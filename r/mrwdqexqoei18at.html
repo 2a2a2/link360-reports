@@ -1,0 +1,221 @@
+<title>Análisis de Perfil de LinkedIn — Bill Gates · Link360</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><style>
+@font-face{font-family:Geist;src:url(https://2a2a2.github.io/link360-reports/assets/geist.woff2) format('woff2');font-weight:100 900;font-display:swap;font-style:normal}
+@font-face{font-family:Hanken;src:url(https://2a2a2.github.io/link360-reports/assets/hanken.woff2) format('woff2');font-weight:100 900;font-display:swap;font-style:normal}
+
+:root{
+  --paper:#F5F2FA; --paper2:#FBFAFE; --paperDim:#C7BEDE;
+  --ink:#1C1330; --inkSurf:#2E2348; --muted:#6B6280; --faint:#8478A0; --line:#DCD4EC;
+  --accent:#5E2CA5; --accentDeep:#3E1C70; --accentMid:#9A66D6; --accentPale:#ECE3F8; --accentPale2:#CFB6EE;
+  --success:#2E7D5B; --warning:#8A5B0F; --crit:#B4321F;
+  --sh-sm:0 1px 2px rgba(28,19,48,.06);
+  --sh-md:0 10px 34px -18px rgba(28,19,48,.30);
+  --glow:transparent;
+  --measure:64ch;
+  --sans:Geist,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --glyph:Hanken,Geist,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#120D21; --paper2:#1A1233; --paperDim:#2C2540;
+    --ink:#F1ECFB; --inkSurf:#241A3C; --muted:#A79BC4; --faint:#8478A0; --line:#2A2145;
+    --accent:#9A66D6; --accentDeep:#7B45C0; --accentMid:#B48AE6; --accentPale:#241A3C; --accentPale2:#4B3A6E;
+    --success:#74C69D; --warning:#E0B25E; --crit:#E58873;
+    --sh-sm:0 1px 2px rgba(0,0,0,.4); --sh-md:0 18px 50px -22px rgba(0,0,0,.75);
+    --glow:radial-gradient(1100px 600px at 50% -10%, rgba(94,44,165,.30), transparent 60%);
+  }
+}
+:root[data-theme="light"]{
+  --paper:#F5F2FA; --paper2:#FBFAFE; --paperDim:#C7BEDE; --ink:#1C1330; --inkSurf:#2E2348;
+  --muted:#6B6280; --faint:#8478A0; --line:#DCD4EC; --accent:#5E2CA5; --accentDeep:#3E1C70;
+  --accentMid:#9A66D6; --accentPale:#ECE3F8; --accentPale2:#CFB6EE;
+  --success:#2E7D5B; --warning:#8A5B0F; --crit:#B4321F;
+  --sh-sm:0 1px 2px rgba(28,19,48,.06); --sh-md:0 10px 34px -18px rgba(28,19,48,.30); --glow:transparent;
+}
+:root[data-theme="dark"]{
+  --paper:#120D21; --paper2:#1A1233; --paperDim:#2C2540; --ink:#F1ECFB; --inkSurf:#241A3C;
+  --muted:#A79BC4; --faint:#8478A0; --line:#2A2145; --accent:#9A66D6; --accentDeep:#7B45C0;
+  --accentMid:#B48AE6; --accentPale:#241A3C; --accentPale2:#4B3A6E;
+  --success:#74C69D; --warning:#E0B25E; --crit:#E58873;
+  --sh-sm:0 1px 2px rgba(0,0,0,.4); --sh-md:0 18px 50px -22px rgba(0,0,0,.75);
+  --glow:radial-gradient(1100px 600px at 50% -10%, rgba(154,102,214,.22), transparent 60%);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  font-feature-settings:"ss01","cv01","tnum" 0}
+body::before{content:"";position:fixed;inset:0;background:var(--glow);pointer-events:none;z-index:0}
+.doc{position:relative;z-index:1;max-width:940px;margin:0 auto;padding:0 26px}
+h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.02em;text-wrap:balance;line-height:1.1}
+p{margin:0}
+.tnum{font-variant-numeric:tabular-nums}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+a{color:inherit}
+.g{font-family:var(--glyph)}
+
+/* bar */
+.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 82%,transparent);
+  backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:940px;margin:0 auto;padding:12px 26px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.mark{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.02em}
+.mark svg{display:block}
+.mark .s360{color:var(--faint);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.themer{border:1px solid var(--line);background:var(--paper2);color:var(--muted);font-family:inherit;
+  font-size:12px;font-weight:600;padding:7px 13px;border-radius:9px;cursor:pointer}
+.themer:hover{border-color:var(--accentPale2)}
+.themer:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* cover */
+.cover{padding:60px 0 46px}
+.cv-eye{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.cv-eye .ln{height:1px;width:34px;background:var(--accentPale2)}
+.cover h1{font-size:clamp(32px,5.6vw,52px);font-weight:800;line-height:1.04}
+.cover .for{margin-top:16px;font-size:18px;color:var(--muted);max-width:50ch}
+.cover .for b{color:var(--ink);font-weight:650}
+
+.hero{display:grid;grid-template-columns:1fr auto;gap:46px;align-items:center;margin-top:42px;
+  padding:34px;background:var(--paper2);border:1px solid var(--line);border-radius:20px 20px 20px 4px;box-shadow:var(--sh-md)}
+@media (max-width:740px){.hero{grid-template-columns:1fr;gap:30px;padding:26px;text-align:left}}
+.verdict .eyebrow{margin-bottom:12px}
+.verdict .lead{font-size:19px;line-height:1.5;font-weight:500}
+.verdict .lead b{color:var(--accentDeep);font-weight:700}
+.verdict p+p{margin-top:12px;color:var(--muted);font-size:16px;line-height:1.6}
+
+/* 360 arc score = signature */
+.arc-wrap{display:flex;flex-direction:column;align-items:center;gap:14px;min-width:210px}
+.arc{position:relative;width:210px;height:210px}
+.arc svg{display:block;transform:rotate(-90deg)}
+.arc .mid{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.arc .n{font-size:62px;font-weight:800;line-height:.9;letter-spacing:-.04em}
+.arc .of{font-size:13px;font-weight:600;letter-spacing:.1em;color:var(--faint)}
+.level{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--accent);background:var(--accentPale);border:1px solid var(--accentPale2);padding:6px 14px;border-radius:999px}
+
+/* section score strip */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:22px}
+@media (max-width:620px){.strip{grid-template-columns:repeat(2,1fr)}}
+.scell{background:var(--paper2);border:1px solid var(--line);border-radius:12px;padding:16px 16px 15px}
+.scell .l{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.scell .v{font-size:30px;font-weight:800;margin:9px 0 12px;letter-spacing:-.03em}
+.scell .v small{font-size:14px;font-weight:600;color:var(--faint);letter-spacing:0}
+.meter{height:5px;border-radius:99px;background:color-mix(in srgb,var(--ink) 9%,transparent);overflow:hidden}
+.meter i{display:block;height:100%;border-radius:99px}
+
+/* section */
+section{padding:52px 0;border-top:1px solid var(--line)}
+.sec-head{margin-bottom:22px}
+.sec-head h2{font-size:clamp(23px,3.4vw,30px);font-weight:750}
+.sec-head .eyebrow{margin-bottom:9px}
+.deck{color:var(--muted);font-size:16.5px;max-width:var(--measure);margin-top:6px}
+.body{max-width:var(--measure)}
+.body p{margin-bottom:13px}
+.lead{font-size:18px;line-height:1.55;font-weight:500}
+.lead b{font-weight:700}
+
+/* graded subblocks */
+.grades{margin-top:24px;display:flex;flex-direction:column;gap:0}
+.gr{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line)}
+@media (max-width:600px){.gr{grid-template-columns:1fr;gap:12px}}
+.gr .gh{display:flex;flex-direction:column;gap:7px}
+.gr .gl{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.gr .gv{font-size:42px;font-weight:800;letter-spacing:-.04em;line-height:.9}
+.gr .gv small{font-size:16px;font-weight:600;color:var(--faint)}
+.gr .st{font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.chips{display:flex;flex-direction:column;gap:9px;margin-top:4px}
+.chip{display:grid;grid-template-columns:16px 1fr;gap:10px;font-size:14.5px;line-height:1.45;color:var(--ink)}
+.chip .m{font-family:var(--glyph);font-weight:700;text-align:center;line-height:1.5}
+.chip.win .m{color:var(--success)} .chip.gap .m{color:var(--crit)} .chip.fix .m{color:var(--accent)}
+.chip b{font-weight:700}
+
+/* paste panel (distinct dark surface) */
+.paste{margin-top:8px;background:var(--inkSurf);border-radius:16px;padding:26px 28px;box-shadow:var(--sh-md);
+  border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+.paste .plab{display:flex;align-items:center;gap:10px;font-size:11.5px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accentMid);margin-bottom:15px}
+.paste .plab .ln{flex:1;height:1px;background:color-mix(in srgb,#fff 14%,transparent)}
+.paste p{color:#EBE4F7;font-size:15.5px;line-height:1.6}
+.paste p+p{margin-top:11px}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:6px 0 22px}
+@media (max-width:600px){.metrics{grid-template-columns:repeat(2,1fr)}}
+.tile{background:var(--paper2);border:1px solid var(--line);border-radius:10px;padding:16px}
+.tile .k{font-size:27px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.tile .l{font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-top:8px}
+
+/* ideas — asymmetric list, not identical cards */
+.ideas{display:flex;flex-direction:column;gap:2px;margin-top:20px;border-top:1px solid var(--line)}
+.idea{display:grid;grid-template-columns:42px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+@media (max-width:600px){.idea{grid-template-columns:1fr;gap:8px}}
+.idea .ix{font-size:14px;font-weight:800;color:var(--accent);letter-spacing:-.02em;padding-top:3px}
+.idea h4{font-size:18px;font-weight:700;margin-bottom:7px;line-height:1.2}
+.idea p{font-size:14.5px;color:var(--muted)}
+.idea .fmt{margin-top:9px;font-size:11.5px;font-weight:600;letter-spacing:.03em;color:var(--faint)}
+
+/* priorities — real ranking */
+.prios{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.prio{background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:22px 24px;box-shadow:var(--sh-sm)}
+.prio .top{display:flex;align-items:baseline;gap:14px;margin-bottom:14px}
+.prio .rk{font-size:15px;font-weight:800;color:var(--accent);letter-spacing:.02em;white-space:nowrap}
+.prio h3{font-size:19px;font-weight:700;line-height:1.2}
+.kv{display:grid;grid-template-columns:96px 1fr;gap:8px 18px;font-size:14.5px}
+@media (max-width:560px){.kv{grid-template-columns:1fr;gap:2px}.kv dt{margin-top:9px}}
+.kv dt{font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);padding-top:3px}
+.kv dd{margin:0;color:var(--ink);line-height:1.5}
+
+/* plan */
+.plan{display:flex;flex-direction:column;gap:0;margin-top:10px;border-left:2px solid var(--accentPale2);padding-left:0}
+.wk{display:grid;grid-template-columns:66px 1fr;gap:20px;padding:20px 0 22px;position:relative}
+@media (max-width:600px){.wk{grid-template-columns:1fr;gap:8px;padding-left:20px}}
+.wk::before{content:"";position:absolute;left:-6px;top:26px;width:10px;height:10px;border-radius:50%;
+  background:var(--accent);box-shadow:0 0 0 4px var(--paper)}
+.wk .wl{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;padding-left:16px}
+@media (max-width:600px){.wk .wl{padding-left:0}}
+.wk h3{font-size:17px;font-weight:700;margin-bottom:11px}
+.wk ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.wk li{font-size:14px;color:var(--muted);padding-left:20px;position:relative;line-height:1.5}
+.wk li .g{position:absolute;left:0;top:0;color:var(--accentMid);font-weight:700}
+.wk .out{margin-top:12px;font-size:13px;color:var(--ink)}
+.wk .out b{font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-right:7px}
+
+/* cta */
+.ctaW{padding:56px 0}
+.cta{background:var(--ink);color:var(--paper);border-radius:22px;padding:46px 40px;position:relative;overflow:hidden;box-shadow:var(--sh-md)}
+:root[data-theme="dark"] .cta{background:#1A1233;border:1px solid var(--line)}
+@media (prefers-color-scheme:dark){.cta{background:#1A1233;border:1px solid var(--line)}}
+.cta .arc360{position:absolute;right:-90px;top:-90px;width:280px;height:280px;border-radius:50%;
+  border:2px solid color-mix(in srgb,var(--accentMid) 55%,transparent);opacity:.5}
+.cta .in{position:relative;max-width:34ch}
+.cta .eyebrow{color:var(--accentMid)}
+.cta h2{font-size:clamp(24px,3.6vw,32px);font-weight:750;margin:12px 0 12px;color:var(--paper2);letter-spacing:-.02em}
+.cta p{color:color-mix(in srgb,var(--paper) 78%,transparent);margin-bottom:26px;font-size:16px;line-height:1.55}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;font-family:inherit;
+  font-weight:700;font-size:15px;padding:15px 26px;border-radius:11px;text-decoration:none;transition:transform .14s ease,background .14s ease}
+.btn:hover{transform:translateY(-2px);background:var(--accentDeep)}
+.btn:focus-visible{outline:2px solid var(--paper);outline-offset:3px}
+.foot{padding:22px 0 56px;display:flex;align-items:center;justify-content:space-between;gap:14px;color:var(--faint);font-size:12.5px;flex-wrap:wrap}
+.foot .b{font-weight:700;color:var(--muted)}
+
+.reveal{opacity:0;transform:translateY(12px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}
+  #arc{stroke-dashoffset:var(--fin)!important;transition:none!important}}
+</style><div class="bar"><div class="bar-in"><div class="mark"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-dasharray="38 12" stroke-linecap="round"/></svg> Link360 <span class="s360">Análisis de perfil</span></div><button class="themer" id="themer">Modo oscuro</button></div></div><div class="doc"><header class="cover"><div class="cv-eye"><span class="ln"></span><span class="eyebrow">Informe personalizado</span></div><h1>El análisis de perfil de LinkedIn que convierte tu autoridad en clientes</h1><p class="for">Preparado para <b>Bill Gates</b>. Chair, Gates Foundation and Founder, Breakthrough Energy</p><div class="hero"><div class="verdict"><div class="eyebrow">Veredicto</div><p>Tu perfil comunica hoy una autoridad institucional excepcional y una actividad de contenido sostenida y de alta calidad. La foto proyecta profesionalidad y cercanía, y tus publicaciones funcionan como un potente canal de reputación y advocacy, con ganchos de datos, storytelling humano y coherencia temática impecable. Lo que frena la conversión es la capa que transforma esa atención en acción: el titular enumera cargos sin misión, el About actúa como tarjeta minimalista, las experiencias sostienen la autoridad solo con el prestigio de los nombres y no existe un siguiente paso claro. La principal distancia no está en la autoridad, que es máxima, sino en traducirla en narrativa de impacto y en un camino de conversión coherente. Aplicando propuesta de valor, camino de conversión y pruebas integradas, el perfil pasará de exhibir estatus a comunicar impacto y activar a su audiencia.</p></div><div class="arc-wrap"><div class="arc" role="img" aria-label="Puntuación global 59 de 100"><svg width="210" height="210" viewBox="0 0 210 210"><circle cx="105" cy="105" r="92" fill="none" stroke="var(--accentPale2)" stroke-width="12" opacity=".5"/><circle id="arc" cx="105" cy="105" r="92" fill="none" stroke="var(--accent)" stroke-width="12" stroke-linecap="round" data-pct="59"/></svg><div class="mid"><div class="n tnum">59</div><div class="of">DE 100</div></div></div><span class="level"><span class="g" style="color:var(--warning)">◆</span> Perfil básico</span></div></div><div class="strip"><div class="scell"><div class="l">Foto</div><div class="v tnum">9<small>/10</small></div><div class="meter"><i style="width:90%;background:var(--success)"></i></div></div><div class="scell"><div class="l">Titular</div><div class="v tnum">8<small>/10</small></div><div class="meter"><i style="width:80%;background:var(--success)"></i></div></div><div class="scell"><div class="l">Acerca de</div><div class="v tnum">6<small>/10</small></div><div class="meter"><i style="width:60%;background:var(--warning)"></i></div></div><div class="scell"><div class="l">Contenido</div><div class="v tnum">16<small>/10</small></div><div class="meter"><i style="width:160%;background:var(--success)"></i></div></div></div></header><section class="reveal"><div class="sec-head"><div class="eyebrow">Los 3 primeros segundos</div><h2>Foto y titular</h2><p class="deck">Lo único que ve un visitante antes de decidir si sigue leyendo o se marcha.</p></div><div class="body"><p class="lead">La primera impresión de tu perfil es sólida: una imagen profesional y cercana se combina con un titular de máxima autoridad. El reto no está en lo que muestras, sino en traducir ese estatus en misión e impacto desde el primer vistazo.</p></div><div class="grades"><div class="gr"><div class="gh"><div class="gl">Foto</div><div class="gv tnum">9<small>/10</small></div><div class="st" style="color:var(--success)">Sólido</div></div><div><p style="margin-bottom:12px;color:var(--muted)">Retrato de estudio de alta calidad, rostro nítido y centrado con mirada a cámara y sonrisa natural. Iluminación suave, fondo degradado azul limpio y vestimenta cercana pero solvente, coherente con un liderazgo filantrópico accesible más que corporativo frío.</p><div class="chips"><div class="chip win"><span class="m">✓</span><span>Rostro nítido, bien iluminado y con contacto visual directo, junto a una expresión cálida que genera confianza y proximidad de inmediato.</span></div><div class="chip gap"><span class="m">✕</span><span>El tono informal del jersey podría restar algo de gravedad institucional en contextos muy corporativos, aunque encaja con tu rol filantrópico.</span></div><div class="chip fix"><span class="m">→</span><span>Mantén esta foto: cumple los requisitos de una imagen eficaz. Si buscas un matiz más institucional para ciertos públicos, ten una variante con americana, pero no es necesario cambiar la actual.</span></div></div></div></div><div class="gr"><div class="gh"><div class="gl">Titular</div><div class="gv tnum">8<small>/10</small></div><div class="st" style="color:var(--success)">Sólido</div></div><div><p style="margin-bottom:12px;color:var(--muted)">Tu titular describe dos cargos de altísima autoridad, pero no comunica a quién ayudas, qué resultado persigues ni qué problema resuelves. Funciona por tu reconocimiento, aunque desaprovecha el espacio más leído del perfil para transmitir misión e impacto.</p><div class="chips"><div class="chip win"><span class="m">✓</span><span>Autoridad institucional inmediata gracias a dos organizaciones de referencia global, con total coherencia respecto a tu posicionamiento como líder filantrópico.</span></div><div class="chip gap"><span class="m">✕</span><span>Es una lista de cargos, no una propuesta de valor: no aparece la misión ni el resultado que humaniza tu impacto ni el problema que combates.</span></div><div class="chip fix"><span class="m">→</span><span>Conserva la autoridad de los cargos pero añade la misión y el resultado que persigues. Pasa de enumerar puestos a comunicar impacto, manteniendo tu tono sobrio y global.</span></div></div></div></div></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Tu argumento de venta silencioso</div><h2>Tu “Acerca de”</h2><p class="deck">Donde el visitante decide si conectar contigo o cerrar la pestaña.</p></div><div class="body"><p class="lead">Tu About parte de una autoridad enorme, pero funciona hoy como una tarjeta de presentación minimalista. Ese contraste entre el potencial disponible y el texto actual es la mayor oportunidad de mejora del perfil.</p><div class="chips" style="margin:16px 0 0"><div class="chip gap"><span class="m">✕</span><span><b>Gancho.</b> Muy débil. La primera línea es un cargo institucional, no un gancho que capte atención ni genere tensión narrativa. No hay promesa, dato ni pregunta que enganche.</span></div><div class="chip gap"><span class="m">✕</span><span><b>Claridad de ICP.</b> Inexistente. El texto no menciona ni sugiere a quién te diriges: donantes, científicos, responsables políticos, socios o público interesado en salud global y energía. El público solo puede inferirse desde fuera.</span></div><div class="chip gap"><span class="m">✕</span><span><b>Autoridad y prueba.</b> La autoridad real es altísima, pero en el texto está infrautilizada: se enuncian los roles sin cifras, logros ni contexto de impacto. La prueba potente disponible en los datos no se aprovecha.</span></div><div class="chip gap"><span class="m">✕</span><span><b>CTA.</b> No hay CTA. El texto termina en un rasgo personal, sin invitar a leer, seguir, apoyar ni conectar con ninguna causa o contenido.</span></div></div></div><div class="paste"><div class="plab"><span class="g">✍</span> Borrador optimizado, listo para pegar<span class="ln"></span></div><p>Cada año, millones de vidas dependen de que una innovación llegue a tiempo a quien la necesita: una vacuna, un diagnóstico, una nueva fuente de energía limpia.</p><p>Mi trabajo consiste en acelerar esas innovaciones y hacer que lleguen a las personas con menos recursos, no solo a quienes pueden pagarlas.</p><p>Desde la Gates Foundation, que presido desde el año 2000, invierto junto a nuestros socios en salud global y desarrollo, guiado por una idea sencilla: toda vida tiene el mismo valor. El progreso es real y medible. La mortalidad infantil global ha pasado de más de 10 millones de muertes al año en 2000 a menos de 5 millones en 2023, y las herramientas contra la malaria han contribuido a salvar más de 14 millones de vidas desde el año 2000.</p><p>Con Breakthrough Energy, que fundé en 2015, apoyo la investigación, las empresas y las políticas que hacen posible una energía limpia y abundante frente al cambio climático.</p><p>El mecanismo es siempre el mismo: financiar la innovación en sus fases más arriesgadas, construir alianzas globales entre ciencia, empresa y gobiernos, y explicar públicamente qué funciona y por qué merece la pena sostener la inversión.</p><p>Antes de esto, cofundé Microsoft en 1975, una experiencia que me enseñó cómo la tecnología, bien dirigida, puede cambiar la vida de miles de millones de personas.</p><p>Escribo con frecuencia sobre estos temas para compartir lo que aprendo. Si te importan la salud global, el desarrollo y la energía limpia, te invito a leer mis artículos y ensayos, y a seguir de cerca el trabajo de la Gates Foundation.</p><p>Fuera del trabajo, soy un lector voraz y un viajero incansable.</p></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Tu motor de visibilidad</div><h2>Contenido y actividad</h2><p class="deck">50 publicaciones analizadas. Del 28 de abril de 2026 al 16 de julio de 2026, aproximadamente 80 días..</p></div><div class="metrics"><div class="tile"><div class="k tnum">2.831</div><div class="l">Reacciones / post</div></div><div class="tile"><div class="k tnum">336</div><div class="l">Comentarios / post</div></div><div class="tile"><div class="k tnum">171</div><div class="l">Reposts / post</div></div><div class="tile"><div class="k tnum">—</div><div class="l">Engagement</div></div></div><div class="body"><p class="lead">Tu contenido es el músculo más fuerte del perfil. Funciona ya como un potente canal de reputación y advocacy, con alta frecuencia, calidad narrativa y coherencia temática impecable. El margen está en dirigir intención y participación.</p><p>El contenido cumple con nota alta en consistencia, autoridad y calidad. El contenido nativo rinde mejor que los posts de enlace externo. El principal punto débil está en la fase de conversión: no diriges intención ni activas a la comunidad, y tu opinión personal fuerte aparece menos de lo esperable.</p></div><div class="eyebrow" style="margin-top:26px">3 ideas listas para publicar</div><div class="ideas"><div class="idea"><div class="ix tnum">01</div><div><h4>Cómo decidimos dónde invertir cada dólar: el filtro de las tres preguntas</h4><p>Transparencia radical sobre el proceso de decisión: por qué se financia una innovación en fase arriesgada y no otra. Muestra el mecanismo interno que solo tú puedes producir y refuerza la confianza de donantes y socios.</p><div class="fmt">Documento o carrusel PDF con ejemplos reales de innovaciones ya publicadas.</div></div></div><div class="idea"><div class="ix tnum">02</div><div><h4>Lo que creo sobre la IA y que casi nadie está diciendo</h4><p>Punto de vista personal y predictivo, con tesis clara sobre dónde salvará vidas primero la IA, qué disrupción hay que amortiguar y qué papel deben jugar filantropía, empresas y gobiernos. Posiciona tu voz como líder de opinión diferencial.</p><div class="fmt">Artículo largo acompañado de un vídeo corto de resumen.</div></div></div><div class="idea"><div class="ix tnum">03</div><div><h4>El gráfico que no cuenta toda la historia: qué pasa si dejamos de invertir</h4><p>El progreso es real pero frágil: visualizar el coste humano de retirar la inversión, no solo celebrar los avances. Convierte a la audiencia pasiva en advocacy activo con un mensaje de movilización tangible.</p><div class="fmt">Documento o carrusel de datos con contraste entre escenarios con y sin inversión.</div></div></div></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Ordenadas por impacto</div><h2>Tus prioridades</h2><p class="deck">Las palancas que más mueven la aguja en tu caso.</p></div><div class="prios"><article class="prio"><div class="top"><span class="rk">Prioridad 1</span><h3>Convertir la parte superior del perfil en una propuesta de valor con misión e impacto</h3></div><dl class="kv"><dt>Situación</dt><dd>El titular enumera dos cargos de altísima autoridad pero no comunica a quién ayudas, qué problema combates ni qué resultado persigues. El About refuerza ese patrón: abre con un cargo, no plantea problema ni audiencia, no explica el mecanismo y no incluye llamada a la acción.</dd><dt>Por qué</dt><dd>Titular y About son los espacios más leídos del perfil y condicionan la comprensión inmediata de tu foco actual. Con tu volumen de seguidores, una mejora marginal en claridad multiplica el número de personas que entienden tu misión presente más allá de tu legado en Microsoft.</dd><dt>Acción</dt><dd>Implementa el titular optimizado ya propuesto, que conserva la autoridad y añade la misión de salvar vidas y avanzar hacia energía limpia. Sustituye el About actual por la versión reescrita, con dato potente, problema, audiencia, mecanismo y CTA. La foto se mantiene.</dd><dt>Impacto</dt><dd>Mayor claridad del posicionamiento en los primeros segundos, mejor conexión con donantes, científicos, responsables políticos y público alineado, y aprovechamiento real del espacio más leído para sumar impacto a la reputación.</dd></dl></article><article class="prio"><div class="top"><span class="rk">Prioridad 2</span><h3>Definir un camino de conversión único hacia tus contenidos y causas</h3></div><dl class="kv"><dt>Situación</dt><dd>No existe un siguiente paso claramente definido. Los CTA del perfil y de las publicaciones son débiles o implícitos, no hay email, teléfono ni enlace de agenda, y la sección Destacados no puede confirmarse como optimizada pese a existir activos de divulgación que podrían estructurarse con alto valor.</dd><dt>Por qué</dt><dd>Es la palanca con mayor coste de oportunidad: canaliza una audiencia masiva ya conseguida. En un perfil de advocacy, un único siguiente paso de bajo coste y alta afinidad convierte atención dispersa en lectores fieles, suscriptores y aliados, y es de implementación relativamente rápida.</dd><dt>Acción</dt><dd>Define un único siguiente paso coherente con tu misión, la suscripción a Gates Notes, y sitúalo al final del About y como primer activo de Destacados. Estructura Destacados priorizando ese activo y refuerza el mismo destino con CTA accionables al cierre de tus publicaciones.</dd><dt>Impacto</dt><dd>Transformación de parte de la visibilidad actual en comunidad activada y lectores recurrentes, con un recorrido claro desde la primera impresión hasta la acción, sin introducir elementos comerciales ajenos a tu posicionamiento filantrópico.</dd></dl></article><article class="prio"><div class="top"><span class="rk">Prioridad 3</span><h3>Anclar las pruebas de impacto reales en la sección de Experiencia</h3></div><dl class="kv"><dt>Situación</dt><dd>Las tres experiencias están reducidas a cargo, empresa y fecha, sin descripción ni resultados. Las cifras verificables (reducción de mortalidad infantil, más de 14 millones de vidas salvadas por herramientas contra la malaria, compromisos de financiación y horizonte de cierre en 2045) viven dispersas en publicaciones y en el About.</dd><dt>Por qué</dt><dd>La autoridad es máxima pero la prueba está fuera de contexto, lo que obliga al visitante a reconstruir el impacto por su cuenta y debilita la fuerza persuasiva inmediata. Integrar cifras que ya existen es de bajo riesgo y alto retorno de credibilidad.</dd><dt>Acción</dt><dd>Añade a cada experiencia una breve introducción y de dos a cuatro viñetas con las cifras ya disponibles, priorizando Gates Foundation y Breakthrough Energy. Vincula cada métrica al rol que la genera y equilibra la prueba entre salud y energía.</dd><dt>Impacto</dt><dd>Prueba estructurada y verificable dentro del propio perfil, mayor confianza en segundos para socios institucionales y responsables políticos, y un hilo claro entre innovación e impacto medible en cada organización.</dd></dl></article></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Del impulso al sistema</div><h2>Tu plan de 30 días</h2><p class="deck">Cuatro semanas, un foco concreto en cada una.</p></div><div class="plan"><div class="wk"><div class="wl">Semana 1</div><div><h3>Base estratégica y primera impresión</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Que la parte superior comunique impacto además de autoridad.</p><ul><li><span class="g">→</span>Revisa y fija el posicionamiento nuclear que une salud global y energía limpia bajo un mismo mecanismo: financiar innovación de alto riesgo y llevarla a quienes más la necesitan.</li><li><span class="g">→</span>Sustituye el titular actual por la versión optimizada ya propuesta, que combina cargos con misión y resultado.</li><li><span class="g">→</span>Confirma que la foto se mantiene sin cambios, dado que ya cumple todos los requisitos de una imagen eficaz.</li></ul><div class="out"><b>Resultado</b>Mejora inmediata en la claridad con la que un visitante entiende tu foco actual en los primeros segundos.</div></div></div><div class="wk"><div class="wl">Semana 2</div><div><h3>Secciones de conversión</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Establecer un único camino de conversión y una narrativa de impacto coherente.</p><ul><li><span class="g">→</span>Publica la versión reescrita del About, con gancho, problema, audiencia, mecanismo, cifras verificables y CTA final hacia tus contenidos.</li><li><span class="g">→</span>Añade a cada experiencia, priorizando Gates Foundation y Breakthrough Energy, una breve introducción y de dos a cuatro viñetas con las cifras de impacto disponibles, vinculando cada dato a su rol.</li><li><span class="g">→</span>Estructura Destacados situando como primer activo la suscripción a Gates Notes y fija un único siguiente paso, colocado también al final del About.</li></ul><div class="out"><b>Resultado</b>Mayor fuerza persuasiva del perfil y un recorrido definido desde la lectura hasta la acción.</div></div></div><div class="wk"><div class="wl">Semana 3</div><div><h3>Contenido y refuerzo de conversión</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Aumentar el rendimiento y la capacidad de canalización del contenido.</p><ul><li><span class="g">→</span>Prioriza el contenido nativo, vídeo, imagen y artículo propio, sobre los posts de mero enlace externo.</li><li><span class="g">→</span>Incorpora CTA de advocacy accionables y claros al cierre de cada publicación, dirigidos al mismo destino único definido en la semana 2.</li><li><span class="g">→</span>Aprovecha más tu punto de vista personal y predictivo donde tu voz es diferencial, sin alterar tus pilares temáticos consolidados.</li></ul><div class="out"><b>Resultado</b>Contenido igual de consistente pero con mayor capacidad de dirigir la atención hacia acciones concretas.</div></div></div><div class="wk"><div class="wl">Semana 4</div><div><h3>Publicación, medición y continuidad</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Convertir las mejoras en un sistema medible y sostenible.</p><ul><li><span class="g">→</span>Mantén la cadencia de publicación con el nuevo estándar de formato y CTA.</li><li><span class="g">→</span>Mide indicadores básicos disponibles: visitas al perfil, suscripciones a Gates Notes e interacción de las publicaciones nativas frente a las de enlace.</li><li><span class="g">→</span>Ajusta el CTA único y los activos de Destacados según lo que muestre mayor respuesta y documenta un sistema de revisión periódica.</li></ul><div class="out"><b>Resultado</b>Un perfil más consistente y medible, con capacidad razonable de convertir su visibilidad en comunidad activada de forma sostenida.</div></div></div></div></section><div class="ctaW reveal"><div class="cta"><div class="arc360" aria-hidden="true"></div><div class="in"><div class="eyebrow">Y ahora qué</div><h2>Este informe te muestra el qué. Nosotros ejecutamos el cómo.</h2><p>En Link360 convertimos tu perfil en una máquina de autoridad y clientes, con contenido estratégico publicado por ti cada semana.</p><a class="btn" href="https://cal.com/linked-360-zdcqtu/llamada-estrategica-link360">Reserva tu sesión de 15 min <span class="g">→</span></a></div></div><div class="foot"><div><span class="b">Link360</span>, el partner de contenido y autoridad para expertos B2B</div><div>Confidencial, preparado para Bill Gates</div></div></div></div><script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themer');
+  function cur(){return root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');}
+  function sync(){btn.textContent=cur()==='dark'?'Modo claro':'Modo oscuro';}
+  btn.addEventListener('click',function(){root.setAttribute('data-theme',cur()==='dark'?'light':'dark');sync();});
+  sync();
+  var arc=document.getElementById('arc'), r=92, C=2*Math.PI*r, off=C*(1-((parseFloat(arc.getAttribute('data-pct'))||0)/100));
+  arc.style.strokeDasharray=C+' '+C; arc.style.transform='rotate(-90deg)'; arc.style.transformOrigin='105px 105px';
+  arc.style.setProperty('--fin',off);
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){arc.style.strokeDashoffset=off;}
+  else{arc.style.strokeDashoffset=C;arc.style.transition='stroke-dashoffset 1.5s cubic-bezier(.2,.7,.2,1) .25s';
+    requestAnimationFrame(function(){requestAnimationFrame(function(){arc.style.strokeDashoffset=off;});});}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});}
+})();
+</script>
