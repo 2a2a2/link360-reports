@@ -1,0 +1,229 @@
+<title>Análisis de Perfil de LinkedIn — David Ibáñez · Link360</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><style>
+@font-face{font-family:Geist;src:url(https://2a2a2.github.io/link360-reports/assets/geist.woff2) format('woff2');font-weight:100 900;font-display:swap;font-style:normal}
+@font-face{font-family:Hanken;src:url(https://2a2a2.github.io/link360-reports/assets/hanken.woff2) format('woff2');font-weight:100 900;font-display:swap;font-style:normal}
+
+:root{
+  --paper:#F5F2FA; --paper2:#FBFAFE; --paperDim:#C7BEDE;
+  --ink:#1C1330; --inkSurf:#2E2348; --muted:#6B6280; --faint:#8478A0; --line:#DCD4EC;
+  --accent:#5E2CA5; --accentDeep:#3E1C70; --accentMid:#9A66D6; --accentPale:#ECE3F8; --accentPale2:#CFB6EE;
+  --success:#2E7D5B; --warning:#8A5B0F; --crit:#B4321F;
+  --sh-sm:0 1px 2px rgba(28,19,48,.06);
+  --sh-md:0 10px 34px -18px rgba(28,19,48,.30);
+  --glow:transparent;
+  --measure:64ch;
+  --sans:Geist,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --glyph:Hanken,Geist,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#120D21; --paper2:#1A1233; --paperDim:#2C2540;
+    --ink:#F1ECFB; --inkSurf:#241A3C; --muted:#A79BC4; --faint:#8478A0; --line:#2A2145;
+    --accent:#9A66D6; --accentDeep:#7B45C0; --accentMid:#B48AE6; --accentPale:#241A3C; --accentPale2:#4B3A6E;
+    --success:#74C69D; --warning:#E0B25E; --crit:#E58873;
+    --sh-sm:0 1px 2px rgba(0,0,0,.4); --sh-md:0 18px 50px -22px rgba(0,0,0,.75);
+    --glow:radial-gradient(1100px 600px at 50% -10%, rgba(94,44,165,.30), transparent 60%);
+  }
+}
+:root[data-theme="light"]{
+  --paper:#F5F2FA; --paper2:#FBFAFE; --paperDim:#C7BEDE; --ink:#1C1330; --inkSurf:#2E2348;
+  --muted:#6B6280; --faint:#8478A0; --line:#DCD4EC; --accent:#5E2CA5; --accentDeep:#3E1C70;
+  --accentMid:#9A66D6; --accentPale:#ECE3F8; --accentPale2:#CFB6EE;
+  --success:#2E7D5B; --warning:#8A5B0F; --crit:#B4321F;
+  --sh-sm:0 1px 2px rgba(28,19,48,.06); --sh-md:0 10px 34px -18px rgba(28,19,48,.30); --glow:transparent;
+}
+:root[data-theme="dark"]{
+  --paper:#120D21; --paper2:#1A1233; --paperDim:#2C2540; --ink:#F1ECFB; --inkSurf:#241A3C;
+  --muted:#A79BC4; --faint:#8478A0; --line:#2A2145; --accent:#9A66D6; --accentDeep:#7B45C0;
+  --accentMid:#B48AE6; --accentPale:#241A3C; --accentPale2:#4B3A6E;
+  --success:#74C69D; --warning:#E0B25E; --crit:#E58873;
+  --sh-sm:0 1px 2px rgba(0,0,0,.4); --sh-md:0 18px 50px -22px rgba(0,0,0,.75);
+  --glow:radial-gradient(1100px 600px at 50% -10%, rgba(154,102,214,.22), transparent 60%);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  font-feature-settings:"ss01","cv01","tnum" 0}
+body::before{content:"";position:fixed;inset:0;background:var(--glow);pointer-events:none;z-index:0}
+.doc{position:relative;z-index:1;max-width:940px;margin:0 auto;padding:0 26px}
+h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.02em;text-wrap:balance;line-height:1.1}
+p{margin:0}
+.tnum{font-variant-numeric:tabular-nums}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+a{color:inherit}
+.g{font-family:var(--glyph)}
+
+/* bar */
+.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 82%,transparent);
+  backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:940px;margin:0 auto;padding:12px 26px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.mark{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.02em}
+.mark svg{display:block}
+.mark .s360{color:var(--faint);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.themer{border:1px solid var(--line);background:var(--paper2);color:var(--muted);font-family:inherit;
+  font-size:12px;font-weight:600;padding:7px 13px;border-radius:9px;cursor:pointer}
+.themer:hover{border-color:var(--accentPale2)}
+.themer:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* cover */
+.cover{padding:60px 0 46px}
+.cv-eye{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.cv-eye .ln{height:1px;width:34px;background:var(--accentPale2)}
+.cover h1{font-size:clamp(32px,5.6vw,52px);font-weight:800;line-height:1.04}
+.cover .for{margin-top:16px;font-size:18px;color:var(--muted);max-width:50ch}
+.cover .for b{color:var(--ink);font-weight:650}
+
+.hero{display:grid;grid-template-columns:1fr auto;gap:46px;align-items:center;margin-top:42px;
+  padding:34px;background:var(--paper2);border:1px solid var(--line);border-radius:20px 20px 20px 4px;box-shadow:var(--sh-md)}
+@media (max-width:740px){.hero{grid-template-columns:1fr;gap:30px;padding:26px;text-align:left}}
+.verdict .eyebrow{margin-bottom:12px}
+.verdict .lead{font-size:19px;line-height:1.5;font-weight:500}
+.verdict .lead b{color:var(--accentDeep);font-weight:700}
+.verdict p+p{margin-top:12px;color:var(--muted);font-size:16px;line-height:1.6}
+
+/* 360 arc score = signature */
+.arc-wrap{display:flex;flex-direction:column;align-items:center;gap:14px;min-width:210px}
+.arc{position:relative;width:210px;height:210px}
+.arc svg{display:block;transform:rotate(-90deg)}
+.arc .mid{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.arc .n{font-size:62px;font-weight:800;line-height:.9;letter-spacing:-.04em}
+.arc .of{font-size:13px;font-weight:600;letter-spacing:.1em;color:var(--faint)}
+.level{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--accent);background:var(--accentPale);border:1px solid var(--accentPale2);padding:6px 14px;border-radius:999px}
+
+/* section score strip */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:22px}
+@media (max-width:620px){.strip{grid-template-columns:repeat(2,1fr)}}
+.scell{background:var(--paper2);border:1px solid var(--line);border-radius:12px;padding:16px 16px 15px}
+.scell .l{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.scell .v{font-size:30px;font-weight:800;margin:9px 0 12px;letter-spacing:-.03em}
+.scell .v small{font-size:14px;font-weight:600;color:var(--faint);letter-spacing:0}
+.meter{height:5px;border-radius:99px;background:color-mix(in srgb,var(--ink) 9%,transparent);overflow:hidden}
+.meter i{display:block;height:100%;border-radius:99px}
+
+/* section */
+section{padding:52px 0;border-top:1px solid var(--line)}
+.sec-head{margin-bottom:22px}
+.sec-head h2{font-size:clamp(23px,3.4vw,30px);font-weight:750}
+.sec-head .eyebrow{margin-bottom:9px}
+.deck{color:var(--muted);font-size:16.5px;max-width:var(--measure);margin-top:6px}
+.body{max-width:var(--measure)}
+.body p{margin-bottom:13px}
+.lead{font-size:18px;line-height:1.55;font-weight:500}
+.lead b{font-weight:700}
+
+/* graded subblocks */
+.grades{margin-top:24px;display:flex;flex-direction:column;gap:0}
+.gr{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line)}
+@media (max-width:600px){.gr{grid-template-columns:1fr;gap:12px}}
+.gr .gh{display:flex;flex-direction:column;gap:7px}
+.gr .gl{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.gr .gv{font-size:42px;font-weight:800;letter-spacing:-.04em;line-height:.9}
+.gr .gv small{font-size:16px;font-weight:600;color:var(--faint)}
+.gr .st{font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.chips{display:flex;flex-direction:column;gap:9px;margin-top:4px}
+.chip{display:grid;grid-template-columns:16px 1fr;gap:10px;font-size:14.5px;line-height:1.45;color:var(--ink)}
+.chip .m{font-family:var(--glyph);font-weight:700;text-align:center;line-height:1.5}
+.chip.win .m{color:var(--success)} .chip.gap .m{color:var(--crit)} .chip.fix .m{color:var(--accent)}
+.chip b{font-weight:700}
+
+/* paste panel (distinct dark surface) */
+.paste{margin-top:8px;background:var(--inkSurf);border-radius:16px;padding:26px 28px;box-shadow:var(--sh-md);
+  border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+.paste .plab{display:flex;align-items:center;gap:10px;font-size:11.5px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accentMid);margin-bottom:15px}
+.paste .plab .ln{flex:1;height:1px;background:color-mix(in srgb,#fff 14%,transparent)}
+.paste p{color:#EBE4F7;font-size:15.5px;line-height:1.6}
+.paste p+p{margin-top:11px}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:6px 0 22px}
+@media (max-width:600px){.metrics{grid-template-columns:repeat(2,1fr)}}
+.tile{background:var(--paper2);border:1px solid var(--line);border-radius:10px;padding:16px}
+.tile .k{font-size:27px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.tile .l{font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-top:8px}
+
+/* ideas — asymmetric list, not identical cards */
+.ideas{display:flex;flex-direction:column;gap:2px;margin-top:20px;border-top:1px solid var(--line)}
+.idea{display:grid;grid-template-columns:42px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+@media (max-width:600px){.idea{grid-template-columns:1fr;gap:8px}}
+.idea .ix{font-size:14px;font-weight:800;color:var(--accent);letter-spacing:-.02em;padding-top:3px}
+.idea h4{font-size:18px;font-weight:700;margin-bottom:7px;line-height:1.2}
+.idea p{font-size:14.5px;color:var(--muted)}
+.idea .fmt{margin-top:9px;font-size:11.5px;font-weight:600;letter-spacing:.03em;color:var(--faint)}
+
+/* priorities — real ranking */
+.prios{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.prio{background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:22px 24px;box-shadow:var(--sh-sm)}
+.prio .top{display:flex;align-items:baseline;gap:14px;margin-bottom:14px}
+.prio .rk{font-size:15px;font-weight:800;color:var(--accent);letter-spacing:.02em;white-space:nowrap}
+.prio h3{font-size:19px;font-weight:700;line-height:1.2}
+.kv{display:grid;grid-template-columns:96px 1fr;gap:8px 18px;font-size:14.5px}
+@media (max-width:560px){.kv{grid-template-columns:1fr;gap:2px}.kv dt{margin-top:9px}}
+.kv dt{font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);padding-top:3px}
+.kv dd{margin:0;color:var(--ink);line-height:1.5}
+
+/* plan */
+.plan{display:flex;flex-direction:column;gap:0;margin-top:10px;border-left:2px solid var(--accentPale2);padding-left:0}
+.wk{display:grid;grid-template-columns:66px 1fr;gap:20px;padding:20px 0 22px;position:relative}
+@media (max-width:600px){.wk{grid-template-columns:1fr;gap:8px;padding-left:20px}}
+.wk::before{content:"";position:absolute;left:-6px;top:26px;width:10px;height:10px;border-radius:50%;
+  background:var(--accent);box-shadow:0 0 0 4px var(--paper)}
+.wk .wl{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;padding-left:16px}
+@media (max-width:600px){.wk .wl{padding-left:0}}
+.wk h3{font-size:17px;font-weight:700;margin-bottom:11px}
+.wk ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.wk li{font-size:14px;color:var(--muted);padding-left:20px;position:relative;line-height:1.5}
+.wk li .g{position:absolute;left:0;top:0;color:var(--accentMid);font-weight:700}
+.wk .out{margin-top:12px;font-size:13px;color:var(--ink)}
+.wk .out b{font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-right:7px}
+
+/* cta */
+.ctaW{padding:56px 0}
+.cta{background:var(--ink);color:#F4F8F5;border-radius:22px;padding:46px 40px;position:relative;overflow:hidden;box-shadow:var(--sh-md)}
+:root[data-theme="dark"] .cta{background:#1A1233;border:1px solid var(--line)}
+@media (prefers-color-scheme:dark){.cta{background:#1A1233;border:1px solid var(--line)}}
+.cta .arc360{position:absolute;right:-90px;top:-90px;width:280px;height:280px;border-radius:50%;
+  border:2px solid color-mix(in srgb,var(--accentMid) 55%,transparent);opacity:.5}
+.cta .in{position:relative;max-width:34ch}
+.cta .eyebrow{color:var(--accentMid)}
+.cta h2{font-size:clamp(24px,3.6vw,32px);font-weight:750;margin:12px 0 12px;color:#F4F8F5;letter-spacing:-.02em}
+.cta p{color:color-mix(in srgb,#F4F8F5 82%,transparent);margin-bottom:26px;font-size:16px;line-height:1.55}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;font-family:inherit;
+  font-weight:700;font-size:15px;padding:15px 26px;border-radius:11px;text-decoration:none;transition:transform .14s ease,background .14s ease}
+.btn:hover{transform:translateY(-2px);background:var(--accentDeep)}
+.btn:focus-visible{outline:2px solid var(--paper);outline-offset:3px}
+.foot{padding:22px 0 56px;display:flex;align-items:center;justify-content:space-between;gap:14px;color:var(--faint);font-size:12.5px;flex-wrap:wrap}
+.foot .b{font-weight:700;color:var(--muted)}
+
+.midcta{max-width:var(--measure);margin-top:18px;padding:14px 18px;background:var(--accentPale);border:1px solid var(--accentPale2);border-radius:12px;font-size:14.5px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.midcta a{color:var(--accentDeep);font-weight:700;text-decoration:none}
+.midcta a:hover{text-decoration:underline}
+ol.steps{margin:0;padding-left:0;list-style:none;counter-reset:st;display:flex;flex-direction:column;gap:12px}
+ol.steps li{counter-increment:st;position:relative;padding-left:40px;font-size:15.5px;line-height:1.55;color:var(--muted)}
+ol.steps li b{color:var(--ink)}
+ol.steps li::before{content:counter(st);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--accentPale);border:1px solid var(--accentPale2);color:var(--accentDeep);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.riskfree{margin-top:12px;font-size:12.5px;color:color-mix(in srgb,#F4F8F5 62%,transparent)}
+.reveal{opacity:0;transform:translateY(12px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}
+  #arc{stroke-dashoffset:var(--fin)!important;transition:none!important}}
+</style><div class="bar"><div class="bar-in"><div class="mark"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-dasharray="38 12" stroke-linecap="round"/></svg> Link360 <span class="s360">Análisis de perfil</span></div><button class="themer" id="themer">Modo oscuro</button></div></div><div class="doc"><header class="cover"><div class="cv-eye"><span class="ln"></span><span class="eyebrow">Informe personalizado</span></div><h1>El análisis de perfil de LinkedIn que convierte tu autoridad en clientes</h1><p class="for">Preparado para <b>David Ibáñez</b>.</p><div class="hero"><div class="verdict"><div class="eyebrow">Veredicto</div><p>Tu perfil comunica hoy el de un fundador activo y competente: publicas con constancia, dominas la mecánica del alcance y transmites formalidad B2B en el primer vistazo. El problema no es la ejecución, sino la dirección estratégica y la coherencia del mensaje. Se repite una contradicción de fondo: te presentas como una herramienta de IA self-serve, mientras tu web promete un servicio done-for-you operado por humanos. A esto se suman el idioma inglés frente a un ICP hispanohablante y una autoridad real documentada fuera del perfil pero ausente dentro de él.</p></div><div class="arc-wrap"><div class="arc" role="img" aria-label="Puntuación global 56 de 100"><svg width="210" height="210" viewBox="0 0 210 210"><circle cx="105" cy="105" r="92" fill="none" stroke="var(--accentPale2)" stroke-width="12" opacity=".5"/><circle id="arc" cx="105" cy="105" r="92" fill="none" stroke="var(--accent)" stroke-width="12" stroke-linecap="round" data-pct="56"/></svg><div class="mid"><div class="n tnum">56</div><div class="of">DE 100</div></div></div><span class="level"><span class="g" style="color:var(--warning)">◆</span> Perfil básico</span></div></div><div class="strip"><div class="scell"><div class="l">Foto</div><div class="v tnum">7<small>/10</small></div><div class="meter"><i style="width:70%;background:var(--success)"></i></div></div><div class="scell"><div class="l">Titular</div><div class="v tnum">6<small>/10</small></div><div class="meter"><i style="width:60%;background:var(--warning)"></i></div></div><div class="scell"><div class="l">Acerca de</div><div class="v tnum">4<small>/10</small></div><div class="meter"><i style="width:40%;background:var(--crit)"></i></div></div><div class="scell"><div class="l">Contenido</div><div class="v tnum">7<small>/10</small></div><div class="meter"><i style="width:70%;background:var(--success)"></i></div></div></div></header><div class="midcta reveal" style="margin-top:18px"><span>Tu palanca más floja ahora mismo: <b>Acerca de (4/10)</b>. En 15 minutos montamos contigo el plan para convertirla en tu punto fuerte.</span> <a href="https://cal.com/linked-360-zdcqtu/llamada-estrategica-link360?utm_source=informe&utm_medium=lead_magnet&utm_campaign=mrxbhdr6wu00jbb&utm_content=hero">Reserva tu sesión gratuita <span class="g">→</span></a></div><section class="reveal"><div class="sec-head"><div class="eyebrow">Por qué importa</div><h2>Tu perfil es tu activo más infravalorado</h2></div><div class="body"><p class="lead"><b>David</b>, cada semana decenas de personas que podrían ser tu próximo cliente visitan tu perfil de LinkedIn. La mayoría no te escribe. Y casi nunca es un problema de nivel: es que tu perfil no lo comunica en los primeros segundos.</p><div class="chips" style="margin:16px 0"><div class="chip fix"><span class="m">→</span><span>¿Mi perfil transmite de verdad la autoridad que tengo?</span></div><div class="chip fix"><span class="m">→</span><span>¿Qué ve un cliente potencial antes de decidir si confía en mí?</span></div><div class="chip fix"><span class="m">→</span><span>¿Por dónde empiezo para que LinkedIn me traiga oportunidades en vez de silencio?</span></div></div><p>Este análisis responde a esas preguntas mirando tu perfil concreto, no con teoría genérica: tu primera impresión, tu Acerca de y tu contenido, con propuestas listas para usar y un plan de 30 días.</p><p><b>La buena noticia: casi todo lo que frena tu perfil hoy se arregla en días, no en meses.</b></p></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Los 3 primeros segundos</div><h2>Foto y titular</h2><p class="deck">Lo único que ve un visitante antes de decidir si sigue leyendo o se marcha.</p></div><div class="body"><p class="lead">Tu cabecera transmite formalidad B2B y proyecta la imagen de un fundador activo. La foto genera reconocimiento y el titular promete resultado, pero ambos dejan sin explotar tu mayor activo: la autoridad real que ya posees.</p></div><div class="grades"><div class="gr"><div class="gh"><div class="gl">Foto</div><div class="gv tnum">7<small>/10</small></div><div class="st" style="color:var(--success)">Sólido</div></div><div><p style="margin-bottom:12px;color:var(--muted)">Plano de busto con traje oscuro y camisa blanca sobre fondo degradado morado. Rostro nítido, bien iluminado y con contacto visual directo. El recorte sobre fondo violeta delata edición: bordes algo artificiales, iluminación plana y expresión seria que resta cercanía.</p><div class="chips"><div class="chip win"><span class="m">✓</span><span>Rostro nítido, bien centrado y con contacto visual directo a cámara, con vestimenta formal coherente con un público B2B de directivos y fundadores.</span></div><div class="chip gap"><span class="m">✕</span><span>El fondo morado sólido y los bordes del recorte se ven artificiales, con iluminación plana y expresión seria que reducen naturalidad, confianza y cercanía.</span></div><div class="chip fix"><span class="m">→</span><span>Sustituye el recorte sobre fondo morado por una fotografía real con fondo neutro o desenfoque suave e iluminación con volumen. Mantén el traje y busca una leve sonrisa que combine autoridad y cercanía.</span></div></div></div></div><div class="gr"><div class="gh"><div class="gl">Titular</div><div class="gv tnum">6<small>/10</small></div><div class="st" style="color:var(--warning)">Mejorable</div></div><div><p style="margin-bottom:12px;color:var(--muted)">El titular comunica una promesa clara (de posts a clientes) y ataca las objeciones de precio y tiempo. Sin embargo está en inglés frente a un ICP hispanohablante, no nombra a tu público y se vende como herramienta self-serve cuando tu web promete un servicio operado por humanos donde tú solo apruebas.</p><div class="chips"><div class="chip win"><span class="m">✓</span><span>Promesa de resultado clara y orientada a negocio que anticipa y neutraliza objeciones clave: coste de agencias y falta de tiempo.</span></div><div class="chip gap"><span class="m">✕</span><span>En inglés pese a un ICP hispanohablante, sin nombrar a fundadores y consultores, sin ninguna prueba de autoridad y con ambigüedad sobre si contratan una app o un servicio.</span></div><div class="chip fix"><span class="m">→</span><span>Reescríbelo en español, nombra a tu ICP, incorpora una prueba real y alinéalo con la promesa done-for-you de tu web, evitando la etiqueta de herramienta automática que genera ambigüedad.</span></div></div></div></div></div><div class="paste" style="margin-top:22px"><div class="plab"><span class="g">✍</span> Titular optimizado, listo para pegar<span class="ln"></span></div><p style="font-size:17px;font-weight:600">Convierto a fundadores y consultores B2B en referentes de LinkedIn y les lleno la agenda de clientes | +250 clientes, 0€ en ads | Lo operamos por ti, tú solo apruebas</p></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Tu argumento de venta silencioso</div><h2>Tu “Acerca de”</h2><p class="deck">Donde el visitante decide si conectar contigo o cerrar la pestaña.</p></div><div class="body"><p class="lead">Tu sección Acerca de funciona hoy más como una biografía que como una pieza de conversión. Tiene ideas potentes y un diferenciador real, pero no habla al cliente ideal ni presenta una promesa coherente.</p><div class="chips" style="margin:16px 0 0"><div class="chip gap"><span class="m">✕</span><span><b>Gancho.</b> Débil. Abre hablando de tu propia trayectoria en vez de interpelar al cliente ideal o a su problema. No genera tensión ni curiosidad.</span></div><div class="chip gap"><span class="m">✕</span><span><b>Claridad de ICP.</b> Baja. No se nombra con claridad a fundadores, directivos y consultores B2B con experiencia pero sin tiempo. Se habla de empresas de forma genérica.</span></div><div class="chip gap"><span class="m">✕</span><span><b>Autoridad y prueba.</b> Prácticamente nula. No usa ninguna cifra real disponible: +250 clientes, 0€ en ads, +24.900 seguidores ni casos con nombre. La autoridad se queda en afirmaciones genéricas.</span></div><div class="chip gap"><span class="m">✕</span><span><b>CTA.</b> Débil. Un genérico escríbeme y hablamos, sin motivo concreto, sin oferta de diagnóstico, sin mecánica clara ni siguiente paso definido.</span></div></div></div><div class="paste"><div class="plab"><span class="g">✍</span> Borrador optimizado, listo para pegar<span class="ln"></span></div><p>Tienes la experiencia y el criterio que a otros les falta. Pero en LinkedIn eres invisible.</p><p>Publicas (o piensas en hacerlo) y, en el mejor de los casos, consigues algún like. Lo que no llega son clientes.</p><p>Y mientras tanto, otros con la mitad de tu conocimiento ocupan el espacio que debería ser tuyo. Cada mes que pasa sin visibilidad es un mes de oportunidades comerciales que se van a la competencia.</p><p>El problema no es tu talento. Es que gestionar LinkedIn bien exige tiempo, estrategia y constancia que tú no tienes por qué dedicar.</p><p>Por eso creé Link360.</p><p>Convierto a fundadores, directivos y consultores B2B en el referente de su sector y les lleno la agenda de clientes, sin que escriban ni publiquen. Lo operamos nosotros de principio a fin. Tú solo apruebas.</p><p>Así funciona nuestro sistema Motor 360:</p><p>- Capturamos tu forma de pensar y tu voz real (nada de contenido genérico ni &quot;slop&quot; de IA).</p><p>- Diseñamos tu estrategia de contenido y publicamos cada semana.</p><p>- Nuestra IA propia, entrenada con más de 10.000 posts y verificada por humanos, mantiene tu tono en cada pieza.</p><p>- Detectamos señales de interés y abrimos conversaciones con leads cualificados.</p><p>- Repetimos y mejoramos el ciclo cada mes: visibilidad, autoridad, conversaciones, clientes.</p><p>No hablo de teoría. Es lo que hemos hecho para más de 250 clientes B2B captados desde LinkedIn, con 0€ invertidos en publicidad. Y lo mismo que me llevó a construir una comunidad de más de 24.900 seguidores aplicando este sistema a mi propio perfil.</p><p>Antes de esto pasé años liderando equipos y departamentos comerciales. Conozco los cuellos de botella que frenan el crecimiento y sé que la tecnología no reemplaza a las personas: desbloquea su verdadero potencial.</p><p>Si eres un profesional B2B con experiencia y quieres que LinkedIn te traiga clientes sin gestionarlo tú, escríbeme por mensaje directo y te preparo un diagnóstico gratuito de tu perfil.</p></div><div class="midcta"><span>¿Prefieres que lo adaptemos contigo a tu voz?</span> <a href="https://cal.com/linked-360-zdcqtu/llamada-estrategica-link360?utm_source=informe&utm_medium=lead_magnet&utm_campaign=mrxbhdr6wu00jbb&utm_content=about">Agenda 15 minutos <span class="g">→</span></a></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Tu motor de visibilidad</div><h2>Contenido y actividad</h2><p class="deck">27 publicaciones analizadas. Del 5 de mayo al 21 de julio de 2026.</p></div><div class="metrics"><div class="tile"><div class="k tnum">86</div><div class="l">Reacciones / post</div></div><div class="tile"><div class="k tnum">110</div><div class="l">Comentarios / post</div></div><div class="tile"><div class="k tnum">12</div><div class="l">Reposts / post</div></div><div class="tile"><div class="k tnum">0,83%</div><div class="l">Engagement</div></div></div><div class="body"><p class="lead">Tu contenido es uno de tus grandes activos: publicas con constancia, dominas los ganchos y los formatos guardables, y generas visibilidad y comunidad. El reto no es la ejecución, sino hacia quién apuntas.</p><p>El contenido está bien producido y domina la mecánica del alcance, pero la dirección estratégica falla. Demasiado material es genérico y tutorial, lo que atrae a una audiencia que quiere hacerlo sola, mientras tu oferta es un servicio para quien quiere delegar. Los lead magnets con comentario inflan métricas de vanidad y la autoridad real queda diluida.</p></div><div class="eyebrow" style="margin-top:26px">3 ideas listas para publicar</div><div class="ideas"><div class="idea"><div class="ix tnum">01</div><div><h4>Por qué un directivo ocupado no debería aprender LinkedIn (aunque pueda)</h4><p>Coste de oportunidad: el tiempo de un fundador vale más operándolo que aprendiendo a operar LinkedIn. Reencuadra la conversación desde aprende a hacerlo hacia delega el proceso.</p><div class="fmt">Post de texto largo con estructura de argumento y cierre reflexivo</div></div></div><div class="idea"><div class="ix tnum">02</div><div><h4>Cómo evitamos que la IA suene a IA: el proceso anti-slop de Motor 360</h4><p>Entre bastidores del mecanismo real, no un tutorial replicable: muestra el sistema para justificar el servicio frente a soluciones baratas de IA genérica.</p><div class="fmt">Carrusel o infografía con el proceso paso a paso</div></div></div><div class="idea"><div class="ix tnum">03</div><div><h4>De perfil invisible a agenda con oportunidades: anatomía de un caso real</h4><p>Storytelling de transformación con foco en oportunidades comerciales, no en métricas de vanidad, elevando los casos a pieza de conversión recurrente.</p><div class="fmt">Post narrativo con estructura antes, proceso y después</div></div></div></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Ordenadas por impacto</div><h2>Tus prioridades</h2><p class="deck">Las palancas que más mueven la aguja en tu caso.</p></div><div class="prios"><article class="prio"><div class="top"><span class="rk">Prioridad 1</span><h3>Unificar y clarificar la propuesta de valor en la parte superior del perfil</h3></div><dl class="kv"><dt>Situación</dt><dd>El titular y el Acerca de están en inglés frente a un ICP hispanohablante, no nombran a fundadores, directivos y consultores B2B, y describen un modelo self-serve que contradice la promesa done-for-you de tu web. Además hay inconsistencia en el nombre de marca.</dd><dt>Por qué</dt><dd>Es la zona más visible y define la primera impresión y la comprensión de la oferta. La ambigüedad entre app que uso yo y servicio que me lo hacen erosiona la confianza justo antes de la decisión. Resolverla ordena todo lo demás.</dd><dt>Acción</dt><dd>Aplica el titular optimizado (español, ICP nombrado, prueba real y promesa done-for-you) y reescribe el Acerca de en español con ese mismo enfoque, el ángulo del experto invisible, el mecanismo Motor 360, cifras reales y una CTA única hacia diagnóstico. Fija un único nombre de marca.</dd><dt>Impacto</dt><dd>Mayor claridad en los primeros segundos, identificación inmediata del ICP y eliminación de la contradicción sobre qué se contrata, lo que reduce la fricción y mejora la calidad de las conversaciones.</dd></dl></article><article class="prio"><div class="top"><span class="rk">Prioridad 2</span><h3>Trasladar la autoridad real y reducir la fricción de conversión</h3></div><dl class="kv"><dt>Situación</dt><dd>Tus pruebas más potentes (+250 clientes B2B, 0€ en ads, comunidad amplia, casos con nombre) viven en la web y en los posts, pero no dentro del perfil. La experiencia describe funciones sin resultados y la conversión depende de DM o waitlist, sin enlace directo de agenda.</dd><dt>Por qué</dt><dd>Tu público tiene poco tiempo y decide con una lectura rápida. Si la prueba no está donde la busca y no puede reservar en un clic, se pierden oportunidades en caliente. Es una palanca rápida porque el material ya existe.</dd><dt>Acción</dt><dd>Incorpora las cifras verificadas y 1-2 casos con nombre en la experiencia de Link360 AI, consolida los cargos comerciales cortos en una narrativa con resultados, conecta Fusion Solutions AI con Link360, ordena Destacados por impacto comercial y añade un enlace de agenda directo, manteniendo el DM como vía secundaria.</dd><dt>Impacto</dt><dd>Autoridad visible en la lectura rápida del perfil y un camino de conversión de un solo clic, lo que aumenta la probabilidad de que una visita interesada solicite el diagnóstico sin demoras.</dd></dl></article><article class="prio"><div class="top"><span class="rk">Prioridad 3</span><h3>Reequilibrar el contenido hacia el comprador que delega</h3></div><dl class="kv"><dt>Situación</dt><dd>El contenido es constante, con ganchos potentes y buena prueba social, pero un tercio largo son roundups genéricos de IA y tutoriales hazlo tú mismo que contradicen tu discurso anti-slop y atraen a quien quiere aprender solo. Los lead magnets con comentario inflan métricas de vanidad.</dd><dt>Por qué</dt><dd>El contenido es tu principal motor de tracción, pero hoy educa al perfil equivocado para una oferta done-for-you. Alinearlo con el comprador que delega mejora la calidad de las conversaciones sin aumentar el volumen de publicación.</dd><dt>Acción</dt><dd>Reduce los roundups genéricos de IA y aumenta casos de cliente con foco en resultado de negocio, piezas sobre por qué el DIY fracasa para un directivo ocupado y entre bastidores del Motor 360. Sustituye parte de los lead magnets masivos por CTAs de conversación cualificada e incorpora opinión propia.</dd><dt>Impacto</dt><dd>Contenido más coherente con la oferta y con el titular y el Acerca de renovados, que atrae y cualifica mejor a quien puede pagar por delegar, reforzando tu autoridad diferencial.</dd></dl></article></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Del impulso al sistema</div><h2>Tu plan de 30 días</h2><p class="deck">Cuatro semanas, un foco concreto en cada una.</p></div><div class="plan"><div class="wk"><div class="wl">Semana 1</div><div><h3>Base estratégica y primera impresión</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Fijar un mensaje único y coherente en la parte superior del perfil, resolviendo idioma, ICP, promesa done-for-you y marca.</p><ul><li><span class="g">→</span>Decidir y documentar el nombre de marca único a usar en todo el perfil y publicar el titular ya optimizado.</li><li><span class="g">→</span>Sustituir la foto por una versión con fondo neutro real e iluminación con volumen y expresión con leve sonrisa, manteniendo el traje.</li><li><span class="g">→</span>Definir el ángulo del experto invisible como hilo conductor y revisar que ubicación e idioma sean coherentes con el ICP hispanohablante.</li></ul><div class="out"><b>Resultado</b>Primera impresión más clara y coherente, con identificación inmediata del ICP y de la promesa real del servicio.</div></div></div><div class="wk"><div class="wl">Semana 2</div><div><h3>Conversión: Acerca de, experiencia y Destacados</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Llevar la propuesta de valor y la autoridad real a las secciones donde se toma la decisión y eliminar la fricción de contacto.</p><ul><li><span class="g">→</span>Reescribir el Acerca de en español según la recomendación e incorporar cifras verificadas y 1-2 casos con nombre en la experiencia de Link360 AI.</li><li><span class="g">→</span>Consolidar los cargos comerciales cortos en una narrativa breve con resultados, conectar Fusion Solutions AI con Link360 y estandarizar la cifra de seguidores.</li><li><span class="g">→</span>Ordenar Destacados por impacto comercial (casos, activos de valor y diagnóstico) y añadir enlace de agenda directo, con el DM como vía secundaria.</li></ul><div class="out"><b>Resultado</b>Mayor credibilidad en la lectura rápida y un camino de conversión sin pasos intermedios innecesarios.</div></div></div><div class="wk"><div class="wl">Semana 3</div><div><h3>Reequilibrio de contenido hacia el comprador que delega</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Ajustar los pilares de contenido para atraer y cualificar a quien quiere delegar, en coherencia con la oferta.</p><ul><li><span class="g">→</span>Reducir la proporción de roundups genéricos de IA y tutoriales hazlo tú mismo y aumentar casos de cliente centrados en resultado de negocio.</li><li><span class="g">→</span>Programar piezas de entre bastidores del sistema Motor 360 y la verificación anti-slop, e incorporar contenido sobre por qué el DIY fracasa para un directivo ocupado.</li><li><span class="g">→</span>Sustituir parte de los lead magnets de comentario masivo por CTAs de conversación cualificada.</li></ul><div class="out"><b>Resultado</b>Contenido más coherente con la propuesta de valor y con capacidad de cualificar mejor a los interesados.</div></div></div><div class="wk"><div class="wl">Semana 4</div><div><h3>Publicación, medición y continuidad</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Consolidar el sistema, medir el efecto de los cambios y afinar la conversión de visitas en conversaciones.</p><ul><li><span class="g">→</span>Mantener el ritmo de publicación con los pilares reequilibrados y definir una rutina semanal para responder y cualificar conversaciones entrantes.</li><li><span class="g">→</span>Revisar métricas de calidad: origen de las conversaciones y diagnósticos reservados por el enlace de agenda.</li><li><span class="g">→</span>Ajustar titular, Acerca de o Destacados según lo observado y documentar un checklist de continuidad para no volver a la ambigüedad de mensaje.</li></ul><div class="out"><b>Resultado</b>Mayor consistencia operativa y una capacidad de conversión de visita a conversación más estable y medible.</div></div></div></div><div class="body" style="margin-top:22px"><p class="lead">Un perfil optimizado se arregla en días. Lo que no se arregla con un fix es <b>publicar contenido estratégico cada semana, durante meses</b>: ahí es donde se construye la autoridad que trae clientes, y ese es exactamente el sistema que montamos por ti.</p></div></section><div class="ctaW reveal"><div class="cta"><div class="arc360" aria-hidden="true"></div><div class="in"><div class="eyebrow">El siguiente paso</div><h2>Este informe te muestra el qué. Nosotros ejecutamos el cómo.</h2><p>En la llamada montamos contigo el plan de tus 2 primeras semanas, empezando por tu Acerca de (4/10). Y si encaja, nuestro sistema publica por ti la autoridad que este informe te ha enseñado a construir.</p><a class="btn" href="https://cal.com/linked-360-zdcqtu/llamada-estrategica-link360?utm_source=informe&utm_medium=lead_magnet&utm_campaign=mrxbhdr6wu00jbb&utm_content=final">Reserva tu sesión gratuita de 15 min <span class="g">→</span></a><p class="riskfree">Sin compromiso. Sales con acciones aplicables, trabajemos juntos o no.</p></div></div><div class="foot"><div><span class="b">Link360</span>, el partner de contenido y autoridad para expertos B2B</div><div>Confidencial, preparado para David Ibáñez</div></div></div></div><script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themer');
+  function cur(){return root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');}
+  function sync(){btn.textContent=cur()==='dark'?'Modo claro':'Modo oscuro';}
+  btn.addEventListener('click',function(){root.setAttribute('data-theme',cur()==='dark'?'light':'dark');sync();});
+  sync();
+  var arc=document.getElementById('arc'), r=92, C=2*Math.PI*r, off=C*(1-((parseFloat(arc.getAttribute('data-pct'))||0)/100));
+  arc.style.strokeDasharray=C+' '+C; arc.style.transform='rotate(-90deg)'; arc.style.transformOrigin='105px 105px';
+  arc.style.setProperty('--fin',off);
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){arc.style.strokeDashoffset=off;}
+  else{arc.style.strokeDashoffset=C;arc.style.transition='stroke-dashoffset 1.5s cubic-bezier(.2,.7,.2,1) .25s';
+    requestAnimationFrame(function(){requestAnimationFrame(function(){arc.style.strokeDashoffset=off;});});}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});}
+})();
+</script>
