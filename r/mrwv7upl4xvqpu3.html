@@ -1,0 +1,229 @@
+<title>Análisis de Perfil de LinkedIn — David Tomas · Link360</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><style>
+@font-face{font-family:Geist;src:url(https://2a2a2.github.io/link360-reports/assets/geist.woff2) format('woff2');font-weight:100 900;font-display:swap;font-style:normal}
+@font-face{font-family:Hanken;src:url(https://2a2a2.github.io/link360-reports/assets/hanken.woff2) format('woff2');font-weight:100 900;font-display:swap;font-style:normal}
+
+:root{
+  --paper:#F5F2FA; --paper2:#FBFAFE; --paperDim:#C7BEDE;
+  --ink:#1C1330; --inkSurf:#2E2348; --muted:#6B6280; --faint:#8478A0; --line:#DCD4EC;
+  --accent:#5E2CA5; --accentDeep:#3E1C70; --accentMid:#9A66D6; --accentPale:#ECE3F8; --accentPale2:#CFB6EE;
+  --success:#2E7D5B; --warning:#8A5B0F; --crit:#B4321F;
+  --sh-sm:0 1px 2px rgba(28,19,48,.06);
+  --sh-md:0 10px 34px -18px rgba(28,19,48,.30);
+  --glow:transparent;
+  --measure:64ch;
+  --sans:Geist,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --glyph:Hanken,Geist,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#120D21; --paper2:#1A1233; --paperDim:#2C2540;
+    --ink:#F1ECFB; --inkSurf:#241A3C; --muted:#A79BC4; --faint:#8478A0; --line:#2A2145;
+    --accent:#9A66D6; --accentDeep:#7B45C0; --accentMid:#B48AE6; --accentPale:#241A3C; --accentPale2:#4B3A6E;
+    --success:#74C69D; --warning:#E0B25E; --crit:#E58873;
+    --sh-sm:0 1px 2px rgba(0,0,0,.4); --sh-md:0 18px 50px -22px rgba(0,0,0,.75);
+    --glow:radial-gradient(1100px 600px at 50% -10%, rgba(94,44,165,.30), transparent 60%);
+  }
+}
+:root[data-theme="light"]{
+  --paper:#F5F2FA; --paper2:#FBFAFE; --paperDim:#C7BEDE; --ink:#1C1330; --inkSurf:#2E2348;
+  --muted:#6B6280; --faint:#8478A0; --line:#DCD4EC; --accent:#5E2CA5; --accentDeep:#3E1C70;
+  --accentMid:#9A66D6; --accentPale:#ECE3F8; --accentPale2:#CFB6EE;
+  --success:#2E7D5B; --warning:#8A5B0F; --crit:#B4321F;
+  --sh-sm:0 1px 2px rgba(28,19,48,.06); --sh-md:0 10px 34px -18px rgba(28,19,48,.30); --glow:transparent;
+}
+:root[data-theme="dark"]{
+  --paper:#120D21; --paper2:#1A1233; --paperDim:#2C2540; --ink:#F1ECFB; --inkSurf:#241A3C;
+  --muted:#A79BC4; --faint:#8478A0; --line:#2A2145; --accent:#9A66D6; --accentDeep:#7B45C0;
+  --accentMid:#B48AE6; --accentPale:#241A3C; --accentPale2:#4B3A6E;
+  --success:#74C69D; --warning:#E0B25E; --crit:#E58873;
+  --sh-sm:0 1px 2px rgba(0,0,0,.4); --sh-md:0 18px 50px -22px rgba(0,0,0,.75);
+  --glow:radial-gradient(1100px 600px at 50% -10%, rgba(154,102,214,.22), transparent 60%);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  font-feature-settings:"ss01","cv01","tnum" 0}
+body::before{content:"";position:fixed;inset:0;background:var(--glow);pointer-events:none;z-index:0}
+.doc{position:relative;z-index:1;max-width:940px;margin:0 auto;padding:0 26px}
+h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.02em;text-wrap:balance;line-height:1.1}
+p{margin:0}
+.tnum{font-variant-numeric:tabular-nums}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+a{color:inherit}
+.g{font-family:var(--glyph)}
+
+/* bar */
+.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 82%,transparent);
+  backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:940px;margin:0 auto;padding:12px 26px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.mark{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.02em}
+.mark svg{display:block}
+.mark .s360{color:var(--faint);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.themer{border:1px solid var(--line);background:var(--paper2);color:var(--muted);font-family:inherit;
+  font-size:12px;font-weight:600;padding:7px 13px;border-radius:9px;cursor:pointer}
+.themer:hover{border-color:var(--accentPale2)}
+.themer:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* cover */
+.cover{padding:60px 0 46px}
+.cv-eye{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.cv-eye .ln{height:1px;width:34px;background:var(--accentPale2)}
+.cover h1{font-size:clamp(32px,5.6vw,52px);font-weight:800;line-height:1.04}
+.cover .for{margin-top:16px;font-size:18px;color:var(--muted);max-width:50ch}
+.cover .for b{color:var(--ink);font-weight:650}
+
+.hero{display:grid;grid-template-columns:1fr auto;gap:46px;align-items:center;margin-top:42px;
+  padding:34px;background:var(--paper2);border:1px solid var(--line);border-radius:20px 20px 20px 4px;box-shadow:var(--sh-md)}
+@media (max-width:740px){.hero{grid-template-columns:1fr;gap:30px;padding:26px;text-align:left}}
+.verdict .eyebrow{margin-bottom:12px}
+.verdict .lead{font-size:19px;line-height:1.5;font-weight:500}
+.verdict .lead b{color:var(--accentDeep);font-weight:700}
+.verdict p+p{margin-top:12px;color:var(--muted);font-size:16px;line-height:1.6}
+
+/* 360 arc score = signature */
+.arc-wrap{display:flex;flex-direction:column;align-items:center;gap:14px;min-width:210px}
+.arc{position:relative;width:210px;height:210px}
+.arc svg{display:block;transform:rotate(-90deg)}
+.arc .mid{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.arc .n{font-size:62px;font-weight:800;line-height:.9;letter-spacing:-.04em}
+.arc .of{font-size:13px;font-weight:600;letter-spacing:.1em;color:var(--faint)}
+.level{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--accent);background:var(--accentPale);border:1px solid var(--accentPale2);padding:6px 14px;border-radius:999px}
+
+/* section score strip */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:22px}
+@media (max-width:620px){.strip{grid-template-columns:repeat(2,1fr)}}
+.scell{background:var(--paper2);border:1px solid var(--line);border-radius:12px;padding:16px 16px 15px}
+.scell .l{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.scell .v{font-size:30px;font-weight:800;margin:9px 0 12px;letter-spacing:-.03em}
+.scell .v small{font-size:14px;font-weight:600;color:var(--faint);letter-spacing:0}
+.meter{height:5px;border-radius:99px;background:color-mix(in srgb,var(--ink) 9%,transparent);overflow:hidden}
+.meter i{display:block;height:100%;border-radius:99px}
+
+/* section */
+section{padding:52px 0;border-top:1px solid var(--line)}
+.sec-head{margin-bottom:22px}
+.sec-head h2{font-size:clamp(23px,3.4vw,30px);font-weight:750}
+.sec-head .eyebrow{margin-bottom:9px}
+.deck{color:var(--muted);font-size:16.5px;max-width:var(--measure);margin-top:6px}
+.body{max-width:var(--measure)}
+.body p{margin-bottom:13px}
+.lead{font-size:18px;line-height:1.55;font-weight:500}
+.lead b{font-weight:700}
+
+/* graded subblocks */
+.grades{margin-top:24px;display:flex;flex-direction:column;gap:0}
+.gr{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line)}
+@media (max-width:600px){.gr{grid-template-columns:1fr;gap:12px}}
+.gr .gh{display:flex;flex-direction:column;gap:7px}
+.gr .gl{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.gr .gv{font-size:42px;font-weight:800;letter-spacing:-.04em;line-height:.9}
+.gr .gv small{font-size:16px;font-weight:600;color:var(--faint)}
+.gr .st{font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.chips{display:flex;flex-direction:column;gap:9px;margin-top:4px}
+.chip{display:grid;grid-template-columns:16px 1fr;gap:10px;font-size:14.5px;line-height:1.45;color:var(--ink)}
+.chip .m{font-family:var(--glyph);font-weight:700;text-align:center;line-height:1.5}
+.chip.win .m{color:var(--success)} .chip.gap .m{color:var(--crit)} .chip.fix .m{color:var(--accent)}
+.chip b{font-weight:700}
+
+/* paste panel (distinct dark surface) */
+.paste{margin-top:8px;background:var(--inkSurf);border-radius:16px;padding:26px 28px;box-shadow:var(--sh-md);
+  border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+.paste .plab{display:flex;align-items:center;gap:10px;font-size:11.5px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accentMid);margin-bottom:15px}
+.paste .plab .ln{flex:1;height:1px;background:color-mix(in srgb,#fff 14%,transparent)}
+.paste p{color:#EBE4F7;font-size:15.5px;line-height:1.6}
+.paste p+p{margin-top:11px}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:6px 0 22px}
+@media (max-width:600px){.metrics{grid-template-columns:repeat(2,1fr)}}
+.tile{background:var(--paper2);border:1px solid var(--line);border-radius:10px;padding:16px}
+.tile .k{font-size:27px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.tile .l{font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-top:8px}
+
+/* ideas — asymmetric list, not identical cards */
+.ideas{display:flex;flex-direction:column;gap:2px;margin-top:20px;border-top:1px solid var(--line)}
+.idea{display:grid;grid-template-columns:42px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+@media (max-width:600px){.idea{grid-template-columns:1fr;gap:8px}}
+.idea .ix{font-size:14px;font-weight:800;color:var(--accent);letter-spacing:-.02em;padding-top:3px}
+.idea h4{font-size:18px;font-weight:700;margin-bottom:7px;line-height:1.2}
+.idea p{font-size:14.5px;color:var(--muted)}
+.idea .fmt{margin-top:9px;font-size:11.5px;font-weight:600;letter-spacing:.03em;color:var(--faint)}
+
+/* priorities — real ranking */
+.prios{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.prio{background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:22px 24px;box-shadow:var(--sh-sm)}
+.prio .top{display:flex;align-items:baseline;gap:14px;margin-bottom:14px}
+.prio .rk{font-size:15px;font-weight:800;color:var(--accent);letter-spacing:.02em;white-space:nowrap}
+.prio h3{font-size:19px;font-weight:700;line-height:1.2}
+.kv{display:grid;grid-template-columns:96px 1fr;gap:8px 18px;font-size:14.5px}
+@media (max-width:560px){.kv{grid-template-columns:1fr;gap:2px}.kv dt{margin-top:9px}}
+.kv dt{font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);padding-top:3px}
+.kv dd{margin:0;color:var(--ink);line-height:1.5}
+
+/* plan */
+.plan{display:flex;flex-direction:column;gap:0;margin-top:10px;border-left:2px solid var(--accentPale2);padding-left:0}
+.wk{display:grid;grid-template-columns:66px 1fr;gap:20px;padding:20px 0 22px;position:relative}
+@media (max-width:600px){.wk{grid-template-columns:1fr;gap:8px;padding-left:20px}}
+.wk::before{content:"";position:absolute;left:-6px;top:26px;width:10px;height:10px;border-radius:50%;
+  background:var(--accent);box-shadow:0 0 0 4px var(--paper)}
+.wk .wl{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;padding-left:16px}
+@media (max-width:600px){.wk .wl{padding-left:0}}
+.wk h3{font-size:17px;font-weight:700;margin-bottom:11px}
+.wk ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.wk li{font-size:14px;color:var(--muted);padding-left:20px;position:relative;line-height:1.5}
+.wk li .g{position:absolute;left:0;top:0;color:var(--accentMid);font-weight:700}
+.wk .out{margin-top:12px;font-size:13px;color:var(--ink)}
+.wk .out b{font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-right:7px}
+
+/* cta */
+.ctaW{padding:56px 0}
+.cta{background:var(--ink);color:#F4F8F5;border-radius:22px;padding:46px 40px;position:relative;overflow:hidden;box-shadow:var(--sh-md)}
+:root[data-theme="dark"] .cta{background:#1A1233;border:1px solid var(--line)}
+@media (prefers-color-scheme:dark){.cta{background:#1A1233;border:1px solid var(--line)}}
+.cta .arc360{position:absolute;right:-90px;top:-90px;width:280px;height:280px;border-radius:50%;
+  border:2px solid color-mix(in srgb,var(--accentMid) 55%,transparent);opacity:.5}
+.cta .in{position:relative;max-width:34ch}
+.cta .eyebrow{color:var(--accentMid)}
+.cta h2{font-size:clamp(24px,3.6vw,32px);font-weight:750;margin:12px 0 12px;color:#F4F8F5;letter-spacing:-.02em}
+.cta p{color:color-mix(in srgb,#F4F8F5 82%,transparent);margin-bottom:26px;font-size:16px;line-height:1.55}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;font-family:inherit;
+  font-weight:700;font-size:15px;padding:15px 26px;border-radius:11px;text-decoration:none;transition:transform .14s ease,background .14s ease}
+.btn:hover{transform:translateY(-2px);background:var(--accentDeep)}
+.btn:focus-visible{outline:2px solid var(--paper);outline-offset:3px}
+.foot{padding:22px 0 56px;display:flex;align-items:center;justify-content:space-between;gap:14px;color:var(--faint);font-size:12.5px;flex-wrap:wrap}
+.foot .b{font-weight:700;color:var(--muted)}
+
+.midcta{max-width:var(--measure);margin-top:18px;padding:14px 18px;background:var(--accentPale);border:1px solid var(--accentPale2);border-radius:12px;font-size:14.5px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.midcta a{color:var(--accentDeep);font-weight:700;text-decoration:none}
+.midcta a:hover{text-decoration:underline}
+ol.steps{margin:0;padding-left:0;list-style:none;counter-reset:st;display:flex;flex-direction:column;gap:12px}
+ol.steps li{counter-increment:st;position:relative;padding-left:40px;font-size:15.5px;line-height:1.55;color:var(--muted)}
+ol.steps li b{color:var(--ink)}
+ol.steps li::before{content:counter(st);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--accentPale);border:1px solid var(--accentPale2);color:var(--accentDeep);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.riskfree{margin-top:12px;font-size:12.5px;color:color-mix(in srgb,#F4F8F5 62%,transparent)}
+.reveal{opacity:0;transform:translateY(12px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}
+  #arc{stroke-dashoffset:var(--fin)!important;transition:none!important}}
+</style><div class="bar"><div class="bar-in"><div class="mark"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-dasharray="38 12" stroke-linecap="round"/></svg> Link360 <span class="s360">Análisis de perfil</span></div><button class="themer" id="themer">Modo oscuro</button></div></div><div class="doc"><header class="cover"><div class="cv-eye"><span class="ln"></span><span class="eyebrow">Informe personalizado</span></div><h1>El análisis de perfil de LinkedIn que convierte tu autoridad en clientes</h1><p class="for">Preparado para <b>David Tomas</b>.</p><div class="hero"><div class="verdict"><div class="eyebrow">Veredicto</div><p>Tu perfil proyecta a un profesional veterano y creíble: la foto transmite autoridad y cercanía, el contenido es frecuente y sólido, y tu trayectoria como cofundador, tus libros y tus partnerships respaldan una reputación difícil de igualar. La distancia principal no está en la calidad de lo que haces, sino en la coherencia y la conversión: la parte superior del perfil no orienta esa autoridad hacia un mensaje único ni hacia un siguiente paso concreto.</p></div><div class="arc-wrap"><div class="arc" role="img" aria-label="Puntuación global 55 de 100"><svg width="210" height="210" viewBox="0 0 210 210"><circle cx="105" cy="105" r="92" fill="none" stroke="var(--accentPale2)" stroke-width="12" opacity=".5"/><circle id="arc" cx="105" cy="105" r="92" fill="none" stroke="var(--accent)" stroke-width="12" stroke-linecap="round" data-pct="55"/></svg><div class="mid"><div class="n tnum">55</div><div class="of">DE 100</div></div></div><span class="level"><span class="g" style="color:var(--warning)">◆</span> Perfil básico</span></div></div><div class="strip"><div class="scell"><div class="l">Foto</div><div class="v tnum">9<small>/10</small></div><div class="meter"><i style="width:90%;background:var(--success)"></i></div></div><div class="scell"><div class="l">Titular</div><div class="v tnum">5,3<small>/10</small></div><div class="meter"><i style="width:53%;background:var(--warning)"></i></div></div><div class="scell"><div class="l">Acerca de</div><div class="v tnum">2,5<small>/10</small></div><div class="meter"><i style="width:25%;background:var(--crit)"></i></div></div><div class="scell"><div class="l">Contenido</div><div class="v tnum">7,5<small>/10</small></div><div class="meter"><i style="width:75%;background:var(--success)"></i></div></div></div></header><div class="midcta reveal" style="margin-top:18px"><span>Tu palanca más floja ahora mismo: <b>Acerca de (2,5/10)</b>. En 15 minutos montamos contigo el plan para convertirla en tu punto fuerte.</span> <a href="https://cal.com/linked-360-zdcqtu/llamada-estrategica-link360?utm_source=informe&utm_medium=lead_magnet&utm_campaign=mrwv7upl4xvqpu3&utm_content=hero">Reserva tu sesión gratuita <span class="g">→</span></a></div><section class="reveal"><div class="sec-head"><div class="eyebrow">Por qué importa</div><h2>Tu perfil es tu activo más infravalorado</h2></div><div class="body"><p class="lead"><b>David</b>, cada semana decenas de personas que podrían ser tu próximo cliente visitan tu perfil de LinkedIn. La mayoría no te escribe. Y casi nunca es un problema de nivel: es que tu perfil no lo comunica en los primeros segundos.</p><div class="chips" style="margin:16px 0"><div class="chip fix"><span class="m">→</span><span>¿Mi perfil transmite de verdad la autoridad que tengo?</span></div><div class="chip fix"><span class="m">→</span><span>¿Qué ve un cliente potencial antes de decidir si confía en mí?</span></div><div class="chip fix"><span class="m">→</span><span>¿Por dónde empiezo para que LinkedIn me traiga oportunidades en vez de silencio?</span></div></div><p>Este análisis responde a esas preguntas mirando tu perfil concreto, no con teoría genérica: tu primera impresión, tu Acerca de y tu contenido, con propuestas listas para usar y un plan de 30 días.</p><p><b>La buena noticia: casi todo lo que frena tu perfil hoy se arregla en días, no en meses.</b></p></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Los 3 primeros segundos</div><h2>Foto y titular</h2><p class="deck">Lo único que ve un visitante antes de decidir si sigue leyendo o se marcha.</p></div><div class="body"><p class="lead">Tu primera impresión combina una imagen que transmite autoridad y cercanía con un titular respaldado por una trayectoria sólida, aunque este último aún no comunica a quién ayudas ni tu foco actual.</p></div><div class="grades"><div class="gr"><div class="gh"><div class="gl">Foto</div><div class="gv tnum">9<small>/10</small></div><div class="st" style="color:var(--success)">Sólido</div></div><div><p style="margin-bottom:12px;color:var(--muted)">Retrato profesional de alta calidad: rostro nítido con buen encuadre, mirada directa y sonrisa natural. Iluminación suave sin sombras duras y fondo de oficina desenfocado que aporta contexto. El blazer azul sobre camisa celeste equilibra autoridad y accesibilidad, muy coherente con tu perfil directivo.</p><div class="chips"><div class="chip win"><span class="m">✓</span><span>Rostro bien iluminado y expresión cálida que genera confianza inmediata, con vestimenta profesional y cercana alineada con tu posicionamiento de directivo humano.</span></div><div class="chip gap"><span class="m">✕</span><span>El fondo, aunque limpio, presenta algunas zonas de alto brillo en la parte superior que restan algo de contraste al contorno del cabello.</span></div><div class="chip fix"><span class="m">→</span><span>Mantén esta foto: cumple todos los estándares de una imagen de conversión. Como matiz opcional, podrías probar un fondo algo más neutro tras la cabeza para reforzar la separación figura-fondo, pero no es prioritario.</span></div></div></div></div><div class="gr"><div class="gh"><div class="gl">Titular</div><div class="gv tnum">5,3<small>/10</small></div><div class="st" style="color:var(--warning)">Mejorable</div></div><div><p style="margin-bottom:12px;color:var(--muted)">Acumula autoridad sólida (cofundador, dos libros, trayectoria desde 1999) pero funciona como tarjeta de logros, no como propuesta de valor. No dice a quién ayudas ni con qué resultado, y omite la IA, que es el eje de tu web y de tu contenido actual.</p><div class="chips"><div class="chip win"><span class="m">✓</span><span>Autoridad genuina y verificable: cofundador y autor de dos libros, con una trayectoria clara desde 1999 y una marca personal reconocible.</span></div><div class="chip gap"><span class="m">✕</span><span>No comunica ICP, resultado ni mecanismo actual, y omite por completo la palabra IA, además de arrastrar una puntuación descuidada tras Cyberclick.</span></div><div class="chip fix"><span class="m">→</span><span>Une tu autoridad con la promesa que vende tu web: IA aplicada a marketing, ventas y customer success para directivos B2B. Conserva un ancla de credibilidad, pero abre con el a-quién-ayudas y el resultado, no con el cargo.</span></div></div></div></div></div><div class="paste" style="margin-top:22px"><div class="plab"><span class="g">✍</span> Titular optimizado, listo para pegar<span class="ln"></span></div><p style="font-size:17px;font-weight:600">Ayudo a directivos B2B a convertir la IA en crecimiento real en marketing, ventas y customer success | Cofundador Cyberclick · Digital Marketing desde 1999</p></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Tu argumento de venta silencioso</div><h2>Tu “Acerca de”</h2><p class="deck">Donde el visitante decide si conectar contigo o cerrar la pestaña.</p></div><div class="body"><p class="lead">Tu Acerca de es la sección con mayor recorrido de mejora del perfil y una de las palancas de conversión más rentables si la alineas con tu foco actual.</p><div class="chips" style="margin:16px 0 0"><div class="chip gap"><span class="m">✕</span><span><b>Gancho.</b> Muy baja. Arranca con años de experiencia seguida de tecnicismos. Es autorreferencial y genérico, no captura la atención ni interpela al lector.</span></div><div class="chip gap"><span class="m">✕</span><span><b>Claridad de ICP.</b> Inexistente. No se menciona a quién ayudas (directivos, managers o fundadores B2B); el público solo se infiere de tu contenido externo.</span></div><div class="chip gap"><span class="m">✕</span><span><b>Autoridad y prueba.</b> Desaprovechada. Solo aparece la autoría de dos libros. Faltan 26 años como cofundador, los partnerships Google, LinkedIn y HubSpot, y el estudio con cerca de 900 profesionales.</span></div><div class="chip gap"><span class="m">✕</span><span><b>CTA.</b> Casi nula. El único enlace descarga el primer capítulo de un libro; no hay CTA comercial hacia los servicios de Cyberclick ni invitación a contactar o agendar.</span></div></div></div><div class="paste"><div class="plab"><span class="g">✍</span> Borrador optimizado, listo para pegar<span class="ln"></span></div><p>El 70% de los profesionales ya usa IA en su día a día. Pero solo el 21,6% de las empresas la integra con una estrategia real. El resto acumula herramientas sin hoja de ruta, sin datos ordenados y sin resultados que se noten en el negocio.</p><p>Ahí es donde entro yo.</p><p>Soy cofundador de Cyberclick, agencia desde la que ayudo a directivos, managers y fundadores de empresas B2B a convertir la IA en crecimiento real: más leads cualificados, más ventas y clientes que se quedan.</p><p>El problema casi nunca es la tecnología. Es la falta de estrategia. Comprar licencias de IA sin un plan es gastar sin dirección: equipos usando herramientas por su cuenta (Shadow AI), datos dispersos y decisiones que no mueven la aguja.</p><p>Mi enfoque es distinto. Trabajamos la IA con estrategia de datos, agentes personalizados y acompañamiento en todo el recorrido Go-to-Market, uniendo marketing, ventas y customer success en un mismo sistema. La IA como ventaja competitiva estructural, no como capricho tecnológico.</p><p>Lo que respalda este trabajo:</p><p>- 26 años cofundando y liderando Cyberclick en marketing digital.</p><p>- Google Premier Partner (top 3% en España), LinkedIn Marketing Partner y partner de HubSpot.</p><p>- Un estudio propio sobre IA en marketing con cerca de 900 profesionales analizados en España.</p><p>- Autor de los libros 'La empresa más feliz del mundo' y 'Diario de un Millennial'.</p><p>Creo que la tecnología solo funciona cuando pone a las personas en el centro. Por eso mi rol es Chief Empathy Officer: combino la aplicación práctica de la IA con el factor humano.</p><p>¿Tu empresa está invirtiendo en IA pero no ves el retorno? Hablemos. Escríbeme por aquí o descubre cómo trabajamos en cyberclick.es.</p></div><div class="midcta"><span>¿Prefieres que lo adaptemos contigo a tu voz?</span> <a href="https://cal.com/linked-360-zdcqtu/llamada-estrategica-link360?utm_source=informe&utm_medium=lead_magnet&utm_campaign=mrwv7upl4xvqpu3&utm_content=about">Agenda 15 minutos <span class="g">→</span></a></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Tu motor de visibilidad</div><h2>Contenido y actividad</h2><p class="deck">50 publicaciones analizadas. Del 19 de febrero al 20 de julio de 2026.</p></div><div class="metrics"><div class="tile"><div class="k tnum">67</div><div class="l">Reacciones / post</div></div><div class="tile"><div class="k tnum">15</div><div class="l">Comentarios / post</div></div><div class="tile"><div class="k tnum">2</div><div class="l">Reposts / post</div></div><div class="tile"><div class="k tnum">0,21%</div><div class="l">Engagement</div></div></div><div class="body"><p class="lead">Tu contenido es uno de tus grandes activos: frecuente, creíble y con buena conversación. El margen está en orientarlo mejor hacia la generación de oportunidades comerciales.</p><p>El contenido es sólido, frecuente y creíble, y te proyecta como referente veterano de marketing e IA. El problema no es la calidad ni la constancia, sino la orientación comercial: los retos personales ocupan demasiado espacio y el contenido alineado con la oferta rara vez conecta con prueba de resultados o un CTA relevante.</p></div><div class="eyebrow" style="margin-top:26px">3 ideas listas para publicar</div><div class="ideas"><div class="idea"><div class="ix tnum">01</div><div><h4>El coste oculto de la IA sin estrategia de datos: diagnóstico en 4 señales</h4><p>No es la herramienta, es la ausencia de estrategia de datos: cómo detectarlo antes de gastar más presupuesto.</p><div class="fmt">Texto largo analítico con estructura de puntos o carrusel.</div></div></div><div class="idea"><div class="ix tnum">02</div><div><h4>Anatomía de un caso: cómo un cliente B2B pasó de leads a oportunidades reales</h4><p>Mostrar el cómo trabajamos uniendo marketing, ventas y customer success en un mismo sistema, en lugar de hablar solo de tendencias externas.</p><div class="fmt">Texto largo con estructura antes/después o vídeo explicativo.</div></div></div><div class="idea"><div class="ix tnum">03</div><div><h4>Serie La IA en marketing 2026: el dato que más me ha sorprendido del estudio</h4><p>Analizar un solo insight por publicación para crear una serie recurrente, en lugar de un único post de lanzamiento.</p><div class="fmt">Vídeo corto en primera persona más imagen con gráfico del estudio.</div></div></div></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Ordenadas por impacto</div><h2>Tus prioridades</h2><p class="deck">Las palancas que más mueven la aguja en tu caso.</p></div><div class="prios"><article class="prio"><div class="top"><span class="rk">Prioridad 1</span><h3>Unificar la propuesta de valor con foco en IA en la parte superior del perfil</h3></div><dl class="kv"><dt>Situación</dt><dd>El titular acumula autoridad pero no comunica a quién ayudas, qué resultado consigues ni menciona la IA. El Acerca de es una biografía con lista de disciplinas y libros, sin gancho, problema, mecanismo ni CTA, y tampoco menciona la IA pese a ser el eje de tu web y tu contenido.</dd><dt>Por qué</dt><dd>Titular y Acerca de son las dos secciones de mayor visibilidad y las que determinan si un directivo B2B entiende qué le resuelves. La ausencia de la IA y de tu ICP crea incoherencia con tu web y hace que conviertas por reputación pero no por relevancia. Corregir ambos elimina esa brecha.</dd><dt>Acción</dt><dd>Publica el titular optimizado propuesto y reescribe el Acerca de siguiendo la recomendación: abrir con el problema real, presentar solución y mecanismo (estrategia de datos, agentes personalizados y acompañamiento Go-to-Market), apoyar en autoridad verificable y cerrar con un CTA hacia contacto o los servicios de Cyberclick.</dd><dt>Impacto</dt><dd>Mayor claridad y coherencia entre perfil, web y contenido, mejor comprensión de tu oferta por el decisor y captación más eficaz de quienes buscan IA aplicada a marketing y ventas.</dd></dl></article><article class="prio"><div class="top"><span class="rk">Prioridad 2</span><h3>Consolidar autoridad y crear un camino de conversión sin fricción</h3></div><dl class="kv"><dt>Situación</dt><dd>La experiencia de Cyberclick no tiene descripción propia del cargo y MELLER y Deporvillage carecen de detalle de impacto. Los partnerships, el estudio propio y los casos viven en los posts, no en las secciones fijas. No hay CTA específico ni enlace de agenda, y los activos de conversión están dispersos.</dd><dt>Por qué</dt><dd>Tu autoridad es alta pero está fragmentada en publicaciones que el visitante rara vez encuentra. Sin descripciones con resultados y sin un siguiente paso claro, la intención de contacto se enfría en el momento de mayor interés. Consolidar estas señales en secciones permanentes es la palanca más rápida para transformar visitas en conversaciones.</dd><dt>Acción</dt><dd>Reescribe la experiencia de Cyberclick con introducción de a quién ayudas y viñetas de resultados y activos de autoridad; añade dos líneas de rol e impacto en MELLER y Deporvillage. Consolida en Destacados el estudio propio, un caso de referencia y un enlace de agenda real, y aplica el CTA de diagnóstico recomendado.</dd><dt>Impacto</dt><dd>Autoridad estable y verificable en las secciones fijas del perfil y un siguiente paso único y de baja fricción que facilite convertir el interés existente en solicitudes de contacto.</dd></dl></article><article class="prio"><div class="top"><span class="rk">Prioridad 3</span><h3>Reequilibrar el contenido hacia la generación de oportunidades</h3></div><dl class="kv"><dt>Situación</dt><dd>El contenido es frecuente, creíble y genera conversación, pero el exceso de retos de desarrollo personal con estructura repetitiva diluye el ICP, falta prueba social cuantificada con casos de cliente y los posts de mayor alcance no conducen hacia la oferta ni hacia un activo.</dd><dt>Por qué</dt><dd>Tu contenido ya trabaja bien la parte alta del embudo. El margen está en que el mismo volumen genere más conversaciones de negocio: reducir lo que atrae audiencia no compradora, mostrar resultados y colocar puentes suaves hacia tu oferta capitaliza la autoridad que ya tienes.</dd><dt>Acción</dt><dd>Reduce la proporción de retos de desarrollo personal y aumenta el contenido de caso de cliente con métricas y de método propio; convierte el estudio de IA en una serie por insight, documenta tu enfoque Go-to-Market y cierra los contenidos de mayor alcance con un puente natural hacia el estudio, un diagnóstico o el enlace de agenda.</dd><dt>Impacto</dt><dd>Mejor alineación del contenido con el decisor B2B y una transición más natural desde el alcance hacia la conversación comercial, manteniendo la autoridad y la conversación que ya generas.</dd></dl></article></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Del impulso al sistema</div><h2>Tu plan de 30 días</h2><p class="deck">Cuatro semanas, un foco concreto en cada una.</p></div><div class="plan"><div class="wk"><div class="wl">Semana 1</div><div><h3>Base estratégica y primera impresión</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Alinear el mensaje visible del perfil con tu foco actual en IA y tu ICP directivo B2B.</p><ul><li><span class="g">→</span>Publicar el titular optimizado ya propuesto por el módulo de titular.</li><li><span class="g">→</span>Definir en una frase el eje único de posicionamiento (IA aplicada a marketing, ventas y customer success para directivos B2B) que guiará el resto de secciones.</li><li><span class="g">→</span>Revisar la coherencia entre el nuevo titular y la promesa de tu web para eliminar cualquier discrepancia de mensaje.</li></ul><div class="out"><b>Resultado</b>Mayor claridad inmediata sobre a quién ayudas y en qué, reduciendo la desconexión actual entre reputación y relevancia.</div></div></div><div class="wk"><div class="wl">Semana 2</div><div><h3>Conversión: Acerca de, experiencia, autoridad y Destacados</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Convertir la autoridad dispersa en un mensaje de conversión consolidado y accesible.</p><ul><li><span class="g">→</span>Reescribir el Acerca de según la recomendación del módulo (problema, solución, mecanismo, autoridad verificable y CTA comercial) y reescribir la experiencia de Cyberclick con introducción y viñetas de resultados y activos de autoridad.</li><li><span class="g">→</span>Añadir dos líneas de rol e impacto en MELLER y Deporvillage.</li><li><span class="g">→</span>Consolidar en Destacados el estudio propio, un caso de referencia y un enlace de agenda real, e implementar el CTA de diagnóstico con reserva sin fricción.</li></ul><div class="out"><b>Resultado</b>Autoridad estable en secciones fijas y un camino de conversión claro que facilita el paso del interés al contacto.</div></div></div><div class="wk"><div class="wl">Semana 3</div><div><h3>Reequilibrio de pilares de contenido</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Orientar el contenido hacia el decisor B2B y hacia la demostración de resultados.</p><ul><li><span class="g">→</span>Reducir la proporción de retos de desarrollo personal y aumentar caso de cliente con métricas y contenido de método propio.</li><li><span class="g">→</span>Iniciar la serie de contenidos por insight a partir del estudio de IA y documentar el enfoque Go-to-Market como framework.</li><li><span class="g">→</span>Incorporar en los posts de mayor alcance un puente suave hacia el estudio, el diagnóstico o el enlace de agenda.</li></ul><div class="out"><b>Resultado</b>Contenido más alineado con el ICP y transición más natural del alcance hacia la conversación comercial.</div></div></div><div class="wk"><div class="wl">Semana 4</div><div><h3>Publicación, medición y continuidad</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Consolidar el sistema y convertir visitas en conversaciones de forma sostenible.</p><ul><li><span class="g">→</span>Mantener el ritmo de publicación con la nueva distribución de pilares.</li><li><span class="g">→</span>Revisar métricas de perfil: visitas, interacciones en posts con puente a oferta y solicitudes de contacto o agenda, ajustando ganchos y CTAs según el rendimiento.</li><li><span class="g">→</span>Verificar que el enlace de agenda y el CTA del Acerca de funcionan y son el único siguiente paso prioritario.</li></ul><div class="out"><b>Resultado</b>Un sistema repetible que mejora la consistencia del mensaje y la capacidad de convertir el interés en conversaciones cualificadas.</div></div></div></div><div class="body" style="margin-top:22px"><p class="lead">Un perfil optimizado se arregla en días. Lo que no se arregla con un fix es <b>publicar contenido estratégico cada semana, durante meses</b>: ahí es donde se construye la autoridad que trae clientes, y ese es exactamente el sistema que montamos por ti.</p></div></section><div class="ctaW reveal"><div class="cta"><div class="arc360" aria-hidden="true"></div><div class="in"><div class="eyebrow">El siguiente paso</div><h2>Este informe te muestra el qué. Nosotros ejecutamos el cómo.</h2><p>En la llamada montamos contigo el plan de tus 2 primeras semanas, empezando por tu Acerca de (2,5/10). Y si encaja, nuestro sistema publica por ti la autoridad que este informe te ha enseñado a construir.</p><a class="btn" href="https://cal.com/linked-360-zdcqtu/llamada-estrategica-link360?utm_source=informe&utm_medium=lead_magnet&utm_campaign=mrwv7upl4xvqpu3&utm_content=final">Reserva tu sesión gratuita de 15 min <span class="g">→</span></a><p class="riskfree">Sin compromiso. Sales con acciones aplicables, trabajemos juntos o no.</p></div></div><div class="foot"><div><span class="b">Link360</span>, el partner de contenido y autoridad para expertos B2B</div><div>Confidencial, preparado para David Tomas</div></div></div></div><script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themer');
+  function cur(){return root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');}
+  function sync(){btn.textContent=cur()==='dark'?'Modo claro':'Modo oscuro';}
+  btn.addEventListener('click',function(){root.setAttribute('data-theme',cur()==='dark'?'light':'dark');sync();});
+  sync();
+  var arc=document.getElementById('arc'), r=92, C=2*Math.PI*r, off=C*(1-((parseFloat(arc.getAttribute('data-pct'))||0)/100));
+  arc.style.strokeDasharray=C+' '+C; arc.style.transform='rotate(-90deg)'; arc.style.transformOrigin='105px 105px';
+  arc.style.setProperty('--fin',off);
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){arc.style.strokeDashoffset=off;}
+  else{arc.style.strokeDashoffset=C;arc.style.transition='stroke-dashoffset 1.5s cubic-bezier(.2,.7,.2,1) .25s';
+    requestAnimationFrame(function(){requestAnimationFrame(function(){arc.style.strokeDashoffset=off;});});}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});}
+})();
+</script>
