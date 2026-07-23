@@ -1,0 +1,229 @@
+<title>Análisis de Perfil de LinkedIn — Carlos Blanco · Link360</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><style>
+@font-face{font-family:Geist;src:url(https://2a2a2.github.io/link360-reports/assets/geist.woff2) format('woff2');font-weight:100 900;font-display:swap;font-style:normal}
+@font-face{font-family:Hanken;src:url(https://2a2a2.github.io/link360-reports/assets/hanken.woff2) format('woff2');font-weight:100 900;font-display:swap;font-style:normal}
+
+:root{
+  --paper:#F5F2FA; --paper2:#FBFAFE; --paperDim:#C7BEDE;
+  --ink:#1C1330; --inkSurf:#2E2348; --muted:#6B6280; --faint:#8478A0; --line:#DCD4EC;
+  --accent:#5E2CA5; --accentDeep:#3E1C70; --accentMid:#9A66D6; --accentPale:#ECE3F8; --accentPale2:#CFB6EE;
+  --success:#2E7D5B; --warning:#8A5B0F; --crit:#B4321F;
+  --sh-sm:0 1px 2px rgba(28,19,48,.06);
+  --sh-md:0 10px 34px -18px rgba(28,19,48,.30);
+  --glow:transparent;
+  --measure:64ch;
+  --sans:Geist,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --glyph:Hanken,Geist,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#120D21; --paper2:#1A1233; --paperDim:#2C2540;
+    --ink:#F1ECFB; --inkSurf:#241A3C; --muted:#A79BC4; --faint:#8478A0; --line:#2A2145;
+    --accent:#9A66D6; --accentDeep:#7B45C0; --accentMid:#B48AE6; --accentPale:#241A3C; --accentPale2:#4B3A6E;
+    --success:#74C69D; --warning:#E0B25E; --crit:#E58873;
+    --sh-sm:0 1px 2px rgba(0,0,0,.4); --sh-md:0 18px 50px -22px rgba(0,0,0,.75);
+    --glow:radial-gradient(1100px 600px at 50% -10%, rgba(94,44,165,.30), transparent 60%);
+  }
+}
+:root[data-theme="light"]{
+  --paper:#F5F2FA; --paper2:#FBFAFE; --paperDim:#C7BEDE; --ink:#1C1330; --inkSurf:#2E2348;
+  --muted:#6B6280; --faint:#8478A0; --line:#DCD4EC; --accent:#5E2CA5; --accentDeep:#3E1C70;
+  --accentMid:#9A66D6; --accentPale:#ECE3F8; --accentPale2:#CFB6EE;
+  --success:#2E7D5B; --warning:#8A5B0F; --crit:#B4321F;
+  --sh-sm:0 1px 2px rgba(28,19,48,.06); --sh-md:0 10px 34px -18px rgba(28,19,48,.30); --glow:transparent;
+}
+:root[data-theme="dark"]{
+  --paper:#120D21; --paper2:#1A1233; --paperDim:#2C2540; --ink:#F1ECFB; --inkSurf:#241A3C;
+  --muted:#A79BC4; --faint:#8478A0; --line:#2A2145; --accent:#9A66D6; --accentDeep:#7B45C0;
+  --accentMid:#B48AE6; --accentPale:#241A3C; --accentPale2:#4B3A6E;
+  --success:#74C69D; --warning:#E0B25E; --crit:#E58873;
+  --sh-sm:0 1px 2px rgba(0,0,0,.4); --sh-md:0 18px 50px -22px rgba(0,0,0,.75);
+  --glow:radial-gradient(1100px 600px at 50% -10%, rgba(154,102,214,.22), transparent 60%);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  font-feature-settings:"ss01","cv01","tnum" 0}
+body::before{content:"";position:fixed;inset:0;background:var(--glow);pointer-events:none;z-index:0}
+.doc{position:relative;z-index:1;max-width:940px;margin:0 auto;padding:0 26px}
+h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.02em;text-wrap:balance;line-height:1.1}
+p{margin:0}
+.tnum{font-variant-numeric:tabular-nums}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+a{color:inherit}
+.g{font-family:var(--glyph)}
+
+/* bar */
+.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 82%,transparent);
+  backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:940px;margin:0 auto;padding:12px 26px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.mark{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.02em}
+.mark svg{display:block}
+.mark .s360{color:var(--faint);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.themer{border:1px solid var(--line);background:var(--paper2);color:var(--muted);font-family:inherit;
+  font-size:12px;font-weight:600;padding:7px 13px;border-radius:9px;cursor:pointer}
+.themer:hover{border-color:var(--accentPale2)}
+.themer:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* cover */
+.cover{padding:60px 0 46px}
+.cv-eye{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.cv-eye .ln{height:1px;width:34px;background:var(--accentPale2)}
+.cover h1{font-size:clamp(32px,5.6vw,52px);font-weight:800;line-height:1.04}
+.cover .for{margin-top:16px;font-size:18px;color:var(--muted);max-width:50ch}
+.cover .for b{color:var(--ink);font-weight:650}
+
+.hero{display:grid;grid-template-columns:1fr auto;gap:46px;align-items:center;margin-top:42px;
+  padding:34px;background:var(--paper2);border:1px solid var(--line);border-radius:20px 20px 20px 4px;box-shadow:var(--sh-md)}
+@media (max-width:740px){.hero{grid-template-columns:1fr;gap:30px;padding:26px;text-align:left}}
+.verdict .eyebrow{margin-bottom:12px}
+.verdict .lead{font-size:19px;line-height:1.5;font-weight:500}
+.verdict .lead b{color:var(--accentDeep);font-weight:700}
+.verdict p+p{margin-top:12px;color:var(--muted);font-size:16px;line-height:1.6}
+
+/* 360 arc score = signature */
+.arc-wrap{display:flex;flex-direction:column;align-items:center;gap:14px;min-width:210px}
+.arc{position:relative;width:210px;height:210px}
+.arc svg{display:block;transform:rotate(-90deg)}
+.arc .mid{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.arc .n{font-size:62px;font-weight:800;line-height:.9;letter-spacing:-.04em}
+.arc .of{font-size:13px;font-weight:600;letter-spacing:.1em;color:var(--faint)}
+.level{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--accent);background:var(--accentPale);border:1px solid var(--accentPale2);padding:6px 14px;border-radius:999px}
+
+/* section score strip */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:22px}
+@media (max-width:620px){.strip{grid-template-columns:repeat(2,1fr)}}
+.scell{background:var(--paper2);border:1px solid var(--line);border-radius:12px;padding:16px 16px 15px}
+.scell .l{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.scell .v{font-size:30px;font-weight:800;margin:9px 0 12px;letter-spacing:-.03em}
+.scell .v small{font-size:14px;font-weight:600;color:var(--faint);letter-spacing:0}
+.meter{height:5px;border-radius:99px;background:color-mix(in srgb,var(--ink) 9%,transparent);overflow:hidden}
+.meter i{display:block;height:100%;border-radius:99px}
+
+/* section */
+section{padding:52px 0;border-top:1px solid var(--line)}
+.sec-head{margin-bottom:22px}
+.sec-head h2{font-size:clamp(23px,3.4vw,30px);font-weight:750}
+.sec-head .eyebrow{margin-bottom:9px}
+.deck{color:var(--muted);font-size:16.5px;max-width:var(--measure);margin-top:6px}
+.body{max-width:var(--measure)}
+.body p{margin-bottom:13px}
+.lead{font-size:18px;line-height:1.55;font-weight:500}
+.lead b{font-weight:700}
+
+/* graded subblocks */
+.grades{margin-top:24px;display:flex;flex-direction:column;gap:0}
+.gr{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line)}
+@media (max-width:600px){.gr{grid-template-columns:1fr;gap:12px}}
+.gr .gh{display:flex;flex-direction:column;gap:7px}
+.gr .gl{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.gr .gv{font-size:42px;font-weight:800;letter-spacing:-.04em;line-height:.9}
+.gr .gv small{font-size:16px;font-weight:600;color:var(--faint)}
+.gr .st{font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.chips{display:flex;flex-direction:column;gap:9px;margin-top:4px}
+.chip{display:grid;grid-template-columns:16px 1fr;gap:10px;font-size:14.5px;line-height:1.45;color:var(--ink)}
+.chip .m{font-family:var(--glyph);font-weight:700;text-align:center;line-height:1.5}
+.chip.win .m{color:var(--success)} .chip.gap .m{color:var(--crit)} .chip.fix .m{color:var(--accent)}
+.chip b{font-weight:700}
+
+/* paste panel (distinct dark surface) */
+.paste{margin-top:8px;background:var(--inkSurf);border-radius:16px;padding:26px 28px;box-shadow:var(--sh-md);
+  border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+.paste .plab{display:flex;align-items:center;gap:10px;font-size:11.5px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accentMid);margin-bottom:15px}
+.paste .plab .ln{flex:1;height:1px;background:color-mix(in srgb,#fff 14%,transparent)}
+.paste p{color:#EBE4F7;font-size:15.5px;line-height:1.6}
+.paste p+p{margin-top:11px}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:6px 0 22px}
+@media (max-width:600px){.metrics{grid-template-columns:repeat(2,1fr)}}
+.tile{background:var(--paper2);border:1px solid var(--line);border-radius:10px;padding:16px}
+.tile .k{font-size:27px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.tile .l{font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-top:8px}
+
+/* ideas — asymmetric list, not identical cards */
+.ideas{display:flex;flex-direction:column;gap:2px;margin-top:20px;border-top:1px solid var(--line)}
+.idea{display:grid;grid-template-columns:42px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+@media (max-width:600px){.idea{grid-template-columns:1fr;gap:8px}}
+.idea .ix{font-size:14px;font-weight:800;color:var(--accent);letter-spacing:-.02em;padding-top:3px}
+.idea h4{font-size:18px;font-weight:700;margin-bottom:7px;line-height:1.2}
+.idea p{font-size:14.5px;color:var(--muted)}
+.idea .fmt{margin-top:9px;font-size:11.5px;font-weight:600;letter-spacing:.03em;color:var(--faint)}
+
+/* priorities — real ranking */
+.prios{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.prio{background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:22px 24px;box-shadow:var(--sh-sm)}
+.prio .top{display:flex;align-items:baseline;gap:14px;margin-bottom:14px}
+.prio .rk{font-size:15px;font-weight:800;color:var(--accent);letter-spacing:.02em;white-space:nowrap}
+.prio h3{font-size:19px;font-weight:700;line-height:1.2}
+.kv{display:grid;grid-template-columns:96px 1fr;gap:8px 18px;font-size:14.5px}
+@media (max-width:560px){.kv{grid-template-columns:1fr;gap:2px}.kv dt{margin-top:9px}}
+.kv dt{font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);padding-top:3px}
+.kv dd{margin:0;color:var(--ink);line-height:1.5}
+
+/* plan */
+.plan{display:flex;flex-direction:column;gap:0;margin-top:10px;border-left:2px solid var(--accentPale2);padding-left:0}
+.wk{display:grid;grid-template-columns:66px 1fr;gap:20px;padding:20px 0 22px;position:relative}
+@media (max-width:600px){.wk{grid-template-columns:1fr;gap:8px;padding-left:20px}}
+.wk::before{content:"";position:absolute;left:-6px;top:26px;width:10px;height:10px;border-radius:50%;
+  background:var(--accent);box-shadow:0 0 0 4px var(--paper)}
+.wk .wl{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;padding-left:16px}
+@media (max-width:600px){.wk .wl{padding-left:0}}
+.wk h3{font-size:17px;font-weight:700;margin-bottom:11px}
+.wk ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.wk li{font-size:14px;color:var(--muted);padding-left:20px;position:relative;line-height:1.5}
+.wk li .g{position:absolute;left:0;top:0;color:var(--accentMid);font-weight:700}
+.wk .out{margin-top:12px;font-size:13px;color:var(--ink)}
+.wk .out b{font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-right:7px}
+
+/* cta */
+.ctaW{padding:56px 0}
+.cta{background:var(--ink);color:var(--paper);border-radius:22px;padding:46px 40px;position:relative;overflow:hidden;box-shadow:var(--sh-md)}
+:root[data-theme="dark"] .cta{background:#1A1233;border:1px solid var(--line)}
+@media (prefers-color-scheme:dark){.cta{background:#1A1233;border:1px solid var(--line)}}
+.cta .arc360{position:absolute;right:-90px;top:-90px;width:280px;height:280px;border-radius:50%;
+  border:2px solid color-mix(in srgb,var(--accentMid) 55%,transparent);opacity:.5}
+.cta .in{position:relative;max-width:34ch}
+.cta .eyebrow{color:var(--accentMid)}
+.cta h2{font-size:clamp(24px,3.6vw,32px);font-weight:750;margin:12px 0 12px;color:var(--paper2);letter-spacing:-.02em}
+.cta p{color:color-mix(in srgb,var(--paper) 78%,transparent);margin-bottom:26px;font-size:16px;line-height:1.55}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;font-family:inherit;
+  font-weight:700;font-size:15px;padding:15px 26px;border-radius:11px;text-decoration:none;transition:transform .14s ease,background .14s ease}
+.btn:hover{transform:translateY(-2px);background:var(--accentDeep)}
+.btn:focus-visible{outline:2px solid var(--paper);outline-offset:3px}
+.foot{padding:22px 0 56px;display:flex;align-items:center;justify-content:space-between;gap:14px;color:var(--faint);font-size:12.5px;flex-wrap:wrap}
+.foot .b{font-weight:700;color:var(--muted)}
+
+.midcta{max-width:var(--measure);margin-top:18px;padding:14px 18px;background:var(--accentPale);border:1px solid var(--accentPale2);border-radius:12px;font-size:14.5px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.midcta a{color:var(--accentDeep);font-weight:700;text-decoration:none}
+.midcta a:hover{text-decoration:underline}
+ol.steps{margin:0;padding-left:0;list-style:none;counter-reset:st;display:flex;flex-direction:column;gap:12px}
+ol.steps li{counter-increment:st;position:relative;padding-left:40px;font-size:15.5px;line-height:1.55;color:var(--muted)}
+ol.steps li b{color:var(--ink)}
+ol.steps li::before{content:counter(st);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--accentPale);border:1px solid var(--accentPale2);color:var(--accentDeep);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.riskfree{margin-top:12px;font-size:12.5px;color:color-mix(in srgb,#F4F8F5 62%,transparent)}
+.reveal{opacity:0;transform:translateY(12px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}
+  #arc{stroke-dashoffset:var(--fin)!important;transition:none!important}}
+</style><div class="bar"><div class="bar-in"><div class="mark"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-dasharray="38 12" stroke-linecap="round"/></svg> Link360 <span class="s360">Análisis de perfil</span></div><button class="themer" id="themer">Modo oscuro</button></div></div><div class="doc"><header class="cover"><div class="cv-eye"><span class="ln"></span><span class="eyebrow">Informe personalizado</span></div><h1>El análisis de perfil de LinkedIn que convierte tu autoridad en clientes</h1><p class="for">Preparado para <b>Carlos Blanco</b>.</p><div class="hero"><div class="verdict"><div class="eyebrow">Veredicto</div><p>Tu perfil comunica autoridad de forma inequívoca: casi tres décadas como emprendedor en serie e inversor, presencia en las tres capas del ecosistema y un track record verificable con exits y compañías icónicas. Esa credibilidad ya funciona, sobre todo en la experiencia y en los posts de opinión propia. Lo que frena la conversión no es la sustancia, sino la traducción: el titular se limita a tu cargo y está en inglés, el Acerca de funciona como currículum y la experiencia enumera roles sin trasladar las métricas del fondo. A ello se suma un contenido apoyado en reposts, con ganchos irregulares y sin CTA recurrente, y un camino de contacto con fricción. La distancia principal separa una autoridad enorme pero dispersa de una autoridad ordenada y orientada a la acción.</p></div><div class="arc-wrap"><div class="arc" role="img" aria-label="Puntuación global 52 de 100"><svg width="210" height="210" viewBox="0 0 210 210"><circle cx="105" cy="105" r="92" fill="none" stroke="var(--accentPale2)" stroke-width="12" opacity=".5"/><circle id="arc" cx="105" cy="105" r="92" fill="none" stroke="var(--accent)" stroke-width="12" stroke-linecap="round" data-pct="52"/></svg><div class="mid"><div class="n tnum">52</div><div class="of">DE 100</div></div></div><span class="level"><span class="g" style="color:var(--warning)">◆</span> Perfil básico</span></div></div><div class="strip"><div class="scell"><div class="l">Foto</div><div class="v tnum">7<small>/10</small></div><div class="meter"><i style="width:70%;background:var(--success)"></i></div></div><div class="scell"><div class="l">Titular</div><div class="v tnum">4<small>/10</small></div><div class="meter"><i style="width:40%;background:var(--crit)"></i></div></div><div class="scell"><div class="l">Acerca de</div><div class="v tnum">3,5<small>/10</small></div><div class="meter"><i style="width:35%;background:var(--crit)"></i></div></div><div class="scell"><div class="l">Contenido</div><div class="v tnum">6<small>/10</small></div><div class="meter"><i style="width:60%;background:var(--warning)"></i></div></div></div></header><div class="midcta reveal" style="margin-top:18px"><span>Tu palanca más floja ahora mismo: <b>Acerca de (3,5/10)</b>. En 15 minutos montamos contigo el plan para convertirla en tu punto fuerte.</span> <a href="https://cal.com/linked-360-zdcqtu/llamada-estrategica-link360?utm_source=informe&utm_medium=lead_magnet&utm_campaign=mrwtdozsy7fk8fm&utm_content=hero">Reserva tu sesión gratuita <span class="g">→</span></a></div><section class="reveal"><div class="sec-head"><div class="eyebrow">Por qué importa</div><h2>Tu perfil es tu activo más infravalorado</h2></div><div class="body"><p class="lead"><b>Carlos</b>, cada semana decenas de personas que podrían ser tu próximo cliente visitan tu perfil de LinkedIn. La mayoría no te escribe. Y casi nunca es un problema de nivel: es que tu perfil no lo comunica en los primeros segundos.</p><div class="chips" style="margin:16px 0"><div class="chip fix"><span class="m">→</span><span>¿Mi perfil transmite de verdad la autoridad que tengo?</span></div><div class="chip fix"><span class="m">→</span><span>¿Qué ve un cliente potencial antes de decidir si confía en mí?</span></div><div class="chip fix"><span class="m">→</span><span>¿Por dónde empiezo para que LinkedIn me traiga oportunidades en vez de silencio?</span></div></div><p>Este análisis responde a esas preguntas mirando tu perfil concreto, no con teoría genérica: tu primera impresión, tu Acerca de y tu contenido, con propuestas listas para usar y un plan de 30 días.</p><p><b>La buena noticia: casi todo lo que frena tu perfil hoy se arregla en días, no en meses.</b></p></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Los 3 primeros segundos</div><h2>Foto y titular</h2><p class="deck">Lo único que ve un visitante antes de decidir si sigue leyendo o se marcha.</p></div><div class="body"><p class="lead">La parte superior de tu perfil transmite jerarquía y credibilidad de inmediato, pero desaprovecha su capacidad de comunicar a quién ayudas y con qué prueba. Tanto la imagen como el titular proyectan autoridad, aunque pierden conexión y claridad justo en la zona que más condiciona la decisión del fundador en los primeros segundos.</p></div><div class="grades"><div class="gr"><div class="gh"><div class="gl">Foto</div><div class="gv tnum">7<small>/10</small></div><div class="st" style="color:var(--success)">Sólido</div></div><div><p style="margin-bottom:12px;color:var(--muted)">La imagen procede de un evento: micrófono de solapa, vaso de agua y fondo magenta con texto de marca ajena. El rostro se ve nítido y bien iluminado, con americana azul y camisa celeste que transmiten un registro profesional. La mirada desviada, la expresión seria y el encuadre bajo restan conexión.</p><div class="chips"><div class="chip win"><span class="m">✓</span><span>Rostro nítido y bien iluminado, sin sombras que distorsionen la cara, y vestuario coherente con un perfil de inversor que combina autoridad y cercanía.</span></div><div class="chip gap"><span class="m">✕</span><span>No hay contacto visual con la cámara: la mirada desviada y la expresión seria elevan la barrera de contacto justo cuando quieres proyectar accesibilidad para recibir pitches.</span></div><div class="chip fix"><span class="m">→</span><span>Sustitúyela por un retrato con mirada directa a cámara, medio plano centrado en el rostro y fondo neutro. Mantén el registro americana y camisa, pero busca una expresión más cálida y abierta.</span></div></div></div></div><div class="gr"><div class="gh"><div class="gl">Titular</div><div class="gv tnum">4<small>/10</small></div><div class="st" style="color:var(--crit)">Prioritario</div></div><div><p style="margin-bottom:12px;color:var(--muted)">Tu titular es solo un cargo: informa de tu rol en Encomenda, pero no dice a quién ayudas, qué consigues ni por qué eres diferente. Está en inglés pese a que tu mercado prioritario es español y no incorpora prueba ni palabras clave que activen la curiosidad del fundador.</p><div class="chips"><div class="chip win"><span class="m">✓</span><span>El rol Chairman y Co-Founder aporta jerarquía y credibilidad inmediata, y el nombre de la empresa está claro y es fácil de asociar al proyecto.</span></div><div class="chip gap"><span class="m">✕</span><span>Es solo un cargo, sin ICP, resultado ni mecanismo, y sin palabras clave de búsqueda como venture capital, early stage, IA o seed que mejoren tu descubribilidad.</span></div><div class="chip fix"><span class="m">→</span><span>Reescríbelo combinando rol, ICP, resultado y prueba. Deja claro que inviertes en startups tech early stage con foco IA, como emprendedor en serie con exits reales, y prioriza el español para tu mercado principal.</span></div></div></div></div></div><div class="paste" style="margin-top:22px"><div class="plab"><span class="g">✍</span> Titular optimizado, listo para pegar<span class="ln"></span></div><p style="font-size:17px;font-weight:600">Chairman &amp; Co-Founder Encomenda Capital | Invierto en startups tech early stage (foco IA) | Emprendedor en serie tras Glovo, Kantox, Captio</p></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Tu argumento de venta silencioso</div><h2>Tu “Acerca de”</h2><p class="deck">Donde el visitante decide si conectar contigo o cerrar la pestaña.</p></div><div class="body"><p class="lead">Tu sección Acerca de concentra una autoridad enorme, pero la presenta como biografía y no como una pieza pensada para convertir al fundador que llega buscando inversión.</p><div class="chips" style="margin:16px 0 0"><div class="chip gap"><span class="m">✕</span><span><b>Gancho.</b> Débil. Abre con una etiqueta genérica y con una errata. No genera interés ni tensión en el lector.</span></div><div class="chip gap"><span class="m">✕</span><span><b>Claridad de ICP.</b> Baja. Aunque se deduce que se dirige a fundadores early stage, el texto nunca lo declara ni habla a ese lector; está escrito hacia dentro.</span></div><div class="chip gap"><span class="m">✕</span><span><b>Autoridad y prueba.</b> Muy alta en datos, pero mal aprovechada. Contiene exits, premios y más de 85 startups, aunque se presenta como lista inconexa y omite cifras potentes como la rentabilidad, el ranking o el foco IA.</span></div><div class="chip gap"><span class="m">✕</span><span><b>CTA.</b> Ausente. No hay ninguna llamada a la acción y el lector no sabe qué hacer al terminar de leer.</span></div></div></div><div class="paste"><div class="plab"><span class="g">✍</span> Borrador optimizado, listo para pegar<span class="ln"></span></div><p>Invierto en fundadores capaces de convertir una idea en una empresa que cambie las reglas de su sector.</p><p>Si estás levantando tu primera ronda pre-seed o seed, sabes que el problema no es solo el dinero. Es encontrar un inversor que haya estado antes en tu silla, que entienda lo que duele construir desde cero y que te abra puertas cuando más lo necesitas.</p><p>Sin ese acompañamiento, muchas grandes startups se quedan por el camino: no por falta de talento, sino por falta de capital inteligente y de red en el momento adecuado.</p><p>Soy Chairman y Co-Founder de Encomenda Capital, un fondo de venture capital del Sur de Europa liderado por emprendedores. Invertimos en startups tecnológicas en fase temprana, con un foco creciente en inteligencia artificial (más del 80% de nuestras nuevas inversiones).</p><p>Lo que nos hace diferentes es de dónde venimos. No somos financieros analizando hojas de cálculo: somos emprendedores que hemos fundado, escalado y vendido empresas. Aportamos capital, sí, pero también mentoría real, presencia en el consejo y acceso a una red construida durante casi tres décadas.</p><p>Mi trayectoria como emprendedor arranca en 1996 y como business angel en 2007, con más de 85 startups en cartera. Fui de los primeros en confiar en compañías como Glovo, Kantox, Captio, Habitissimo o Deporvillage. Y he fundado empresas con exit como Akamon, Typs, Finteca y Declarando.</p><p>Más allá de Encomenda, impulso el ecosistema desde Nuclio (venture builder y escuela), Conector (aceleradora) y Barcelona Tech City. Soy autor de 'Los principales errores de los emprendedores' (Gestión 2000, 2013), fui reconocido como mejor emprendedor y mejor business angel de España en 2014, y comparto lo aprendido como profesor y ponente en IESE, IE, ESADE y otras escuelas.</p><p>Si lideras una startup digital en España en fase pre-seed o seed y crees que encajamos, envíame tu deck a carlos@encomenda.com. Lo leo personalmente.</p></div><div class="midcta"><span>¿Prefieres que lo adaptemos contigo a tu voz?</span> <a href="https://cal.com/linked-360-zdcqtu/llamada-estrategica-link360?utm_source=informe&utm_medium=lead_magnet&utm_campaign=mrwtdozsy7fk8fm&utm_content=about">Agenda 15 minutos <span class="g">→</span></a></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Tu motor de visibilidad</div><h2>Contenido y actividad</h2><p class="deck">45 publicaciones analizadas. Del 9 de abril de 2026 al 21 de julio de 2026.</p></div><div class="metrics"><div class="tile"><div class="k tnum">68</div><div class="l">Reacciones / post</div></div><div class="tile"><div class="k tnum">13</div><div class="l">Comentarios / post</div></div><div class="tile"><div class="k tnum">3</div><div class="l">Reposts / post</div></div><div class="tile"><div class="k tnum">0,08%</div><div class="l">Engagement</div></div></div><div class="body"><p class="lead">Tu actividad es constante y goza de una autoridad excepcional, pero hoy comunica reputación sin canalizarla hacia oportunidades cualificadas de dealflow.</p><p>Publicas con alta frecuencia y gran autoridad, pero el contenido funciona más como muro de curación y reputación que como canal de conversión hacia tu ICP. Los posts de opinión propia rinden mejor, lo que confirma que tu voz personal es el activo diferencial infrautilizado frente a los reposts.</p></div><div class="eyebrow" style="margin-top:26px">3 ideas listas para publicar</div><div class="ideas"><div class="idea"><div class="ix tnum">01</div><div><h4>Por qué digo NO al 95% de los decks que recibo</h4><p>Transparencia radical sobre el criterio real de un inversor pre-seed y seed, desde alguien que ha estado en ambos lados de la mesa.</p><div class="fmt">Carrusel en documento PDF o texto largo en primera persona.</div></div></div><div class="idea"><div class="ix tnum">02</div><div><h4>Qué es una startup de IA realmente invertible (y qué es solo una demo con ChatGPT detrás)</h4><p>Contraste entre el hype de la IA y lo que un fondo que dedica más del 80% de sus nuevas inversiones a IA considera defendible.</p><div class="fmt">Texto de opinión propia en primera persona con estructura de lista.</div></div></div><div class="idea"><div class="ix tnum">03</div><div><h4>La historia real de cómo entré en Glovo (y qué me enseñó sobre en quién invertir)</h4><p>Convertir tu credencial más reconocida, ser primer inversor de Glovo, en una lección replicable sobre el carácter del fundador.</p><div class="fmt">Texto largo de storytelling en primera persona, opcional en vídeo corto.</div></div></div></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Ordenadas por impacto</div><h2>Tus prioridades</h2><p class="deck">Las palancas que más mueven la aguja en tu caso.</p></div><div class="prios"><article class="prio"><div class="top"><span class="rk">Prioridad 1</span><h3>Alinear la parte superior del perfil con tu ICP y tu prueba</h3></div><dl class="kv"><dt>Situación</dt><dd>El titular es solo un cargo, está en inglés pese a que tu mercado prioritario es español y no comunica público objetivo, resultado ni track record. La foto proyecta autoridad, pero pierde conexión por la mirada desviada y un fondo de evento distractor.</dd><dt>Por qué</dt><dd>Es la primera zona visible del perfil y la que más condiciona la decisión de un fundador en los primeros segundos. Con tu autoridad, cada visita que no entiende de inmediato que inviertes en pre-seed y seed con foco IA y que hay exits detrás es un pitch cualificado que puedes perder. Además, es de implementación rápida.</dd><dt>Acción</dt><dd>Sustituye el titular actual por el titular optimizado propuesto, priorizando el español y palabras clave como venture capital, early stage, IA y seed. Reemplaza la foto por un retrato de mirada directa, medio plano y fondo limpio, con expresión más abierta.</dd><dt>Impacto</dt><dd>Mayor claridad inmediata sobre a quién inviertes y por qué eres diferente, mejor descubribilidad por búsqueda y una primera impresión más cercana para el fundador en early stage.</dd></dl></article><article class="prio"><div class="top"><span class="rk">Prioridad 2</span><h3>Convertir autoridad dispersa en un recorrido de conversión ordenado</h3></div><dl class="kv"><dt>Situación</dt><dd>El Acerca de está redactado como biografía sin gancho, sin problema del fundador, sin mecanismo y sin CTA. La experiencia enumera cargos sin trasladar a Encomenda las métricas del fondo. Destacados no dirige con claridad y el email vive en texto libre, sin jerarquía entre fundador y LP.</dd><dt>Por qué</dt><dd>Estas tres secciones comparten el mismo problema: una credibilidad extraordinaria que no está estructurada para convertir. El fundador motivado que llega tras el titular no encuentra ni una narrativa que le hable ni un camino claro para actuar, justo en el momento de mayor interés.</dd><dt>Acción</dt><dd>Reescribe el Acerca de como narrativa orientada al fundador con gancho, problema, solución, mecanismo, prueba y CTA de envío de deck. Traslada las métricas del fondo a Encomenda, Nuclio y Conector, añade el email al campo de contacto y estructura Destacados y la CTA en dos caminos: fundadores e inversores.</dd><dt>Impacto</dt><dd>Un recorrido continuo desde el titular hasta el contacto, con la prueba consolidada dentro del perfil y menos fricción para que el dealflow cualificado llegue directamente a ti.</dd></dl></article><article class="prio"><div class="top"><span class="rk">Prioridad 3</span><h3>Reorientar el contenido hacia el fundador y sistematizar el CTA</h3></div><dl class="kv"><dt>Situación</dt><dd>Publicas con alta frecuencia y gran autoridad, pero el feed se apoya en exceso en reposts y curación, con ganchos irregulares, foco temático diluido y sin un CTA recurrente hacia el envío de deck. El engagement por seguidor es bajo para tu audiencia y tu voz propia está infrautilizada.</dd><dt>Por qué</dt><dd>Es tu canal de mayor alcance y hoy genera reputación sin invitación a actuar. Con tu autoridad, cada mejora en foco y CTA tiene impacto directo en el volumen y la calidad de decks recibidos y refuerza el fundraising del propio fondo.</dd><dt>Acción</dt><dd>Reduce el volumen de reposts neutros y aumenta el contenido propio en primera persona alrededor de tres pilares fijos: tesis y criterios de inversión, IA invertible y aprendizajes de exits. Reconduce el tono de opinión que ya genera conversación hacia el núcleo y cierra con la CTA de envío de deck.</dd><dt>Impacto</dt><dd>Contenido más coherente con tu oferta, mejor conexión con tu ICP y una vía sistemática que canaliza el alcance hacia dealflow cualificado.</dd></dl></article></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Del impulso al sistema</div><h2>Tu plan de 30 días</h2><p class="deck">Cuatro semanas, un foco concreto en cada una.</p></div><div class="plan"><div class="wk"><div class="wl">Semana 1</div><div><h3>Base estratégica y primera impresión</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Alinear la parte superior del perfil con tu ICP y tu prueba, según la Prioridad 1.</p><ul><li><span class="g">→</span>Publicar el titular optimizado propuesto, priorizando el español y las palabras clave de búsqueda.</li><li><span class="g">→</span>Encargar y sustituir la foto por un retrato de mirada directa, medio plano y fondo limpio.</li><li><span class="g">→</span>Fijar la propuesta de valor de referencia y definir una cifra defendible y consistente de startups como business angel para todo el perfil.</li></ul><div class="out"><b>Resultado</b>Una primera impresión más clara y cercana que comunica de inmediato a quién inviertes y con qué credenciales.</div></div></div><div class="wk"><div class="wl">Semana 2</div><div><h3>Conversión: Acerca de, experiencia, destacados y CTA</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Ordenar la autoridad en un recorrido de conversión sin fricción, según la Prioridad 2.</p><ul><li><span class="g">→</span>Reescribir el Acerca de como narrativa orientada al fundador con gancho, problema, mecanismo, prueba y CTA de envío de deck.</li><li><span class="g">→</span>Trasladar las métricas del fondo a la descripción de Encomenda y cuantificar Nuclio y Conector, además de añadir el email al campo de contacto.</li><li><span class="g">→</span>Estructurar Destacados en dos caminos, fundadores e inversores, con los criterios de encaje visibles.</li></ul><div class="out"><b>Resultado</b>Un recorrido continuo desde el titular al contacto que reduce fricción y facilita el envío de decks cualificados.</div></div></div><div class="wk"><div class="wl">Semana 3</div><div><h3>Contenido y autoridad temática</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Reorientar el contenido hacia el fundador con pilares y voz propia, según la Prioridad 3.</p><ul><li><span class="g">→</span>Consolidar los tres pilares fijos: tesis y criterios de inversión, IA invertible y aprendizajes de exits.</li><li><span class="g">→</span>Reducir la proporción de reposts neutros y planificar contenido propio en primera persona.</li><li><span class="g">→</span>Preparar un calendario editorial con formatos variados alineados a los pilares y redactar el CTA recurrente de envío de deck.</li></ul><div class="out"><b>Resultado</b>Mayor coherencia temática con tu oferta y una voz propia mejor aprovechada frente a la curación.</div></div></div><div class="wk"><div class="wl">Semana 4</div><div><h3>Publicación, medición y continuidad</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Poner el sistema en marcha y convertir visitas en conversaciones.</p><ul><li><span class="g">→</span>Publicar las primeras piezas de cada pilar con el CTA de envío de deck.</li><li><span class="g">→</span>Medir alcance, engagement por publicación y decks entrantes segmentados por origen.</li><li><span class="g">→</span>Ajustar ganchos y temas según el rendimiento y establecer una cadencia sostenible con revisión mensual.</li></ul><div class="out"><b>Resultado</b>Un sistema consistente que traduce tu alcance en un flujo más claro y medible de conversaciones cualificadas.</div></div></div></div><div class="body" style="margin-top:22px"><p class="lead">Un perfil optimizado se arregla en días. Lo que no se arregla con un fix es <b>publicar contenido estratégico cada semana, durante meses</b>: ahí es donde se construye la autoridad que trae clientes, y ese es exactamente el sistema que montamos por ti.</p></div></section><div class="ctaW reveal"><div class="cta"><div class="arc360" aria-hidden="true"></div><div class="in"><div class="eyebrow">El siguiente paso</div><h2>Este informe te muestra el qué. Nosotros ejecutamos el cómo.</h2><p>En la llamada montamos contigo el plan de tus 2 primeras semanas, empezando por tu Acerca de (3,5/10). Y si encaja, nuestro sistema publica por ti la autoridad que este informe te ha enseñado a construir.</p><a class="btn" href="https://cal.com/linked-360-zdcqtu/llamada-estrategica-link360?utm_source=informe&utm_medium=lead_magnet&utm_campaign=mrwtdozsy7fk8fm&utm_content=final">Reserva tu sesión gratuita de 15 min <span class="g">→</span></a><p class="riskfree">Sin compromiso. Sales con acciones aplicables, trabajemos juntos o no.</p></div></div><div class="foot"><div><span class="b">Link360</span>, el partner de contenido y autoridad para expertos B2B</div><div>Confidencial, preparado para Carlos Blanco</div></div></div></div><script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themer');
+  function cur(){return root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');}
+  function sync(){btn.textContent=cur()==='dark'?'Modo claro':'Modo oscuro';}
+  btn.addEventListener('click',function(){root.setAttribute('data-theme',cur()==='dark'?'light':'dark');sync();});
+  sync();
+  var arc=document.getElementById('arc'), r=92, C=2*Math.PI*r, off=C*(1-((parseFloat(arc.getAttribute('data-pct'))||0)/100));
+  arc.style.strokeDasharray=C+' '+C; arc.style.transform='rotate(-90deg)'; arc.style.transformOrigin='105px 105px';
+  arc.style.setProperty('--fin',off);
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){arc.style.strokeDashoffset=off;}
+  else{arc.style.strokeDashoffset=C;arc.style.transition='stroke-dashoffset 1.5s cubic-bezier(.2,.7,.2,1) .25s';
+    requestAnimationFrame(function(){requestAnimationFrame(function(){arc.style.strokeDashoffset=off;});});}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});}
+})();
+</script>
