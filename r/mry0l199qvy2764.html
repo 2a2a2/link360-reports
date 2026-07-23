@@ -1,0 +1,229 @@
+<title>Análisis de Perfil de LinkedIn — MARISA LARIO HERRERO · Link360</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><style>
+@font-face{font-family:Geist;src:url(https://2a2a2.github.io/link360-reports/assets/geist.woff2) format('woff2');font-weight:100 900;font-display:swap;font-style:normal}
+@font-face{font-family:Hanken;src:url(https://2a2a2.github.io/link360-reports/assets/hanken.woff2) format('woff2');font-weight:100 900;font-display:swap;font-style:normal}
+
+:root{
+  --paper:#F5F2FA; --paper2:#FBFAFE; --paperDim:#C7BEDE;
+  --ink:#1C1330; --inkSurf:#2E2348; --muted:#6B6280; --faint:#8478A0; --line:#DCD4EC;
+  --accent:#5E2CA5; --accentDeep:#3E1C70; --accentMid:#9A66D6; --accentPale:#ECE3F8; --accentPale2:#CFB6EE;
+  --success:#2E7D5B; --warning:#8A5B0F; --crit:#B4321F;
+  --sh-sm:0 1px 2px rgba(28,19,48,.06);
+  --sh-md:0 10px 34px -18px rgba(28,19,48,.30);
+  --glow:transparent;
+  --measure:64ch;
+  --sans:Geist,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --glyph:Hanken,Geist,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#120D21; --paper2:#1A1233; --paperDim:#2C2540;
+    --ink:#F1ECFB; --inkSurf:#241A3C; --muted:#A79BC4; --faint:#8478A0; --line:#2A2145;
+    --accent:#9A66D6; --accentDeep:#7B45C0; --accentMid:#B48AE6; --accentPale:#241A3C; --accentPale2:#4B3A6E;
+    --success:#74C69D; --warning:#E0B25E; --crit:#E58873;
+    --sh-sm:0 1px 2px rgba(0,0,0,.4); --sh-md:0 18px 50px -22px rgba(0,0,0,.75);
+    --glow:radial-gradient(1100px 600px at 50% -10%, rgba(94,44,165,.30), transparent 60%);
+  }
+}
+:root[data-theme="light"]{
+  --paper:#F5F2FA; --paper2:#FBFAFE; --paperDim:#C7BEDE; --ink:#1C1330; --inkSurf:#2E2348;
+  --muted:#6B6280; --faint:#8478A0; --line:#DCD4EC; --accent:#5E2CA5; --accentDeep:#3E1C70;
+  --accentMid:#9A66D6; --accentPale:#ECE3F8; --accentPale2:#CFB6EE;
+  --success:#2E7D5B; --warning:#8A5B0F; --crit:#B4321F;
+  --sh-sm:0 1px 2px rgba(28,19,48,.06); --sh-md:0 10px 34px -18px rgba(28,19,48,.30); --glow:transparent;
+}
+:root[data-theme="dark"]{
+  --paper:#120D21; --paper2:#1A1233; --paperDim:#2C2540; --ink:#F1ECFB; --inkSurf:#241A3C;
+  --muted:#A79BC4; --faint:#8478A0; --line:#2A2145; --accent:#9A66D6; --accentDeep:#7B45C0;
+  --accentMid:#B48AE6; --accentPale:#241A3C; --accentPale2:#4B3A6E;
+  --success:#74C69D; --warning:#E0B25E; --crit:#E58873;
+  --sh-sm:0 1px 2px rgba(0,0,0,.4); --sh-md:0 18px 50px -22px rgba(0,0,0,.75);
+  --glow:radial-gradient(1100px 600px at 50% -10%, rgba(154,102,214,.22), transparent 60%);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  font-feature-settings:"ss01","cv01","tnum" 0}
+body::before{content:"";position:fixed;inset:0;background:var(--glow);pointer-events:none;z-index:0}
+.doc{position:relative;z-index:1;max-width:940px;margin:0 auto;padding:0 26px}
+h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.02em;text-wrap:balance;line-height:1.1}
+p{margin:0}
+.tnum{font-variant-numeric:tabular-nums}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+a{color:inherit}
+.g{font-family:var(--glyph)}
+
+/* bar */
+.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 82%,transparent);
+  backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:940px;margin:0 auto;padding:12px 26px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.mark{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.02em}
+.mark svg{display:block}
+.mark .s360{color:var(--faint);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.themer{border:1px solid var(--line);background:var(--paper2);color:var(--muted);font-family:inherit;
+  font-size:12px;font-weight:600;padding:7px 13px;border-radius:9px;cursor:pointer}
+.themer:hover{border-color:var(--accentPale2)}
+.themer:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* cover */
+.cover{padding:60px 0 46px}
+.cv-eye{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.cv-eye .ln{height:1px;width:34px;background:var(--accentPale2)}
+.cover h1{font-size:clamp(32px,5.6vw,52px);font-weight:800;line-height:1.04}
+.cover .for{margin-top:16px;font-size:18px;color:var(--muted);max-width:50ch}
+.cover .for b{color:var(--ink);font-weight:650}
+
+.hero{display:grid;grid-template-columns:1fr auto;gap:46px;align-items:center;margin-top:42px;
+  padding:34px;background:var(--paper2);border:1px solid var(--line);border-radius:20px 20px 20px 4px;box-shadow:var(--sh-md)}
+@media (max-width:740px){.hero{grid-template-columns:1fr;gap:30px;padding:26px;text-align:left}}
+.verdict .eyebrow{margin-bottom:12px}
+.verdict .lead{font-size:19px;line-height:1.5;font-weight:500}
+.verdict .lead b{color:var(--accentDeep);font-weight:700}
+.verdict p+p{margin-top:12px;color:var(--muted);font-size:16px;line-height:1.6}
+
+/* 360 arc score = signature */
+.arc-wrap{display:flex;flex-direction:column;align-items:center;gap:14px;min-width:210px}
+.arc{position:relative;width:210px;height:210px}
+.arc svg{display:block;transform:rotate(-90deg)}
+.arc .mid{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.arc .n{font-size:62px;font-weight:800;line-height:.9;letter-spacing:-.04em}
+.arc .of{font-size:13px;font-weight:600;letter-spacing:.1em;color:var(--faint)}
+.level{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--accent);background:var(--accentPale);border:1px solid var(--accentPale2);padding:6px 14px;border-radius:999px}
+
+/* section score strip */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:22px}
+@media (max-width:620px){.strip{grid-template-columns:repeat(2,1fr)}}
+.scell{background:var(--paper2);border:1px solid var(--line);border-radius:12px;padding:16px 16px 15px}
+.scell .l{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.scell .v{font-size:30px;font-weight:800;margin:9px 0 12px;letter-spacing:-.03em}
+.scell .v small{font-size:14px;font-weight:600;color:var(--faint);letter-spacing:0}
+.meter{height:5px;border-radius:99px;background:color-mix(in srgb,var(--ink) 9%,transparent);overflow:hidden}
+.meter i{display:block;height:100%;border-radius:99px}
+
+/* section */
+section{padding:52px 0;border-top:1px solid var(--line)}
+.sec-head{margin-bottom:22px}
+.sec-head h2{font-size:clamp(23px,3.4vw,30px);font-weight:750}
+.sec-head .eyebrow{margin-bottom:9px}
+.deck{color:var(--muted);font-size:16.5px;max-width:var(--measure);margin-top:6px}
+.body{max-width:var(--measure)}
+.body p{margin-bottom:13px}
+.lead{font-size:18px;line-height:1.55;font-weight:500}
+.lead b{font-weight:700}
+
+/* graded subblocks */
+.grades{margin-top:24px;display:flex;flex-direction:column;gap:0}
+.gr{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line)}
+@media (max-width:600px){.gr{grid-template-columns:1fr;gap:12px}}
+.gr .gh{display:flex;flex-direction:column;gap:7px}
+.gr .gl{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.gr .gv{font-size:42px;font-weight:800;letter-spacing:-.04em;line-height:.9}
+.gr .gv small{font-size:16px;font-weight:600;color:var(--faint)}
+.gr .st{font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.chips{display:flex;flex-direction:column;gap:9px;margin-top:4px}
+.chip{display:grid;grid-template-columns:16px 1fr;gap:10px;font-size:14.5px;line-height:1.45;color:var(--ink)}
+.chip .m{font-family:var(--glyph);font-weight:700;text-align:center;line-height:1.5}
+.chip.win .m{color:var(--success)} .chip.gap .m{color:var(--crit)} .chip.fix .m{color:var(--accent)}
+.chip b{font-weight:700}
+
+/* paste panel (distinct dark surface) */
+.paste{margin-top:8px;background:var(--inkSurf);border-radius:16px;padding:26px 28px;box-shadow:var(--sh-md);
+  border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+.paste .plab{display:flex;align-items:center;gap:10px;font-size:11.5px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accentMid);margin-bottom:15px}
+.paste .plab .ln{flex:1;height:1px;background:color-mix(in srgb,#fff 14%,transparent)}
+.paste p{color:#EBE4F7;font-size:15.5px;line-height:1.6}
+.paste p+p{margin-top:11px}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:6px 0 22px}
+@media (max-width:600px){.metrics{grid-template-columns:repeat(2,1fr)}}
+.tile{background:var(--paper2);border:1px solid var(--line);border-radius:10px;padding:16px}
+.tile .k{font-size:27px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.tile .l{font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-top:8px}
+
+/* ideas — asymmetric list, not identical cards */
+.ideas{display:flex;flex-direction:column;gap:2px;margin-top:20px;border-top:1px solid var(--line)}
+.idea{display:grid;grid-template-columns:42px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+@media (max-width:600px){.idea{grid-template-columns:1fr;gap:8px}}
+.idea .ix{font-size:14px;font-weight:800;color:var(--accent);letter-spacing:-.02em;padding-top:3px}
+.idea h4{font-size:18px;font-weight:700;margin-bottom:7px;line-height:1.2}
+.idea p{font-size:14.5px;color:var(--muted)}
+.idea .fmt{margin-top:9px;font-size:11.5px;font-weight:600;letter-spacing:.03em;color:var(--faint)}
+
+/* priorities — real ranking */
+.prios{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.prio{background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:22px 24px;box-shadow:var(--sh-sm)}
+.prio .top{display:flex;align-items:baseline;gap:14px;margin-bottom:14px}
+.prio .rk{font-size:15px;font-weight:800;color:var(--accent);letter-spacing:.02em;white-space:nowrap}
+.prio h3{font-size:19px;font-weight:700;line-height:1.2}
+.kv{display:grid;grid-template-columns:96px 1fr;gap:8px 18px;font-size:14.5px}
+@media (max-width:560px){.kv{grid-template-columns:1fr;gap:2px}.kv dt{margin-top:9px}}
+.kv dt{font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);padding-top:3px}
+.kv dd{margin:0;color:var(--ink);line-height:1.5}
+
+/* plan */
+.plan{display:flex;flex-direction:column;gap:0;margin-top:10px;border-left:2px solid var(--accentPale2);padding-left:0}
+.wk{display:grid;grid-template-columns:66px 1fr;gap:20px;padding:20px 0 22px;position:relative}
+@media (max-width:600px){.wk{grid-template-columns:1fr;gap:8px;padding-left:20px}}
+.wk::before{content:"";position:absolute;left:-6px;top:26px;width:10px;height:10px;border-radius:50%;
+  background:var(--accent);box-shadow:0 0 0 4px var(--paper)}
+.wk .wl{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;padding-left:16px}
+@media (max-width:600px){.wk .wl{padding-left:0}}
+.wk h3{font-size:17px;font-weight:700;margin-bottom:11px}
+.wk ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.wk li{font-size:14px;color:var(--muted);padding-left:20px;position:relative;line-height:1.5}
+.wk li .g{position:absolute;left:0;top:0;color:var(--accentMid);font-weight:700}
+.wk .out{margin-top:12px;font-size:13px;color:var(--ink)}
+.wk .out b{font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-right:7px}
+
+/* cta */
+.ctaW{padding:56px 0}
+.cta{background:var(--ink);color:#F4F8F5;border-radius:22px;padding:46px 40px;position:relative;overflow:hidden;box-shadow:var(--sh-md)}
+:root[data-theme="dark"] .cta{background:#1A1233;border:1px solid var(--line)}
+@media (prefers-color-scheme:dark){.cta{background:#1A1233;border:1px solid var(--line)}}
+.cta .arc360{position:absolute;right:-90px;top:-90px;width:280px;height:280px;border-radius:50%;
+  border:2px solid color-mix(in srgb,var(--accentMid) 55%,transparent);opacity:.5}
+.cta .in{position:relative;max-width:34ch}
+.cta .eyebrow{color:var(--accentMid)}
+.cta h2{font-size:clamp(24px,3.6vw,32px);font-weight:750;margin:12px 0 12px;color:#F4F8F5;letter-spacing:-.02em}
+.cta p{color:color-mix(in srgb,#F4F8F5 82%,transparent);margin-bottom:26px;font-size:16px;line-height:1.55}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;font-family:inherit;
+  font-weight:700;font-size:15px;padding:15px 26px;border-radius:11px;text-decoration:none;transition:transform .14s ease,background .14s ease}
+.btn:hover{transform:translateY(-2px);background:var(--accentDeep)}
+.btn:focus-visible{outline:2px solid var(--paper);outline-offset:3px}
+.foot{padding:22px 0 56px;display:flex;align-items:center;justify-content:space-between;gap:14px;color:var(--faint);font-size:12.5px;flex-wrap:wrap}
+.foot .b{font-weight:700;color:var(--muted)}
+
+.midcta{max-width:var(--measure);margin-top:18px;padding:14px 18px;background:var(--accentPale);border:1px solid var(--accentPale2);border-radius:12px;font-size:14.5px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.midcta a{color:var(--accentDeep);font-weight:700;text-decoration:none}
+.midcta a:hover{text-decoration:underline}
+ol.steps{margin:0;padding-left:0;list-style:none;counter-reset:st;display:flex;flex-direction:column;gap:12px}
+ol.steps li{counter-increment:st;position:relative;padding-left:40px;font-size:15.5px;line-height:1.55;color:var(--muted)}
+ol.steps li b{color:var(--ink)}
+ol.steps li::before{content:counter(st);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--accentPale);border:1px solid var(--accentPale2);color:var(--accentDeep);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.riskfree{margin-top:12px;font-size:12.5px;color:color-mix(in srgb,#F4F8F5 62%,transparent)}
+.reveal{opacity:0;transform:translateY(12px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}
+  #arc{stroke-dashoffset:var(--fin)!important;transition:none!important}}
+</style><div class="bar"><div class="bar-in"><div class="mark"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-dasharray="38 12" stroke-linecap="round"/></svg> Link360 <span class="s360">Análisis de perfil</span></div><button class="themer" id="themer">Modo oscuro</button></div></div><div class="doc"><header class="cover"><div class="cv-eye"><span class="ln"></span><span class="eyebrow">Informe personalizado</span></div><h1>El análisis de perfil de LinkedIn que convierte tu autoridad en clientes</h1><p class="for">Preparado para <b>MARISA LARIO HERRERO</b>.</p><div class="hero"><div class="verdict"><div class="eyebrow">Veredicto</div><p>Tu perfil comunica hoy que eres Directora corporativa en una firma sólida de executive search, pero no comunica quién eres tú como profesional ni qué valor aportas de forma diferencial. La marca sostiene toda la credibilidad, mientras tu figura personal queda diluida.</p></div><div class="arc-wrap"><div class="arc" role="img" aria-label="Puntuación global 26 de 100"><svg width="210" height="210" viewBox="0 0 210 210"><circle cx="105" cy="105" r="92" fill="none" stroke="var(--accentPale2)" stroke-width="12" opacity=".5"/><circle id="arc" cx="105" cy="105" r="92" fill="none" stroke="var(--accent)" stroke-width="12" stroke-linecap="round" data-pct="26"/></svg><div class="mid"><div class="n tnum">26</div><div class="of">DE 100</div></div></div><span class="level"><span class="g" style="color:var(--warning)">◆</span> Perfil desaprovechado</span></div></div><div class="strip"><div class="scell"><div class="l">Foto</div><div class="v tnum">6<small>/10</small></div><div class="meter"><i style="width:60%;background:var(--warning)"></i></div></div><div class="scell"><div class="l">Titular</div><div class="v tnum">2,7<small>/10</small></div><div class="meter"><i style="width:27%;background:var(--crit)"></i></div></div><div class="scell"><div class="l">Acerca de</div><div class="v tnum">0,5<small>/10</small></div><div class="meter"><i style="width:5%;background:var(--crit)"></i></div></div><div class="scell"><div class="l">Contenido</div><div class="v tnum">2<small>/10</small></div><div class="meter"><i style="width:20%;background:var(--crit)"></i></div></div></div></header><div class="midcta reveal" style="margin-top:18px"><span>Tu palanca más floja ahora mismo: <b>Acerca de (0,5/10)</b>. En 15 minutos montamos contigo el plan para convertirla en tu punto fuerte.</span> <a href="https://cal.com/linked-360-zdcqtu/llamada-estrategica-link360?utm_source=informe&utm_medium=lead_magnet&utm_campaign=mry0l199qvy2764&utm_content=hero">Reserva tu sesión gratuita <span class="g">→</span></a></div><section class="reveal"><div class="sec-head"><div class="eyebrow">Por qué importa</div><h2>Tu perfil es tu activo más infravalorado</h2></div><div class="body"><p class="lead"><b>MARISA</b>, cada semana decenas de personas que podrían ser tu próximo cliente visitan tu perfil de LinkedIn. La mayoría no te escribe. Y casi nunca es un problema de nivel: es que tu perfil no lo comunica en los primeros segundos.</p><div class="chips" style="margin:16px 0"><div class="chip fix"><span class="m">→</span><span>¿Mi perfil transmite de verdad la autoridad que tengo?</span></div><div class="chip fix"><span class="m">→</span><span>¿Qué ve un cliente potencial antes de decidir si confía en mí?</span></div><div class="chip fix"><span class="m">→</span><span>¿Por dónde empiezo para que LinkedIn me traiga oportunidades en vez de silencio?</span></div></div><p>Este análisis responde a esas preguntas mirando tu perfil concreto, no con teoría genérica: tu primera impresión, tu Acerca de y tu contenido, con propuestas listas para usar y un plan de 30 días.</p><p><b>La buena noticia: casi todo lo que frena tu perfil hoy se arregla en días, no en meses.</b></p></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Los 3 primeros segundos</div><h2>Foto y titular</h2><p class="deck">Lo único que ve un visitante antes de decidir si sigue leyendo o se marcha.</p></div><div class="body"><p class="lead">Tu primera impresión combina una foto cercana que conecta con un titular que se limita a repetir tu cargo. Hay una base humana que funciona, pero la comunicación de tu valor y tu nivel directivo todavía no aparece.</p></div><div class="grades"><div class="gr"><div class="gh"><div class="gl">Foto</div><div class="gv tnum">6<small>/10</small></div><div class="st" style="color:var(--warning)">Mejorable</div></div><div><p style="margin-bottom:12px;color:var(--muted)">Foto tomada en exterior con luz natural y expresión cercana que transmite confianza. El rostro se ve claro y bien encuadrado. Sin embargo, el tono personal-vacacional, el fondo distractor y la iluminación solar dura restan el nivel de autoridad que exige un rol de Directora corporativa en executive search.</p><div class="chips"><div class="chip win"><span class="m">✓</span><span>Rostro claramente visible, buena conexión con la cámara y expresión natural que genera cercanía, apoyada por una luz natural que aporta calidez.</span></div><div class="chip gap"><span class="m">✕</span><span>Tono demasiado informal para un cargo directivo, fondo de exterior distractor sin coherencia con el posicionamiento corporativo e iluminación solar dura que crea brillos y sombras poco favorecedores.</span></div><div class="chip fix"><span class="m">→</span><span>Sustituye la imagen por un retrato profesional con fondo neutro, luz suave y frontal, vestimenta acorde al mundo directivo y encuadre de medio busto con el rostro ocupando el 60-70%. Mantén la expresión cercana que ya proyectas.</span></div></div></div></div><div class="gr"><div class="gh"><div class="gl">Titular</div><div class="gv tnum">2,7<small>/10</small></div><div class="st" style="color:var(--crit)">Prioritario</div></div><div><p style="margin-bottom:12px;color:var(--muted)">Tu titular es puramente descriptivo: replica cargo y firma, pero no comunica a quién ayudas, qué resultado consigues ni con qué método. Un visitante que no conozca la marca no entiende tu valor. Tampoco aprovechas diferenciales como tus 17+ años en la firma o theFoodTechLab.</p><div class="chips"><div class="chip win"><span class="m">✓</span><span>Deja claro tu cargo directivo y la firma de referencia, e incluye la marca internacional Kingsley Gate, que aporta alcance global y credibilidad inmediata.</span></div><div class="chip gap"><span class="m">✕</span><span>No define audiencia, resultado ni mecanismo, no incorpora palabras clave de búsqueda (executive search, talento directivo, liderazgo) ni tus diferenciadores propios.</span></div><div class="chip fix"><span class="m">→</span><span>Reescribe el titular con estructura de propuesta de valor: rol, a quién ayudas, qué resultado y con qué mecanismo. Incorpora palabras clave del sector para mejorar tu visibilidad y alinéate con la promesa que ya vende tu web.</span></div></div></div></div></div><div class="paste" style="margin-top:22px"><div class="plab"><span class="g">✍</span> Titular optimizado, listo para pegar<span class="ln"></span></div><p style="font-size:17px;font-weight:600">Directora corporativa en Seeliger y Conde · Kingsley Gate | Ayudo a empresas y consejos a identificar, desarrollar y retener talento directivo mediante executive search</p></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Tu argumento de venta silencioso</div><h2>Tu “Acerca de”</h2><p class="deck">Donde el visitante decide si conectar contigo o cerrar la pestaña.</p></div><div class="body"><p class="lead">La sección Acerca de es el activo de conversión más importante de tu perfil, y hoy es también el más desaprovechado. Aquí es donde debes transformar tu autoridad real en argumentos que un CEO o un consejero puedan leer y valorar.</p><div class="chips" style="margin:16px 0 0"><div class="chip gap"><span class="m">✕</span><span><b>Gancho.</b> Inexistente. No hay gancho porque no hay texto que despierte interés en los primeros segundos.</span></div><div class="chip gap"><span class="m">✕</span><span><b>Claridad de ICP.</b> Nula. El perfil no define audiencia; solo se puede inferir (empresas y consejos que buscan talento directivo) a partir de la empresa, no de tu texto.</span></div><div class="chip gap"><span class="m">✕</span><span><b>Autoridad y prueba.</b> Desaprovechada. Existen elementos de autoridad reales y potentes (larga trayectoria en la firma, cofundación de theFoodTechLab, experiencia en General Cable y Arthur Andersen, PDG por IESE) que no aparecen porque la sección está vacía.</span></div><div class="chip gap"><span class="m">✕</span><span><b>CTA.</b> Inexistente. No hay ninguna llamada a la acción ni vía de contacto que facilite iniciar una conversación.</span></div></div></div><div class="paste"><div class="plab"><span class="g">✍</span> Borrador optimizado, listo para pegar<span class="ln"></span></div><p>Encontrar al líder adecuado no es cubrir una vacante: es tomar una de las decisiones que más condiciona el futuro de una compañía.</p><p>Ayudo a empresas y consejos de administración a identificar, desarrollar y retener el talento directivo que necesitan para crecer.</p><p>Una dirección mal ajustada cuesta mucho más que un proceso de selección: frena proyectos, desgasta equipos y retrasa decisiones estratégicas durante años. Por eso acompaño a cada organización más allá del nombramiento.</p><p>En Seeliger y Conde · Kingsley Gate trabajamos la búsqueda de directivos, los Leadership Services y la composición de consejos de administración, combinando el conocimiento profundo del mercado en España con el alcance global de Kingsley Gate y sus más de 33 países.</p><p>Mi enfoque parte de entender primero el negocio, la cultura y el reto real de cada compañía, para después buscar, evaluar y presentar a los perfiles que encajan de verdad, y ayudar a que ese talento permanezca y rinda.</p><p>Mi trayectoria une el executive search con una base sólida en finanzas y auditoría (General Cable, Arthur Andersen) y formación directiva por el IESE (PDG). También soy cofundadora de theFoodTechLab, desde donde sigo de cerca el talento y la innovación en el sector agroalimentario.</p><p>We Make It Happen: hacemos que las decisiones de liderazgo ocurran.</p><p>Si estás buscando reforzar tu equipo directivo o tu consejo, escríbeme por LinkedIn o visita www.syc.es. Hablamos.</p></div><div class="midcta"><span>¿Prefieres que lo adaptemos contigo a tu voz?</span> <a href="https://cal.com/linked-360-zdcqtu/llamada-estrategica-link360?utm_source=informe&utm_medium=lead_magnet&utm_campaign=mry0l199qvy2764&utm_content=about">Agenda 15 minutos <span class="g">→</span></a></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Tu motor de visibilidad</div><h2>Contenido y actividad</h2><p class="deck">4 publicaciones analizadas. Del 20 de noviembre de 2020 al 8 de septiembre de 2023..</p></div><div class="metrics"><div class="tile"><div class="k tnum">1.287</div><div class="l">Reacciones / post</div></div><div class="tile"><div class="k tnum">37</div><div class="l">Comentarios / post</div></div><div class="tile"><div class="k tnum">583</div><div class="l">Reposts / post</div></div><div class="tile"><div class="k tnum">—</div><div class="l">Engagement</div></div></div><div class="body"><p class="lead">Tu perfil no tiene hoy una estrategia de contenido, sino actividad esporádica de republicación. Tienes una autoridad real y difícil de igualar, pero no la estás comunicando en un canal que podría sostener tu credibilidad en el tiempo.</p><p>En casi tres años solo hay 4 publicaciones, todas reshares, y la de mayor alcance es un post viral ajeno a tu negocio. No existe ninguna pieza que demuestre criterio propio sobre liderazgo o consejos. El contenido actual no genera confianza diferencial ni abre puertas comerciales.</p></div><div class="eyebrow" style="margin-top:26px">3 ideas listas para publicar</div><div class="ideas"><div class="idea"><div class="ix tnum">01</div><div><h4>El verdadero coste de un mal nombramiento directivo</h4><p>Un mal nombramiento no cuesta lo que cuesta el proceso de selección: cuesta proyectos frenados, equipos desgastados y decisiones estratégicas retrasadas durante años, idea central de tu Acerca de.</p><div class="fmt">Post de texto en primera persona de 300 a 500 palabras.</div></div></div><div class="idea"><div class="ix tnum">02</div><div><h4>Talento e innovación en el sector agroalimentario: lo que veo desde theFoodTechLab</h4><p>Cruce entre dos mundos que habitas a la vez, la búsqueda de directivos y la innovación agroalimentaria como cofundadora de theFoodTechLab, para atraer proyectos e inversores del sector.</p><div class="fmt">Post de reflexión con aprendizajes en formato lista comentada.</div></div></div><div class="idea"><div class="ix tnum">03</div><div><h4>Antes de buscar al directivo, entiendo tu negocio: cómo trabajamos un mandato</h4><p>Desmitificar el executive search mostrando que empieza por comprender el negocio, evaluar con rigor y acompañar después, apoyado en las fases que describes en tu Acerca de. Usa [tu caso] como marcador si quieres ilustrar.</p><div class="fmt">Post educativo tipo detrás del proceso, explicado paso a paso.</div></div></div></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Ordenadas por impacto</div><h2>Tus prioridades</h2><p class="deck">Las palancas que más mueven la aguja en tu caso.</p></div><div class="prios"><article class="prio"><div class="top"><span class="rk">Prioridad 1</span><h3>Construir la propuesta de valor en la parte superior del perfil</h3></div><dl class="kv"><dt>Situación</dt><dd>El titular únicamente reproduce tu cargo y tu firma, y la sección Acerca de está completamente vacía. La primera impresión transmite cercanía a través de la foto, pero no comunica audiencia, resultado ni mecanismo.</dd><dt>Por qué</dt><dd>El titular y el Acerca de son las zonas de mayor visibilidad y conversión. Son lo primero que lee un CEO o un consejero, y hoy no encuentran motivo para seguir leyendo ni para confiar en tu criterio personal. Al estar sin trabajar, toda la carga recae en la marca y tu figura se diluye.</dd><dt>Acción</dt><dd>Publica el titular optimizado ya propuesto y redacta un Acerca de en primera persona que abra con un gancho orientado al problema del cliente, defina a quién ayudas, explique el mecanismo, apoye el mensaje en tu trayectoria real y cierre con una CTA explícita, alineándolo con la promesa de tu web.</dd><dt>Impacto</dt><dd>Mayor claridad de la oferta desde el primer segundo, mejor alineación entre perfil y firma, y aumento de la relevancia comercial y la aparición en búsquedas por palabras clave del sector.</dd></dl></article><article class="prio"><div class="top"><span class="rk">Prioridad 2</span><h3>Activar la autoridad y el camino de conversión</h3></div><dl class="kv"><dt>Situación</dt><dd>Tu experiencia se limita a enumerar cargos sin descripciones ni resultados, no hay activos de prueba en Destacados y no existe ninguna vía de contacto propia. El valor de tu recorrido queda oculto y el visitante no sabe qué hacer tras ver tu perfil.</dd><dt>Por qué</dt><dd>En executive search la confianza y la recomendación lo son todo. Sin descripciones que demuestren criterio, sin prueba de tu forma de trabajar y sin un paso siguiente claro, cada visita cualificada se pierde y no se convierte en conversación.</dd><dt>Acción</dt><dd>Redacta una descripción para cada experiencia clave empezando por la actual, con métricas agregadas honestas sin revelar nombres, conecta tu base financiera con tu credibilidad ante consejos, contextualiza theFoodTechLab, añade activos de prueba en Destacados y activa una CTA de baja fricción.</dd><dt>Impacto</dt><dd>Mayor percepción de autoridad personal frente a la marca, un camino de conversión claro para el visitante y más probabilidad de que directivos y consejeros inicien contacto directo contigo.</dd></dl></article><article class="prio"><div class="top"><span class="rk">Prioridad 3</span><h3>Pasar de republicar a producir criterio propio</h3></div><dl class="kv"><dt>Situación</dt><dd>Solo hay 4 publicaciones en casi 3 años, todas reshares, sin ganchos, sin CTAs y con temáticas parcialmente ajenas a tu oferta. No existe ninguna pieza que demuestre tu criterio sobre decisiones de liderazgo.</dd><dt>Por qué</dt><dd>El contenido es el canal que sostiene la autoridad en el tiempo y mantiene el perfil vivo ante una red ejecutiva cualificada. Sin voz propia, el perfil no genera confianza diferencial ni recuerda tu criterio a quienes toman decisiones de nombramiento. Tienes dos territorios únicos que casi nadie más puede ocupar.</dd><dt>Acción</dt><dd>Establece una cadencia realista y sostenible, semanal o quincenal, de contenido propio centrado en tu criterio sobre decisiones de liderazgo, con ganchos que planteen el coste real de un mal nombramiento y CTAs que inviten a conversar, explotando tu experiencia y el ángulo theFoodTechLab.</dd><dt>Impacto</dt><dd>Construcción progresiva de autoridad temática, mayor consistencia de mensaje y activación de una red ejecutiva ya cualificada que hoy no recibe estímulo alguno.</dd></dl></article></div></section><section class="reveal"><div class="sec-head"><div class="eyebrow">Del impulso al sistema</div><h2>Tu plan de 30 días</h2><p class="deck">Cuatro semanas, un foco concreto en cada una.</p></div><div class="plan"><div class="wk"><div class="wl">Semana 1</div><div><h3>Base estratégica y primera impresión</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Dejar clara tu propuesta de valor en las zonas de mayor visibilidad del perfil.</p><ul><li><span class="g">→</span>Publicar el titular optimizado ya propuesto.</li><li><span class="g">→</span>Definir por escrito audiencia, resultado, mecanismo y diferenciador que guiarán todo el perfil.</li><li><span class="g">→</span>Sustituir la foto por un retrato profesional de fondo neutro, luz suave y vestimenta acorde al mundo directivo, manteniendo tu expresión cercana, y preparar el guion del gancho del Acerca de.</li></ul><div class="out"><b>Resultado</b>Una primera impresión más coherente con tu nivel directivo y una propuesta de valor comprensible desde el primer vistazo.</div></div></div><div class="wk"><div class="wl">Semana 2</div><div><h3>Conversión: Acerca de, experiencia y CTA</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Convertir la autoridad real que ya posees en argumentos legibles y en un camino de contacto claro.</p><ul><li><span class="g">→</span>Redactar y publicar el Acerca de según la estructura y el ángulo estratégico recomendados.</li><li><span class="g">→</span>Escribir descripciones para cada experiencia clave, empezando por la actual, con métricas agregadas honestas y conexión con tu base financiera, y contextualizar theFoodTechLab.</li><li><span class="g">→</span>Añadir activos de prueba en Destacados y activar la CTA de baja fricción recomendada.</li></ul><div class="out"><b>Resultado</b>Mayor percepción de autoridad personal y un recorrido de conversión definido para el visitante.</div></div></div><div class="wk"><div class="wl">Semana 3</div><div><h3>Línea editorial y autoridad temática</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Diseñar el sistema de contenido propio antes de empezar a publicar de forma sostenida.</p><ul><li><span class="g">→</span>Definir 2-3 pilares de contenido apoyados en tus territorios únicos, executive search y theFoodTechLab.</li><li><span class="g">→</span>Establecer la cadencia realista, semanal o quincenal, y el formato principal, y preparar los borradores de las primeras piezas con ganchos y CTAs orientados a conversación.</li><li><span class="g">→</span>Alinear cada pieza con el titular y el Acerca de para reforzar un único mensaje.</li></ul><div class="out"><b>Resultado</b>Un plan de contenido enfocado que traduce tu criterio en material publicable y coherente.</div></div></div><div class="wk"><div class="wl">Semana 4</div><div><h3>Publicación, medición y continuidad</h3><p style="color:var(--muted);font-size:14.5px;margin-bottom:11px">Poner en marcha la publicación y crear un sistema para sostenerla y convertir visitas en conversaciones.</p><ul><li><span class="g">→</span>Publicar las primeras piezas siguiendo el calendario definido.</li><li><span class="g">→</span>Revisar señales básicas como visitas al perfil, interacciones y mensajes recibidos para ajustar temáticas, e interactuar con tu red ejecutiva mediante comentarios y preguntas propias.</li><li><span class="g">→</span>Fijar una rutina de revisión periódica del perfil y de la CTA para mantener la continuidad.</li></ul><div class="out"><b>Resultado</b>Mayor consistencia en la comunicación de tu autoridad y una base para convertir el interés en conversaciones cualificadas.</div></div></div></div><div class="body" style="margin-top:22px"><p class="lead">Un perfil optimizado se arregla en días. Lo que no se arregla con un fix es <b>publicar contenido estratégico cada semana, durante meses</b>: ahí es donde se construye la autoridad que trae clientes, y ese es exactamente el sistema que montamos por ti.</p></div></section><div class="ctaW reveal"><div class="cta"><div class="arc360" aria-hidden="true"></div><div class="in"><div class="eyebrow">El siguiente paso</div><h2>Este informe te muestra el qué. Nosotros ejecutamos el cómo.</h2><p>En la llamada montamos contigo el plan de tus 2 primeras semanas, empezando por tu Acerca de (0,5/10). Y si encaja, nuestro sistema publica por ti la autoridad que este informe te ha enseñado a construir.</p><a class="btn" href="https://cal.com/linked-360-zdcqtu/llamada-estrategica-link360?utm_source=informe&utm_medium=lead_magnet&utm_campaign=mry0l199qvy2764&utm_content=final">Reserva tu sesión gratuita de 15 min <span class="g">→</span></a><p class="riskfree">Sin compromiso. Sales con acciones aplicables, trabajemos juntos o no.</p></div></div><div class="foot"><div><span class="b">Link360</span>, el partner de contenido y autoridad para expertos B2B</div><div>Confidencial, preparado para MARISA LARIO HERRERO</div></div></div></div><script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themer');
+  function cur(){return root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');}
+  function sync(){btn.textContent=cur()==='dark'?'Modo claro':'Modo oscuro';}
+  btn.addEventListener('click',function(){root.setAttribute('data-theme',cur()==='dark'?'light':'dark');sync();});
+  sync();
+  var arc=document.getElementById('arc'), r=92, C=2*Math.PI*r, off=C*(1-((parseFloat(arc.getAttribute('data-pct'))||0)/100));
+  arc.style.strokeDasharray=C+' '+C; arc.style.transform='rotate(-90deg)'; arc.style.transformOrigin='105px 105px';
+  arc.style.setProperty('--fin',off);
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){arc.style.strokeDashoffset=off;}
+  else{arc.style.strokeDashoffset=C;arc.style.transition='stroke-dashoffset 1.5s cubic-bezier(.2,.7,.2,1) .25s';
+    requestAnimationFrame(function(){requestAnimationFrame(function(){arc.style.strokeDashoffset=off;});});}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});}
+})();
+</script>
