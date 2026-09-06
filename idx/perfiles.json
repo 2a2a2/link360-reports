@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-06T15:34:13Z",
+"actualizado": "2026-09-06T15:35:48Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -1643,12 +1643,12 @@
 },
 "ignasi-mellado": {
 "r": "ignasi-mellado",
-"s": 66,
-"l": "Sistema con fuga",
+"s": 60,
+"l": "Autoridad con Grietas",
 "n": "Ignasi",
 "f": "2026-08-24",
 "i": 11,
-"o": "seed-2026-09-06"
+"o": "forzado"
 },
 "alexcanalsrodríguez": {
 "r": "msd2jt10by1kwzh",
