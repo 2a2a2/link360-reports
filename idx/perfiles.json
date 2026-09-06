@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-06T15:35:50Z",
+"actualizado": "2026-09-06T19:08:35Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -1723,6 +1723,15 @@
 "i": 3,
 "o": "seed-2026-09-06",
 "u": "2026-09-06"
+},
+"diego-ibáñez-villar-82022649": {
+"r": "diego-ib-ez-villar",
+"s": 18,
+"l": "Experto invisible",
+"n": "Diego",
+"f": "2026-09-06",
+"i": 1,
+"o": "run"
 }
 }
 }
