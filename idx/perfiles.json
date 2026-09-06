@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-06T20:44:19Z",
+"actualizado": "2026-09-06T22:28:33Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -1750,6 +1750,897 @@
 "f": "2026-09-06",
 "i": 1,
 "o": "run"
+},
+"camalio": {
+"r": "",
+"s": null,
+"l": "",
+"n": "j",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"dulegil-reclamacionibi": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Anton",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"mniger": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Niger",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"karolmorenos": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Karol",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"mariadelgadorobles": {
+"r": "",
+"s": null,
+"l": "",
+"n": "María",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"salvadorguerrero": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Salvador",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"diegoroldanlafont": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Diego",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"paulorosales": {
+"r": "",
+"s": null,
+"l": "",
+"n": "paulo",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"pedro-pablo-fernandez-zenteno-abogado": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Pedro",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"ingenierojfmp": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Julio",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"arkitektors": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Melvin",
+"f": "",
+"i": 6,
+"o": "seed-url-2026-09-07"
+},
+"ignaciakuschel": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Ignacia",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"frankcozmartel": {
+"r": "",
+"s": null,
+"l": "",
+"n": "FRANK",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"dayanakatherinherreraperez": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Daya",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"gonzalo-moya-coach": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Gonzalo",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"diegokup": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Diego",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"toniherrerac": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Toni",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"adolfoperezn": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Adolfo",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"pablo-araujo-googleadsecommerce": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Pablo",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"laraacostar": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Ignasi",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"h2opublicidad": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Juan",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"pacolari": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Paco",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"alemellado": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Alexandra",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"facupfaffen": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Facundo",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"maribeldiazhybridwork": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Maribel",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"enrique-brusco": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Enrique",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"turismo-madrid": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Juan",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"roberto-remis": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Roberto",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"microvcrichyortiz": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Richy",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"andreschaconp08": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Andres",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"nadieskhabojko": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Nadieskha",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"antonio-herencia-iniesta-821449b": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Antonio",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"greta-valderrama-arqueóloga-abogada": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Greta",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"davidhernandezt": {
+"r": "",
+"s": null,
+"l": "",
+"n": "David",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"pabloclavijo": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Pablo",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"normansantana": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Norman",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"sofia.diaz": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Sofia",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"hector-lucena-it-cio": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Hector",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"landetadaniel-marketing": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Daniel",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"lictrevino": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Miguel",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"nxberrios": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Nelson",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"iquijano": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Ivan",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"joan-balcells": {
+"r": "",
+"s": null,
+"l": "",
+"n": "JOAN",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"danielarodriguezbobadilla": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Daniela",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"benjamin-perez-galorion": {
+"r": "",
+"s": null,
+"l": "",
+"n": "benjamin",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"christianjburi": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Christian",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"cortese170879": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Edmundo",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"aliciaperezmorenopedagoga": {
+"r": "",
+"s": null,
+"l": "",
+"n": "ALICIA",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"tu": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Aitor",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"mariolythazelperez": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Mariolyth",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"cesar-a-barlocco": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Cesar",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"franciscobautistaiglesias": {
+"r": "",
+"s": null,
+"l": "",
+"n": "FRANCISCO",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"pablopefaurcornejo": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Pablo",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"javendanio": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Juan",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"paulina-olguin": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Paulina",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"oscar-maríin": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Oscar",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"ordas-david": {
+"r": "",
+"s": null,
+"l": "",
+"n": "David",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"ecombriefs": {
+"r": "",
+"s": null,
+"l": "",
+"n": "ELISABET",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"hectorvalverde-pgmp-itsm-sap-oracle": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Héctor",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"victormagoheredia": {
+"r": "",
+"s": null,
+"l": "",
+"n": "victor",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"javier1arredondo": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Javier",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"bertabahamonde": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Berta",
+"f": "",
+"i": 5,
+"o": "seed-url-2026-09-07"
+},
+"manelruedap": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Manel",
+"f": "",
+"i": 2,
+"o": "seed-url-2026-09-07"
+},
+"danielnaranjo": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Daniel",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"joaquin-garcía": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Joaquin",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"geproy-ingenieria": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Juan",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"mayrely-vivas-consultora-coach": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Mayrely",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"hellenasistentevirtual": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Hellen",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"eduardo-f-martinez-l": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Eduardo",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"christian-olmedo-maintec": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Christian",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"hectorabascal": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Hector",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"luisafrancho": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Luisa",
+"f": "",
+"i": 4,
+"o": "seed-url-2026-09-07"
+},
+"cesar-vela": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Cesar",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"nicolas-de-la-cuesta": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Nicolás",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"andrescmonteiro": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Andrés",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"juang25": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Juan",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"cristianpérezfuentes": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Cristian",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"eduardohugocerezuela": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Eduardo",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"fayna-jimenez": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Fayna",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"oscarenguita": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Oscar",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"gilberto-araya-solano": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Gilberto",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"yolandaaliada": {
+"r": "",
+"s": null,
+"l": "",
+"n": "María",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"gabriela-serrentino-cm-redactora-seo": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Gabi",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"esdotge": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Sergio",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"tonicami": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Toni",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"francisco-jiménez-araya": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Francisco",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"josejuanarroyo": {
+"r": "",
+"s": null,
+"l": "",
+"n": "JOSE",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"sergiohidalgo-pro": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Sergio",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"lissethe-esther-m-aguila": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Lissethe",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"freddylatamabmconsultoria": {
+"r": "",
+"s": null,
+"l": "",
+"n": "FREDDY",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"jimenasilvanavarrete": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Jimena",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"ivanhenares": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Iván",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"juliafuentesvidal": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Julia",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"oaraneda": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Onofre",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"victorartamendi-seguros-inversiones": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Victor",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"jtfidalgo-marketing": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Jaime",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"mikelcatena": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Mikel",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"irisacosta": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Iris",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
+},
+"beppe": {
+"r": "",
+"s": null,
+"l": "",
+"n": "Beppe",
+"f": "",
+"i": 1,
+"o": "seed-url-2026-09-07"
 }
 }
 }
