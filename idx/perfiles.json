@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-06T15:35:48Z",
+"actualizado": "2026-09-06T15:35:50Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -1647,8 +1647,9 @@
 "l": "Autoridad con Grietas",
 "n": "Ignasi",
 "f": "2026-08-24",
-"i": 11,
-"o": "forzado"
+"i": 12,
+"o": "forzado",
+"u": "2026-09-06"
 },
 "alexcanalsrodríguez": {
 "r": "msd2jt10by1kwzh",
