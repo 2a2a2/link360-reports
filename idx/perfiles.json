@@ -1,0 +1,1726 @@
+{
+"version": 1,
+"descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
+"actualizado": "2026-09-06T15:34:11Z",
+"perfiles": {
+"jmalmdvr": {
+"r": "ms93w85etdrjxvu",
+"s": 71,
+"l": "",
+"n": "Juanma",
+"f": "2026-07-31",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"marmunozmunoz": {
+"r": "msfycavz23x8x4v",
+"s": 45,
+"l": "",
+"n": "Mar",
+"f": "2026-08-05",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"joanmatutano": {
+"r": "msg0fk8uc1ljpju",
+"s": 66,
+"l": "",
+"n": "Joan",
+"f": "2026-08-05",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"agustin-cardone": {
+"r": "msg37n5skcbv2i8",
+"s": 39,
+"l": "",
+"n": "Agustín",
+"f": "2026-08-05",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"diego-sandoval-veloso-51338487": {
+"r": "msg3kgv50q1cmm8",
+"s": 34,
+"l": "",
+"n": "Diego",
+"f": "2026-08-05",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"alexisbeltranpino": {
+"r": "msnikilyelotoct",
+"s": 48,
+"l": "",
+"n": "Alexis",
+"f": "2026-08-10",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"varelag": {
+"r": "msooj9nag7p96hr",
+"s": 45,
+"l": "",
+"n": "Alicia",
+"f": "2026-08-11",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"alejandrogonzalezspencer": {
+"r": "msorstqn1bacdwi",
+"s": 53,
+"l": "",
+"n": "Alejandro",
+"f": "2026-08-11",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"betiana-chirino-9816b39a": {
+"r": "msorxlcn45xmy0g",
+"s": 37,
+"l": "",
+"n": "Betiana",
+"f": "2026-08-11",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"sergio-pelecha-bochons-b93538251": {
+"r": "msoz3hhb0refwww",
+"s": 18,
+"l": "",
+"n": "Sergio",
+"f": "2026-08-11",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"javierfernandezrosete": {
+"r": "msp8nghi8hyi6ys",
+"s": 52,
+"l": "",
+"n": "Javier",
+"f": "2026-08-11",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"ambar-elena-rodriguez-quintero": {
+"r": "mspeptsw9ergvdx",
+"s": 50,
+"l": "",
+"n": "Ambar",
+"f": "2026-08-12",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"marisa-filipuzzi-asesorias": {
+"r": "msq15it7nxgb0me",
+"s": 53,
+"l": "",
+"n": "Marisa",
+"f": "2026-08-12",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"carla-e-loyo-miot": {
+"r": "msq6rsocw01a15o",
+"s": 64,
+"l": "",
+"n": "Carla",
+"f": "2026-08-12",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"edgar-aponte-92813b10a": {
+"r": "msq6sput4upouxz",
+"s": 25,
+"l": "",
+"n": "Edgar",
+"f": "2026-08-12",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"karmenpastorademiranda": {
+"r": "msq843w7hhrx5vv",
+"s": 30,
+"l": "",
+"n": "Karmen",
+"f": "2026-08-12",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"juan-manuel-cozzi-14082b103": {
+"r": "msq8ymomg2vpg9j",
+"s": 44,
+"l": "",
+"n": "Juan",
+"f": "2026-08-12",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"nadia-estrada-carreño": {
+"r": "msqj86i7h0rz7xl",
+"s": 35,
+"l": "",
+"n": "Nadia",
+"f": "2026-08-12",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"patriciacoralalegre": {
+"r": "msqjadyj2525vxy",
+"s": 58,
+"l": "",
+"n": "Patricia",
+"f": "2026-08-12",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"silviatalent": {
+"r": "msqlcjth5dkel3v",
+"s": 47,
+"l": "",
+"n": "Silvia",
+"f": "2026-08-12",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"orlandoquinteroeconomiadeimpacto": {
+"r": "msqlwpeqgy2ssoi",
+"s": 58,
+"l": "",
+"n": "Orlando",
+"f": "2026-08-12",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"rafael-castells-laguarda": {
+"r": "msqy8tar3ju47ft",
+"s": 15,
+"l": "",
+"n": "Rafael",
+"f": "2026-08-13",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"malenmunoz": {
+"r": "msr0bgjd296g911",
+"s": 61,
+"l": "",
+"n": "Malen",
+"f": "2026-08-13",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"viviangaticabeckers": {
+"r": "msrbuj9x20ppbc3",
+"s": 47,
+"l": "",
+"n": "Vivian",
+"f": "2026-08-13",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"francisco-pareja-supervisor": {
+"r": "msrhaz6ua4rzl3c",
+"s": 42,
+"l": "",
+"n": "Francisco",
+"f": "2026-08-13",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"johnperformance": {
+"r": "msrjw39beh3i5t8",
+"s": 56,
+"l": "",
+"n": "John",
+"f": "2026-08-13",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"katty-gómez-28457b77": {
+"r": "msrtyt2pipp1ase",
+"s": 51,
+"l": "",
+"n": "Katty",
+"f": "2026-08-13",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"raquel-mª-fernández-tamayo-494a2830a": {
+"r": "msvupmtbuq4qn2a",
+"s": 41,
+"l": "",
+"n": "Raquel",
+"f": "2026-08-16",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"ximenasepulveda": {
+"r": "msw1qkax0pdry6j",
+"s": 65,
+"l": "",
+"n": "Ximena",
+"f": "2026-08-16",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"leandro-gabriel-mugianesi-cortese-9424b6128": {
+"r": "mswi2bbvvcrs3k5",
+"s": 26,
+"l": "",
+"n": "Leandro",
+"f": "2026-08-17",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"mario-pastor-ramirez": {
+"r": "mswz5xiooui65ix",
+"s": 42,
+"l": "",
+"n": "Mario",
+"f": "2026-08-17",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"alejandro-fernandez-martínez": {
+"r": "msx20rjmrm868yw",
+"s": 23,
+"l": "",
+"n": "Alejandro",
+"f": "2026-08-17",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"guillermogiavedoni": {
+"r": "msx356xlwmw3o6g",
+"s": 50,
+"l": "",
+"n": "Guillermo",
+"f": "2026-08-17",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"alvarogarciataibo": {
+"r": "msx9wgpsbisw31b",
+"s": 61,
+"l": "",
+"n": "Alvaro",
+"f": "2026-08-17",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"pepa-vargas-332a1b4": {
+"r": "msxlgk495ztixf8",
+"s": 36,
+"l": "",
+"n": "Pepa",
+"f": "2026-08-17",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"ioneliapetrea": {
+"r": "msye1fvtyulovg4",
+"s": 55,
+"l": "",
+"n": "IONELIA",
+"f": "2026-08-18",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"santiagocardozogiraldo": {
+"r": "msyicvnbe842v9u",
+"s": 46,
+"l": "",
+"n": "Santiago",
+"f": "2026-08-18",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"robertocutillas": {
+"r": "msyjgiwgv5uukem",
+"s": 46,
+"l": "",
+"n": "Roberto",
+"f": "2026-08-18",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"diegoiturralderivadeneira✪": {
+"r": "msyoawpbv95mmyb",
+"s": 44,
+"l": "",
+"n": "Diego",
+"f": "2026-08-18",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"albertosanchezcasero": {
+"r": "msyy7r3tc6djrr7",
+"s": 50,
+"l": "",
+"n": "Alberto",
+"f": "2026-08-18",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"vianey-benítez-hernández": {
+"r": "msz0h0lz2ugrjao",
+"s": 59,
+"l": "",
+"n": "Vianey",
+"f": "2026-08-18",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"paulasanchezpalomar": {
+"r": "msz0m0xueowzi1y",
+"s": 54,
+"l": "",
+"n": "Paula",
+"f": "2026-08-18",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"iván-nicho-4b605979": {
+"r": "msz2fd157rnwnqh",
+"s": 39,
+"l": "",
+"n": "Iván",
+"f": "2026-08-18",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"cesar-mauricio-agudelo-duque": {
+"r": "msz3qwaru7kutay",
+"s": 48,
+"l": "",
+"n": "César",
+"f": "2026-08-18",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"ivonne-galeano": {
+"r": "msz3ye6v4c039ke",
+"s": 59,
+"l": "",
+"n": "Ivonne",
+"f": "2026-08-18",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"pilar-antonio-alvarado": {
+"r": "msz91p4qwnayb9w",
+"s": 31,
+"l": "",
+"n": "Pilar",
+"f": "2026-08-18",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"sergiosaavedradespott": {
+"r": "mszdrbukjlpu4rs",
+"s": 45,
+"l": "",
+"n": "Sergio",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"tatiana-tapia-bastidas": {
+"r": "mszfs5g96qfxsxk",
+"s": 52,
+"l": "",
+"n": "Tatiana",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"eduard-albert-roura-72b39931": {
+"r": "mszs9nlctlmg173",
+"s": 44,
+"l": "",
+"n": "Eduard",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"gary-zubieta-terceros": {
+"r": "mszsgnucvixe82f",
+"s": 58,
+"l": "",
+"n": "Gary",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"david-eduardo-muñoz-cahuich-9a56a22b5": {
+"r": "mszzsuq00fc8atz",
+"s": 29,
+"l": "",
+"n": "David",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"carlos-eduardo-sarmiento": {
+"r": "mt0190shoi5dno5",
+"s": 47,
+"l": "",
+"n": "Carlos",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"javierdiazposadas": {
+"r": "mt08sgrjkgol5rw",
+"s": 36,
+"l": "",
+"n": "Javier",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"angel-chiotti-dulanto": {
+"r": "mt091wbrbubp8ho",
+"s": 45,
+"l": "",
+"n": "Angel",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"arturo-toca-0929aa1a8": {
+"r": "mt09au6pyouku29",
+"s": 56,
+"l": "",
+"n": "Arturo",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"matias-leiblich": {
+"r": "mt09h5fh3qhrwjh",
+"s": 41,
+"l": "",
+"n": "Matias",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"erivan-buitrón-637b9758": {
+"r": "mt0b14oky3befr6",
+"s": 29,
+"l": "",
+"n": "Erivan",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"fernando-h-arturo-6702b71a": {
+"r": "mt0b3txoxg6n2fo",
+"s": 48,
+"l": "",
+"n": "Fernando",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"ingrid-juarez-07386776": {
+"r": "mt0bega65rm9vdo",
+"s": 45,
+"l": "",
+"n": "Ingrid",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"fjmisuraca": {
+"r": "mt0bd09to0l856w",
+"s": 47,
+"l": "",
+"n": "Francisco",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"yunuenjuarez": {
+"r": "mt0byrsco1nqz6n",
+"s": 40,
+"l": "",
+"n": "Yunuen",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"carlos-medina-a78b7357": {
+"r": "mt0cvmc8r49cdz6",
+"s": 49,
+"l": "",
+"n": "Carlos",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"roberto-etenio-san-martín-godoy-53775b17": {
+"r": "mt0dwwpio7now2d",
+"s": 49,
+"l": "",
+"n": "Roberto",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"mercedes-torres-3020b6298": {
+"r": "mt0e1h06flfg98s",
+"s": 52,
+"l": "",
+"n": "Mercedes",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"alejandro-buendia-580378164": {
+"r": "mt0fc823miwgzqn",
+"s": 28,
+"l": "",
+"n": "Alejandro",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"nehalsinghc": {
+"r": "mt0ibu3v8snzv8u",
+"s": 46,
+"l": "",
+"n": "Nehal",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"mayra-ramírez-5149ab328": {
+"r": "mt0is5lisr5a5ui",
+"s": 51,
+"l": "",
+"n": "Mayra",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"gastonbrunicardir": {
+"r": "mt0ja016jlus61t",
+"s": 47,
+"l": "",
+"n": "Gaston",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"gilbertogiraldo": {
+"r": "mt0je0amcjvwi85",
+"s": 61,
+"l": "",
+"n": "Gilberto",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"veronica-puymalie-b0b5a77": {
+"r": "mt0levqq9m9hlrp",
+"s": 44,
+"l": "",
+"n": "Veronica",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"pablojoseacuña-growth-business-development": {
+"r": "mt0ndkvou26dsxy",
+"s": 37,
+"l": "",
+"n": "Pablo",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"franz-sosa-758aa4246": {
+"r": "mt0qybe9leza0sa",
+"s": 16,
+"l": "",
+"n": "franz",
+"f": "2026-08-19",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"jorgemartínezcáceres": {
+"r": "mt0sc6lwfwmqrgh",
+"s": 41,
+"l": "",
+"n": "Jorge",
+"f": "2026-08-20",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"rene-mariano-venegas-ruz": {
+"r": "mt0x2d4robxrwh4",
+"s": 49,
+"l": "",
+"n": "RENE",
+"f": "2026-08-20",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"mario-íñiguez-pérez-19574b21": {
+"r": "mt162fkif7k1p2t",
+"s": 45,
+"l": "",
+"n": "Mario",
+"f": "2026-08-20",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"jorglezfdez": {
+"r": "mt19pf6crcngpxb",
+"s": 31,
+"l": "",
+"n": "Jorge",
+"f": "2026-08-20",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"miguel-cereijo-torres": {
+"r": "mt1eyhlfnhsygao",
+"s": 34,
+"l": "",
+"n": "Miguel",
+"f": "2026-08-20",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"césar-contreras-55a65532": {
+"r": "mt1kbk8w229e88s",
+"s": 48,
+"l": "",
+"n": "César",
+"f": "2026-08-20",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"javierbenitoseo": {
+"r": "mt1lpdnx642e9f1",
+"s": 56,
+"l": "",
+"n": "Javier",
+"f": "2026-08-20",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"katiapollandt": {
+"r": "mt1m74ctmhurlez",
+"s": 54,
+"l": "",
+"n": "Katia",
+"f": "2026-08-20",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"mirian-escalante-santiago-a216a4203": {
+"r": "mirian-escalante-santiago",
+"s": 17,
+"l": "CV Disfrazado",
+"n": "Mirian",
+"f": "2026-08-23",
+"i": 3,
+"o": "seed-2026-09-06"
+},
+"david-bullgrim": {
+"r": "david-botella-amat",
+"s": 42,
+"l": "Talento sin sistema",
+"n": "David",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"adela-valdiviezo-valladolid": {
+"r": "adela-valdiviezo-valladolid",
+"s": 22,
+"l": "Modo CV Pasivo",
+"n": "Adela",
+"f": "2026-08-23",
+"i": 4,
+"o": "seed-2026-09-06"
+},
+"marianoledezma": {
+"r": "mariano-ledezma",
+"s": 29,
+"l": "Landing Rota",
+"n": "Mariano",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"tania-soledad-guerra-b5a58251": {
+"r": "tania-soledad-guerra",
+"s": 18,
+"l": "Currículum sin sistema",
+"n": "Tania",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"juliolopezrodriguez": {
+"r": "julio-l-pez-rodr-guez",
+"s": 22,
+"l": "CV pasivo, no landing",
+"n": "Julio",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"gabriela-corimanya": {
+"r": "gabriela-corimanya",
+"s": 14,
+"l": "Perfil Fantasma",
+"n": "Gabriela",
+"f": "2026-08-23",
+"i": 4,
+"o": "seed-2026-09-06"
+},
+"fernando-castanedo-kasta-seguros": {
+"r": "fernando-castanedo-velasco",
+"s": 42,
+"l": "Landing Apagada",
+"n": "Fernando",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"zarella-manríquez-46791045": {
+"r": "zarella-manriquez",
+"s": 14,
+"l": "CV Disfrazado de Perfil",
+"n": "Zarella",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"cristian-bravo-gallardo": {
+"r": "cristian-bravo-gallardo",
+"s": 37,
+"l": "CV con maquillaje",
+"n": "Cristian",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"mercedes-bertinotti-982351350": {
+"r": "mercedes-bertinotti",
+"s": 16,
+"l": "CV disperso, no landing",
+"n": "Mercedes",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"erika-zepeda-esca": {
+"r": "erika-zepeda",
+"s": 35,
+"l": "Currículum sin sistema",
+"n": "Erika",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"paco-gámez-phd": {
+"r": "paco-g-mez-phd",
+"s": 42,
+"l": "CV con Buen Contenido",
+"n": "Paco",
+"f": "2026-08-23",
+"i": 8,
+"o": "seed-2026-09-06"
+},
+"fernandosciarrotta": {
+"r": "fernando-sciarrotta",
+"s": 28,
+"l": "CV Disfrazado de Perfil",
+"n": "Fernando",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"jesúslópezcarreira": {
+"r": "jes-s-l-pez-carreira",
+"s": 29,
+"l": "Perfil Fantasma",
+"n": "Jesús",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"criselida-garcia-": {
+"r": "criselida-garcia",
+"s": 51,
+"l": "Mensaje Diluido",
+"n": "Criselida",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"sjaramillo": {
+"r": "salvador-jaramillo",
+"s": 27,
+"l": "Modo CV, no Landing",
+"n": "Salvador",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"patricio-c-b55b4163": {
+"r": "patricio-c",
+"s": 23,
+"l": "Identidad Fragmentada",
+"n": "Patricio",
+"f": "2026-08-24",
+"i": 3,
+"o": "seed-2026-09-06"
+},
+"alberto-calderon-coach": {
+"r": "alberto-calder-n-david",
+"s": 52,
+"l": "Autoridad Invisible",
+"n": "Alberto",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"lic-elisa-susana-heredero": {
+"r": "lic-elisa-susana-heredero",
+"s": 18,
+"l": "Landing Rota",
+"n": "Lic.",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"jorge-ortiz-46b4b541": {
+"r": "jorge-ortiz",
+"s": 58,
+"l": "Vitrina sin motor",
+"n": "Jorge",
+"f": "2026-08-28",
+"i": 9,
+"o": "seed-2026-09-06"
+},
+"salvador-salazar-56aa2736": {
+"r": "salvador-salazar",
+"s": 16,
+"l": "El Experto Invisible",
+"n": "Salvador",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"violeta-sotelo-olvera": {
+"r": "violeta-sotelo-olvera",
+"s": 35,
+"l": "CV con Foto de Perfil",
+"n": "Violeta",
+"f": "2026-08-24",
+"i": 3,
+"o": "seed-2026-09-06"
+},
+"eugenioarguesopereda": {
+"r": "eugenio-arg-eso-pereda",
+"s": 23,
+"l": "Landing Rota",
+"n": "Eugenio",
+"f": "2026-08-24",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"antoniopayanblanco": {
+"r": "antonio-payan-blanco",
+"s": 31,
+"l": "Perfil Fantasma",
+"n": "Antonio",
+"f": "2026-08-24",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"david-sanchez-berbel": {
+"r": "david-sanchez-berbel",
+"s": 33,
+"l": "Experto Invisible",
+"n": "David",
+"f": "2026-08-24",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"manuel-migueles-rojas-07255232": {
+"r": "manuel-migueles-rojas",
+"s": 19,
+"l": "Currículum Digital",
+"n": "Manuel",
+"f": "2026-08-24",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"carlos-valdivia-28ba061a5": {
+"r": "carlos-valdivia",
+"s": 35,
+"l": "Catálogo, no landing",
+"n": "Carlos",
+"f": "2026-08-24",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"jones-pinos-1b088829b": {
+"r": "jones-pinos",
+"s": 19,
+"l": "Perfil Fantasma",
+"n": "Jones",
+"f": "2026-08-24",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"alejandro-olmo-guillen-214729120": {
+"r": "alejandro-olmo-guillen",
+"s": 45,
+"l": "Escaparate sin sistema",
+"n": "ALEJANDRO",
+"f": "2026-08-25",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"juan-esteban-g-6522b2128": {
+"r": "juan-esteban-g",
+"s": 21,
+"l": "Perfil Invisible",
+"n": "Juan",
+"f": "2026-08-25",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"ivandepaula": {
+"r": "iv-n-de-paula",
+"s": 22,
+"l": "Perfil en Modo CV",
+"n": "Iván",
+"f": "2026-08-25",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"raul-felipe-romero-maita-9566bb21a": {
+"r": "raul-felipe-romero-maita",
+"s": 17,
+"l": "CV pasivo, no landing",
+"n": "Raul",
+"f": "2026-08-25",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"nachoventura": {
+"r": "nacho-ventura",
+"s": 22,
+"l": "CV pasivo, no landing",
+"n": "Nacho",
+"f": "2026-08-25",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"maria-camila-loaiza-carvajal-b06094242": {
+"r": "maria-camila-loaiza-carvajal",
+"s": 19,
+"l": "CV apagado, no landing",
+"n": "Maria",
+"f": "2026-08-25",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"catorresr": {
+"r": "christian-alexander-torres-rios",
+"s": 20,
+"l": "Perfil Fantasma",
+"n": "Christian",
+"f": "2026-08-26",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"rafael-sànchez-cruz-12409557": {
+"r": "rafael-sanchez",
+"s": 13,
+"l": "CV disfrazado de perfil",
+"n": "Rafael",
+"f": "2026-08-26",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"alberto-sánchez-aquino-824171113": {
+"r": "alberto-s-nchez-aquino",
+"s": 14,
+"l": "Autoridad Invisible",
+"n": "Alberto",
+"f": "2026-08-26",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"jaime-silva-ratz-561a8527b": {
+"r": "jaime-silva-ratz",
+"s": 14,
+"l": "CV Pasivo",
+"n": "Jaime",
+"f": "2026-08-26",
+"i": 3,
+"o": "seed-2026-09-06"
+},
+"robertosanzcriptomonedas": {
+"r": "roberto-sanz",
+"s": 38,
+"l": "Escaparate sin sistema",
+"n": "Roberto",
+"f": "2026-08-26",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"juan-guillermo-castaño-ruiz-94b4b1174": {
+"r": "juan-guillermo-casta-o-ruiz",
+"s": 26,
+"l": "CV Pasivo, Cero Pipeline",
+"n": "Juan",
+"f": "2026-08-26",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"jorge-ag2019": {
+"r": "jorge-ag",
+"s": 12,
+"l": "Perfil Fantasma",
+"n": "Jorge",
+"f": "2026-08-26",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"akaenabusiness": {
+"r": "akaena-hechavarria-vel-zquez",
+"s": 12,
+"l": "Perfil Fantasma",
+"n": "Akaena",
+"f": "2026-08-27",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"silvinarusso": {
+"r": "silvina-russo",
+"s": 41,
+"l": "CV Disfrazado",
+"n": "Silvina",
+"f": "2026-08-27",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"jocelyn-mattisen-lópez-10667761": {
+"r": "jocelyn-mattisen-l-pez",
+"s": 18,
+"l": "Currículum Pasivo",
+"n": "Jocelyn",
+"f": "2026-08-28",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"tashy-fernandez": {
+"r": "tashy-fern-ndez",
+"s": 55,
+"l": "Autoridad Dormida",
+"n": "Tashy",
+"f": "2026-08-28",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"ricardo-rodriguez-martinez-28107134a": {
+"r": "ricardo-rodriguez-martinez",
+"s": 14,
+"l": "CV Digital",
+"n": "Ricardo",
+"f": "2026-08-28",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"carlos-augusto-soto-cardona": {
+"r": "carlos-augusto-soto-cardona",
+"s": 54,
+"l": "Autoridad sin Sistema",
+"n": "Carlos",
+"f": "2026-08-28",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"daniel-gomez-gomez-mba-udd-machali-84a77021": {
+"r": "daniel-gomez-gomez-mba-udd-machali",
+"s": 19,
+"l": "CV Pasivo",
+"n": "Daniel",
+"f": "2026-08-31",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"felipe-b-91061b39": {
+"r": "felipe-b",
+"s": 12,
+"l": "Perfil Fantasma",
+"n": "FELIPE",
+"f": "2026-08-28",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"sergiozafraagenciaismmabydania": {
+"r": "sergio-zafra",
+"s": 46,
+"l": "Sistema a Medias",
+"n": "Sergio",
+"f": "2026-08-29",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"jaime-fdez-avila": {
+"r": "jaime-fdez-vila",
+"s": 12,
+"l": "Perfil Fantasma",
+"n": "Jaime",
+"f": "2026-08-29",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"anasastresoler": {
+"r": "ana-sastre-soler",
+"s": 27,
+"l": "Fuga de Leads",
+"n": "Ana",
+"f": "2026-08-29",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"omen-capital-mexico": {
+"r": "eric-villag-mez",
+"s": 40,
+"l": "Landing Rota",
+"n": "Eric",
+"f": "2026-08-31",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"santiago-pazmino-37b1131b7": {
+"r": "santiago-pazmi-o",
+"s": 21,
+"l": "CV Disfrazado de Perfil",
+"n": "Santiago",
+"f": "2026-08-31",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"oscarfuentesgarrido": {
+"r": "oscar-fuentes-garrido",
+"s": 22,
+"l": "CV disfrazado de perfil",
+"n": "★",
+"f": "2026-08-31",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"eva-ferrer-garcia-9b4a9024": {
+"r": "eva-ferrer-garcia",
+"s": 12,
+"l": "CV Disfrazado de Perfil",
+"n": "Eva",
+"f": "2026-08-31",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"andrea-suárez-barrios-": {
+"r": "andrea-su-rez-barrios",
+"s": 39,
+"l": "Sistema a medio construir",
+"n": "Andrea",
+"f": "2026-08-31",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"mikel-lozano-mayo": {
+"r": "mikel-lozano-mayo",
+"s": 18,
+"l": "Perfil Fantasma",
+"n": "Mikel",
+"f": "2026-08-31",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"fedesanchez": {
+"r": "fede-s-nchez",
+"s": 27,
+"l": "CV de lujo, cero pipeline",
+"n": "Fede",
+"f": "2026-08-31",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"antonio-hartmann": {
+"r": "antonio-hartmann",
+"s": 18,
+"l": "Modo CV",
+"n": "Antonio",
+"f": "2026-08-31",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"chusgarcia": {
+"r": "jes-s-garc-a",
+"s": 46,
+"l": "Fachada sin motor",
+"n": "Jesús",
+"f": "2026-09-01",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"marianocatarino": {
+"r": "mariano-catarino",
+"s": 27,
+"l": "Perfil Fantasma",
+"n": "Mariano",
+"f": "2026-09-01",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"catalinaveralondoño": {
+"r": "catalina-vera-londo-o",
+"s": 22,
+"l": "CV disfrazado de perfil",
+"n": "Catalina",
+"f": "2026-09-01",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"yenicegulev": {
+"r": "yenice-gulev",
+"s": 64,
+"l": "Fachada fuerte, motor flojo",
+"n": "Yenice",
+"f": "2026-09-03",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"jordi-jové": {
+"r": "jordi-jov",
+"s": 38,
+"l": "Producto, no Sistema",
+"n": "Jordi",
+"f": "2026-09-02",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"marc-parera": {
+"r": "marc-parera",
+"s": 22,
+"l": "CV disfrazado de landing",
+"n": "Marc",
+"f": "2026-09-02",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"alfredo-perez-domínguez-494bb960": {
+"r": "alfredo-perez-dom-nguez",
+"s": 19,
+"l": "Landing Rota",
+"n": "Alfredo",
+"f": "2026-09-02",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"william-henry-devlyn-porras-aa26554": {
+"r": "william-henry-devlyn-porras",
+"s": 22,
+"l": "Currículum, no Sistema",
+"n": "William",
+"f": "2026-09-02",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"eduardo-gallegos-0a9a55293": {
+"r": "eduardo-gallegos",
+"s": 12,
+"l": "Perfil Fantasma",
+"n": "Eduardo",
+"f": "2026-09-02",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"rodrigo-andrés-tapia-escobar-33209a35": {
+"r": "rodrigo-andr-s-tapia-escobar",
+"s": 19,
+"l": "Modo CV Invisible",
+"n": "Rodrigo",
+"f": "2026-09-02",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"citlali-castañeda-b3bab5383": {
+"r": "citlali-casta-eda",
+"s": 53,
+"l": "Promesa sin pipeline",
+"n": "Citlali",
+"f": "2026-09-02",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"antoniovegalopez": {
+"r": "antonio-vega-l-pez",
+"s": 26,
+"l": "Modo CV Activado",
+"n": "Antonio",
+"f": "2026-09-02",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"enrique-mon-companys": {
+"r": "enrique-mon-companys",
+"s": 17,
+"l": "Vitrina sin pulso",
+"n": "Enrique",
+"f": "2026-09-02",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"carloscisnerosang": {
+"r": "carlos-cisneros-ang",
+"s": 29,
+"l": "CV Caro, Cero Pipeline",
+"n": "Carlos",
+"f": "2026-09-02",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"malware-intelligence-103504410": {
+"r": "malware-intelligence",
+"s": 22,
+"l": "Autoridad Dormida",
+"n": "Malware",
+"f": "2026-09-02",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"jenniferreyesm-estrategamarketing-planeacionestrategica": {
+"r": "jennifer-reyes-mac-as",
+"s": 26,
+"l": "CV Pasivo, No Landing",
+"n": "Jennifer",
+"f": "2026-09-02",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"dra-lissette-hernández-a547aa186": {
+"r": "dra-lissette-hern-ndez",
+"s": 29,
+"l": "Invisible Para Tu ICP",
+"n": "Dra.",
+"f": "2026-09-02",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"damaris-herrera-b01344a4": {
+"r": "damaris-herrera",
+"s": 15,
+"l": "Currículum Fantasma",
+"n": "Damaris",
+"f": "2026-09-03",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"pablo-marcelo-flores-jara": {
+"r": "pablo-marcelo-flores-jara",
+"s": 22,
+"l": "CV pasivo, no landing",
+"n": "Pablo",
+"f": "2026-09-03",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"yamid-leyva-palencia-28162727": {
+"r": "yamid-leyva-palencia",
+"s": 30,
+"l": "CV Pasivo, No Sistema",
+"n": "Yamid",
+"f": "2026-09-03",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"rene-pallalever-60808248": {
+"r": "rene-pallalever",
+"s": 23,
+"l": "Perfil Invisible",
+"n": "Rene",
+"f": "2026-09-03",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"bernardo-brizuela-experto-en-ley73-modalidad40-ppr-ley97": {
+"r": "bernardo-brizuela",
+"s": 44,
+"l": "Landing dormida",
+"n": "Bernardo",
+"f": "2026-09-03",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"maxcarbonel": {
+"r": "max-carbonel",
+"s": 43,
+"l": "Vitrina apagada",
+"n": "Max",
+"f": "2026-09-03",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"ignacio-gimenez-14365653": {
+"r": "ignacio-gimenez",
+"s": 13,
+"l": "Modo Currículum",
+"n": "Ignacio",
+"f": "2026-09-03",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"felixdeana-digitaltransformation": {
+"r": "f-lix-de-ana",
+"s": 33,
+"l": "CV con Foto",
+"n": "Félix",
+"f": "2026-09-03",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"daniel-martinez-losa-ortigosa-915182161": {
+"r": "daniel-martinez-losa-ortigosa",
+"s": 11,
+"l": "Invisible en LinkedIn",
+"n": "Daniel",
+"f": "2026-09-03",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"agustina-scandogliero": {
+"r": "agustina-scandogliero",
+"s": 64,
+"l": "Autoridad con fugas",
+"n": "Agustina",
+"f": "2026-09-04",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"oberlin-medrano-rodriguez-4b9286323": {
+"r": "oberlin-medrano-rodriguez",
+"s": 14,
+"l": "Perfil Fantasma",
+"n": "Oberlin",
+"f": "2026-09-04",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"david-montaño-romero-31189251": {
+"r": "david-monta-o-romero",
+"s": 42,
+"l": "Marca sí, pipeline no",
+"n": "DAVID",
+"f": "2026-09-04",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"rocío-sánchez-4b2702383": {
+"r": "roc-o-s-nchez",
+"s": 28,
+"l": "Currículum Pasivo",
+"n": "Rocío",
+"f": "2026-09-04",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"lissetebeatrizbarrios": {
+"r": "lissete-beatriz-barrios",
+"s": 31,
+"l": "Vitrina de vacantes",
+"n": "Lissete",
+"f": "2026-09-04",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"lucianobadilla": {
+"r": "luciano-badilla",
+"s": 32,
+"l": "CV disfrazado de perfil",
+"n": "Luciano",
+"f": "2026-09-04",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"jairobalaguer": {
+"r": "jairo-balaguer",
+"s": 45,
+"l": "CV con foto",
+"n": "Jairo",
+"f": "2026-09-04",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"victor-guerra-rodriguez-4090b39a": {
+"r": "victor-guerra-rodriguez",
+"s": 24,
+"l": "CV Disfrazado",
+"n": "Victor",
+"f": "2026-09-04",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"alejandro-mejia-aypxsj": {
+"r": "alex-mejia",
+"s": 28,
+"l": "Landing Rota",
+"n": "Alex",
+"f": "2026-09-05",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"montse-pardo-abad-9341b125": {
+"r": "montse-pardo-abad",
+"s": 18,
+"l": "Perfil Invisible",
+"n": "Montse",
+"f": "2026-09-05",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"eduardofierro": {
+"r": "eduardo-fierro-carballo",
+"s": 39,
+"l": "Currículum sin pipeline",
+"n": "Eduardo",
+"f": "2026-09-05",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"lucia-duron-lopez-3143ab34": {
+"r": "lucia-duron-lopez",
+"s": 24,
+"l": "Bufete sin Sistema",
+"n": "Lucia",
+"f": "2026-09-05",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"lucas-murtra-vaquero-76a300332": {
+"r": "lucas-murtra-vaquero",
+"s": 27,
+"l": "Modo CV Puro",
+"n": "Lucas",
+"f": "2026-09-05",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"philippsalejandro": {
+"r": "alejandro-philipps",
+"s": 42,
+"l": "Experto Invisible",
+"n": "Alejandro",
+"f": "2026-09-03",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"alejandrophilipps": {
+"r": "alejandro-philipps",
+"s": 42,
+"l": "Experto Invisible",
+"n": "Alejandro",
+"f": "2026-09-03",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"ignasi-mellado": {
+"r": "ignasi-mellado",
+"s": 66,
+"l": "Sistema con fuga",
+"n": "Ignasi",
+"f": "2026-08-24",
+"i": 11,
+"o": "seed-2026-09-06"
+},
+"alexcanalsrodríguez": {
+"r": "msd2jt10by1kwzh",
+"s": 36,
+"l": "",
+"n": "Alex",
+"f": "2026-08-03",
+"i": 4,
+"o": "seed-2026-09-06"
+},
+"gustavo-sanchez-bonilla": {
+"r": "gustavo-s-nchez-bonilla",
+"s": 63,
+"l": "Autoridad sin embudo",
+"n": "Gustavo",
+"f": "2026-08-23",
+"i": 6,
+"o": "seed-2026-09-06"
+},
+"carolina-castro-34060724": {
+"r": "mswcpa9jsmr0tsh",
+"s": 36,
+"l": "",
+"n": "Carolina",
+"f": "2026-08-16",
+"i": 3,
+"o": "seed-2026-09-06"
+},
+"mary-yulie-pernia-reyes-265b1127": {
+"r": "mstco0uu5lgtefb",
+"s": 30,
+"l": "",
+"n": "Mary",
+"f": "2026-08-14",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"adominguezjarit": {
+"r": "aitor-dominguez-jarit",
+"s": 26,
+"l": "Experto Invisible",
+"n": "Aitor",
+"f": "2026-08-23",
+"i": 6,
+"o": "seed-2026-09-06"
+},
+"david-ibanez-": {
+"r": "msxds4zjwlx1t0s",
+"s": 52,
+"l": "",
+"n": "David",
+"f": "2026-08-17",
+"i": 1,
+"o": "seed-2026-09-06"
+},
+"eduardo-merdanevic-ramos-35197549": {
+"r": "eduardo-merdanevic-ramos",
+"s": 29,
+"l": "Perfil en Modo CV",
+"n": "Eduardo",
+"f": "2026-09-05",
+"i": 2,
+"o": "seed-2026-09-06"
+},
+"alex-solé": {
+"r": "alex-sol",
+"s": 52,
+"l": "Motor sin carrocería",
+"n": "Alex",
+"f": "2026-08-23",
+"i": 2,
+"o": "seed-2026-09-06"
+}
+}
+}
