@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-07T17:15:03Z",
+"actualizado": "2026-09-07T23:52:54Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -2701,6 +2701,15 @@
 "s": 19,
 "l": "CV Pasivo, No Sistema",
 "n": "Fitzgerald",
+"f": "2026-09-07",
+"i": 1,
+"o": "run"
+},
+"hepzel-castro": {
+"r": "hepzel-castro",
+"s": 42,
+"l": "Producto fuerte, sistema roto",
+"n": "Hepzel",
 "f": "2026-09-07",
 "i": 1,
 "o": "run"
