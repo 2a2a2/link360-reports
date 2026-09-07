@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-07T13:28:11Z",
+"actualizado": "2026-09-07T14:34:43Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -2665,6 +2665,15 @@
 "s": 27,
 "l": "CV Pasivo, No Landing",
 "n": "Michelle",
+"f": "2026-09-07",
+"i": 1,
+"o": "run"
+},
+"adolfo-monsalve-es-gestion-tips-salud": {
+"r": "adolfo-monsalve",
+"s": 29,
+"l": "CV Disfrazado de Perfil",
+"n": "Adolfo",
 "f": "2026-09-07",
 "i": 1,
 "o": "run"
