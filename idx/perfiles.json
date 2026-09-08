@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-07T23:52:54Z",
+"actualizado": "2026-09-08T08:43:15Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -2711,6 +2711,15 @@
 "l": "Producto fuerte, sistema roto",
 "n": "Hepzel",
 "f": "2026-09-07",
+"i": 1,
+"o": "run"
+},
+"alexandruseceleanu": {
+"r": "alexandru-l-seceleanu-ilie",
+"s": 19,
+"l": "Perfil Invisible",
+"n": "Alexandru",
+"f": "2026-09-08",
 "i": 1,
 "o": "run"
 }
