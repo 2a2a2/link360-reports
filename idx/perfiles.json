@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-08T16:50:14Z",
+"actualizado": "2026-09-08T16:53:23Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -2750,6 +2750,15 @@
 "i": 2,
 "o": "run",
 "u": "2026-09-08"
+},
+"verónica-errázuriz-51195533": {
+"r": "ver-nica-err-zuriz",
+"s": 19,
+"l": "Landing Rota",
+"n": "Verónica",
+"f": "2026-09-08",
+"i": 1,
+"o": "run"
 }
 }
 }
