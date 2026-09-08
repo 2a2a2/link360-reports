@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-08T19:16:18Z",
+"actualizado": "2026-09-08T22:51:04Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -2764,6 +2764,15 @@
 "r": "luis-h-berr-o",
 "s": 22,
 "l": "Autoridad Dormida",
+"n": "Luis",
+"f": "2026-09-08",
+"i": 1,
+"o": "run"
+},
+"luis-uribehe": {
+"r": "luis-uribe",
+"s": 23,
+"l": "Landing Rota",
 "n": "Luis",
 "f": "2026-09-08",
 "i": 1,
