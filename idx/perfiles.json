@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-09T00:20:23Z",
+"actualizado": "2026-09-09T04:51:18Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -2796,6 +2796,15 @@
 "i": 2,
 "o": "run",
 "u": "2026-09-09"
+},
+"ciscopaciolla": {
+"r": "cisco-paciolla",
+"s": 31,
+"l": "Vitrina Vacía",
+"n": "Cisco",
+"f": "2026-09-09",
+"i": 1,
+"o": "run"
 }
 }
 }
