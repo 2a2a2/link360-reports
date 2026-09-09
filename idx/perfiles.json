@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-09T04:51:18Z",
+"actualizado": "2026-09-09T08:00:09Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -2802,6 +2802,15 @@
 "s": 31,
 "l": "Vitrina Vacía",
 "n": "Cisco",
+"f": "2026-09-09",
+"i": 1,
+"o": "run"
+},
+"jose-m-gregorio-molina-8a939852": {
+"r": "jose-m-gregorio-molina",
+"s": 24,
+"l": "Autoridad sin sistema",
+"n": "JOSE",
 "f": "2026-09-09",
 "i": 1,
 "o": "run"
