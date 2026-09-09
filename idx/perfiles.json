@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-09T08:00:09Z",
+"actualizado": "2026-09-09T17:52:13Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -2811,6 +2811,15 @@
 "s": 24,
 "l": "Autoridad sin sistema",
 "n": "JOSE",
+"f": "2026-09-09",
+"i": 1,
+"o": "run"
+},
+"josueneri": {
+"r": "josu-neri",
+"s": 38,
+"l": "Vitrina sin caja registradora",
+"n": "Josué",
 "f": "2026-09-09",
 "i": 1,
 "o": "run"
