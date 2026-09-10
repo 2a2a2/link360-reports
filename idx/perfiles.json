@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-09T18:04:54Z",
+"actualizado": "2026-09-10T00:28:54Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -2830,6 +2830,15 @@
 "l": "Landing sin tráfico",
 "n": "Lizeth",
 "f": "2026-09-09",
+"i": 1,
+"o": "run"
+},
+"fran-gracia-nuevo-136740177": {
+"r": "fran-gracia-nuevo",
+"s": 31,
+"l": "Landing rota",
+"n": "Fran",
+"f": "2026-09-10",
 "i": 1,
 "o": "run"
 }
