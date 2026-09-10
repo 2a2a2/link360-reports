@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-10T14:02:46Z",
+"actualizado": "2026-09-10T17:48:43Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -1494,8 +1494,9 @@
 "l": "CV con Foto",
 "n": "Félix",
 "f": "2026-09-03",
-"i": 1,
-"o": "seed-2026-09-06"
+"i": 2,
+"o": "seed-2026-09-06",
+"u": "2026-09-10"
 },
 "daniel-martinez-losa-ortigosa-915182161": {
 "r": "daniel-martinez-losa-ortigosa",
