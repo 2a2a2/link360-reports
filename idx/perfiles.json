@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-10T11:59:14Z",
+"actualizado": "2026-09-10T14:02:46Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -2847,6 +2847,15 @@
 "s": 24,
 "l": "Landing Rota",
 "n": "REULIS",
+"f": "2026-09-10",
+"i": 1,
+"o": "run"
+},
+"sergio-j-campos-81a89610": {
+"r": "sergio-j-campos",
+"s": 21,
+"l": "Perfil Fantasma",
+"n": "Sergio",
 "f": "2026-09-10",
 "i": 1,
 "o": "run"
