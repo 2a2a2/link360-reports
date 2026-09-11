@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-10T17:48:43Z",
+"actualizado": "2026-09-11T11:16:54Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -2858,6 +2858,15 @@
 "l": "Perfil Fantasma",
 "n": "Sergio",
 "f": "2026-09-10",
+"i": 1,
+"o": "run"
+},
+"enrique-melina-b41593330": {
+"r": "enrique-melina",
+"s": 29,
+"l": "Autoridad Invisible",
+"n": "Enrique",
+"f": "2026-09-11",
 "i": 1,
 "o": "run"
 }
