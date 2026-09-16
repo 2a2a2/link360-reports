@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-16T13:01:17Z",
+"actualizado": "2026-09-16T13:32:35Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -2940,6 +2940,15 @@
 "s": 49,
 "l": "Motor Apagado",
 "n": "Edgar",
+"f": "2026-09-16",
+"i": 1,
+"o": "run"
+},
+"borjacusy": {
+"r": "borja-cusy",
+"s": 30,
+"l": "CV Familiar, No Landing",
+"n": "Borja",
 "f": "2026-09-16",
 "i": 1,
 "o": "run"
