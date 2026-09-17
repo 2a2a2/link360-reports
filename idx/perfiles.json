@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-16T22:27:53Z",
+"actualizado": "2026-09-17T02:17:22Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -2986,6 +2986,15 @@
 "l": "Landing Apagada",
 "n": "Juan",
 "f": "2026-09-16",
+"i": 1,
+"o": "run"
+},
+"alonso-garcia-rus-a88a721a3": {
+"r": "alonso-garcia-rus",
+"s": 24,
+"l": "Currículum, no landing",
+"n": "Alonso",
+"f": "2026-09-17",
 "i": 1,
 "o": "run"
 }
