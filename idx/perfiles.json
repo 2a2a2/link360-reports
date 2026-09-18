@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-17T17:11:28Z",
+"actualizado": "2026-09-18T10:34:15Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3040,6 +3040,15 @@
 "l": "Modo Empleado, No Experto",
 "n": "Martin",
 "f": "2026-09-17",
+"i": 1,
+"o": "run"
+},
+"emigior": {
+"r": "emilio-giordanello",
+"s": 38,
+"l": "Currículum, no sistema",
+"n": "Emilio",
+"f": "2026-09-18",
 "i": 1,
 "o": "run"
 }
