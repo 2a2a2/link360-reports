@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-18T19:05:11Z",
+"actualizado": "2026-09-19T19:14:28Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3079,6 +3079,15 @@
 "i": 2,
 "o": "run",
 "u": "2026-09-18"
+},
+"rodrigobarriareyes": {
+"r": "rodrigo-barr-a-r",
+"s": 40,
+"l": "Autoridad Dormida",
+"n": "Rodrigo",
+"f": "2026-09-19",
+"i": 1,
+"o": "run"
 }
 }
 }
