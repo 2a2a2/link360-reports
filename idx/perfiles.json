@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-20T08:03:48Z",
+"actualizado": "2026-09-20T10:12:30Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3094,6 +3094,15 @@
 "s": 36,
 "l": "Currículum, no sistema",
 "n": "Jorge",
+"f": "2026-09-20",
+"i": 1,
+"o": "run"
+},
+"danielhuertadelsol": {
+"r": "daniel-huerta-del-sol",
+"s": 21,
+"l": "CV Pasivo",
+"n": "Daniel",
 "f": "2026-09-20",
 "i": 1,
 "o": "run"
