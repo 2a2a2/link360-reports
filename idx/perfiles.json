@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-09-20T22:48:48Z",
+"actualizado": "2026-09-21T21:00:35Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3140,6 +3140,15 @@
 "l": "Perfil invisible",
 "n": "Ana",
 "f": "2026-09-20",
+"i": 1,
+"o": "run"
+},
+"michaelvaronyasno": {
+"r": "michael-varon-yasno",
+"s": 47,
+"l": "Vitrina sin embudo",
+"n": "Michael",
+"f": "2026-09-21",
 "i": 1,
 "o": "run"
 }
