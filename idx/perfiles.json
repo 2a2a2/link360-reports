@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-09T17:27:58Z",
+"actualizado": "2026-11-09T17:31:32Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3243,6 +3243,15 @@
 "i": 2,
 "o": "run",
 "u": "2026-11-09"
+},
+"bouchernicolas": {
+"r": "nicolas-boucher",
+"s": 45,
+"l": "Autoridad sin Sistema",
+"n": "Nicolas",
+"f": "2026-11-09",
+"i": 1,
+"o": "run"
 }
 }
 }
