@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-10T18:00:48Z",
+"actualizado": "2026-11-10T19:21:31Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3357,6 +3357,15 @@
 "s": 28,
 "l": "CV Disfrazado",
 "n": "Felipe",
+"f": "2026-11-10",
+"i": 1,
+"o": "run"
+},
+"josecarlospuerta": {
+"r": "jos-carlos-puerta-fern-ndez",
+"s": 19,
+"l": "CV pasivo, no landing",
+"n": "José",
 "f": "2026-11-10",
 "i": 1,
 "o": "run"
