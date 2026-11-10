@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-10T19:21:31Z",
+"actualizado": "2026-11-10T19:28:03Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3366,6 +3366,15 @@
 "s": 19,
 "l": "CV pasivo, no landing",
 "n": "José",
+"f": "2026-11-10",
+"i": 1,
+"o": "run"
+},
+"alberto-perote-hernández-27423aa3": {
+"r": "alberto-perote-hern-ndez",
+"s": 12,
+"l": "Perfil Fantasma",
+"n": "alberto",
 "f": "2026-11-10",
 "i": 1,
 "o": "run"
