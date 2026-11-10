@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-10T15:57:35Z",
+"actualizado": "2026-11-10T16:06:50Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3321,6 +3321,15 @@
 "s": 22,
 "l": "Landing Apagada",
 "n": "Ana",
+"f": "2026-11-10",
+"i": 1,
+"o": "run"
+},
+"florian-l-a243813b": {
+"r": "florian-l",
+"s": 29,
+"l": "Modo CV, no Landing",
+"n": "Florian",
 "f": "2026-11-10",
 "i": 1,
 "o": "run"
