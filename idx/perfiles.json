@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-11T12:41:46Z",
+"actualizado": "2026-11-11T14:16:38Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3510,6 +3510,15 @@
 "r": "juan-carlos-arboleda-raigoza",
 "s": 43,
 "l": "Experto Invisible",
+"n": "Juan",
+"f": "2026-11-11",
+"i": 1,
+"o": "run"
+},
+"juan-david-aponte-gaitan-1a03193a9": {
+"r": "juan-david-aponte-gaitan",
+"s": 18,
+"l": "Perfil Fantasma",
 "n": "Juan",
 "f": "2026-11-11",
 "i": 1,
