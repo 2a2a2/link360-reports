@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-11T17:59:07Z",
+"actualizado": "2026-11-11T18:04:16Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3574,6 +3574,15 @@
 "s": 44,
 "l": "Metodología Sin Sistema",
 "n": "Marcelo",
+"f": "2026-11-11",
+"i": 1,
+"o": "run"
+},
+"laura-scaliter": {
+"r": "laura-a-scaliter",
+"s": 63,
+"l": "Sistema a medias",
+"n": "Laura",
 "f": "2026-11-11",
 "i": 1,
 "o": "run"
