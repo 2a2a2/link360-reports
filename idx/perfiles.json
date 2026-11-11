@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-11T19:15:54Z",
+"actualizado": "2026-11-11T19:19:10Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3611,6 +3611,15 @@
 "s": 18,
 "l": "Perfil Invisible",
 "n": "Sofia",
+"f": "2026-11-11",
+"i": 1,
+"o": "run"
+},
+"angelluisdiez": {
+"r": "ngel-luis-d-ez",
+"s": 28,
+"l": "Currículum Invisible",
+"n": "Ángel",
 "f": "2026-11-11",
 "i": 1,
 "o": "run"
