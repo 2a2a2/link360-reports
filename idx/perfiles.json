@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-11T09:40:00Z",
+"actualizado": "2026-11-11T09:52:18Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3420,6 +3420,15 @@
 "s": 20,
 "l": "Modo invisible",
 "n": "Micaela",
+"f": "2026-11-11",
+"i": 1,
+"o": "run"
+},
+"ana-pertuza-perez-weball": {
+"r": "ana-pertuza-perez",
+"s": 19,
+"l": "Invisible y sin sistema",
+"n": "Ana",
 "f": "2026-11-11",
 "i": 1,
 "o": "run"
