@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-11T18:04:16Z",
+"actualizado": "2026-11-11T18:14:08Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3583,6 +3583,15 @@
 "s": 63,
 "l": "Sistema a medias",
 "n": "Laura",
+"f": "2026-11-11",
+"i": 1,
+"o": "run"
+},
+"juliana-beltrán-villarraga-a356211b6": {
+"r": "juliana-beltr-n-villarraga",
+"s": 22,
+"l": "CV Pasivo",
+"n": "Juliana",
 "f": "2026-11-11",
 "i": 1,
 "o": "run"
