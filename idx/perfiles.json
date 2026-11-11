@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-11T15:05:27Z",
+"actualizado": "2026-11-11T16:07:29Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3529,6 +3529,15 @@
 "s": 11,
 "l": "CV Pasivo",
 "n": "Lisseth",
+"f": "2026-11-11",
+"i": 1,
+"o": "run"
+},
+"viviana-cárdenas-hernández": {
+"r": "viviana-c-rdenas-hern-ndez",
+"s": 43,
+"l": "CV Disfrazado de Perfil",
+"n": "Viviana",
 "f": "2026-11-11",
 "i": 1,
 "o": "run"
