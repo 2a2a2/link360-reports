@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-11T05:53:46Z",
+"actualizado": "2026-11-11T09:40:00Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3411,6 +3411,15 @@
 "s": 35,
 "l": "Currículum con Logo",
 "n": "Fran",
+"f": "2026-11-11",
+"i": 1,
+"o": "run"
+},
+"micaela-acosta-650385333": {
+"r": "micaela-acosta",
+"s": 20,
+"l": "Modo invisible",
+"n": "Micaela",
 "f": "2026-11-11",
 "i": 1,
 "o": "run"
