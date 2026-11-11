@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-11T20:31:43Z",
+"actualizado": "2026-11-11T21:31:43Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3629,6 +3629,15 @@
 "s": 26,
 "l": "Vitrina Institucional",
 "n": "Cristal",
+"f": "2026-11-11",
+"i": 1,
+"o": "run"
+},
+"paola-leon-herrera": {
+"r": "paola-le-n-herrera",
+"s": 24,
+"l": "Modo Currículum",
+"n": "Paola",
 "f": "2026-11-11",
 "i": 1,
 "o": "run"
