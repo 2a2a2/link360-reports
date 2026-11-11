@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-11T19:19:10Z",
+"actualizado": "2026-11-11T20:31:43Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3620,6 +3620,15 @@
 "s": 28,
 "l": "Currículum Invisible",
 "n": "Ángel",
+"f": "2026-11-11",
+"i": 1,
+"o": "run"
+},
+"cristaljimenezf": {
+"r": "cristal-jimenez",
+"s": 26,
+"l": "Vitrina Institucional",
+"n": "Cristal",
 "f": "2026-11-11",
 "i": 1,
 "o": "run"
