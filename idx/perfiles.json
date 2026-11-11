@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-11T12:18:41Z",
+"actualizado": "2026-11-11T12:19:57Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3484,6 +3484,15 @@
 "s": 19,
 "l": "CV pasivo",
 "n": "Lisbeth",
+"f": "2026-11-11",
+"i": 1,
+"o": "run"
+},
+"consultoraas": {
+"r": "as-consulting-consulting",
+"s": 20,
+"l": "Modo Fantasma",
+"n": "AS",
 "f": "2026-11-11",
 "i": 1,
 "o": "run"
