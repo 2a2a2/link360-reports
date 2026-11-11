@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-11T18:36:30Z",
+"actualizado": "2026-11-11T19:15:54Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3605,6 +3605,15 @@
 "i": 2,
 "o": "run",
 "u": "2026-11-11"
+},
+"sofia-camila-coelho": {
+"r": "sofia-coelho",
+"s": 18,
+"l": "Perfil Invisible",
+"n": "Sofia",
+"f": "2026-11-11",
+"i": 1,
+"o": "run"
 }
 }
 }
