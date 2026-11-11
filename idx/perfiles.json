@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-11T11:05:09Z",
+"actualizado": "2026-11-11T11:17:39Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3448,6 +3448,15 @@
 "s": 34,
 "l": "Vitrina apagada",
 "n": "Gerard",
+"f": "2026-11-11",
+"i": 1,
+"o": "run"
+},
+"pedrorecuero": {
+"r": "pedro-recuero-valentin",
+"s": 21,
+"l": "Folleto Dormido",
+"n": "Pedro",
 "f": "2026-11-11",
 "i": 1,
 "o": "run"
