@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-12T13:36:06Z",
+"actualizado": "2026-11-12T17:34:19Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3683,6 +3683,15 @@
 "s": 16,
 "l": "Perfil Fantasma",
 "n": "Begoña",
+"f": "2026-11-12",
+"i": 1,
+"o": "run"
+},
+"valeria-gonzález-miceli-39297230www.linkedin.com": {
+"r": "perfil",
+"s": 3,
+"l": "Perfil Fantasma",
+"n": "",
 "f": "2026-11-12",
 "i": 1,
 "o": "run"
