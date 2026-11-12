@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-12T10:43:48Z",
+"actualizado": "2026-11-12T10:47:16Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3665,6 +3665,15 @@
 "s": 41,
 "l": "Fuga de Leads",
 "n": "Amanda",
+"f": "2026-11-12",
+"i": 1,
+"o": "run"
+},
+"david-manguán-martínez": {
+"r": "david-mangu-n-mart-nez",
+"s": 18,
+"l": "Currículum Digital",
+"n": "David",
 "f": "2026-11-12",
 "i": 1,
 "o": "run"
