@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-12T17:34:19Z",
+"actualizado": "2026-11-12T17:52:56Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3692,6 +3692,15 @@
 "s": 3,
 "l": "Perfil Fantasma",
 "n": "",
+"f": "2026-11-12",
+"i": 1,
+"o": "run"
+},
+"davidb2b-growth": {
+"r": "yair-david-beltr-n-su-rez",
+"s": 37,
+"l": "Modo CV, no Landing",
+"n": "Yair",
 "f": "2026-11-12",
 "i": 1,
 "o": "run"
