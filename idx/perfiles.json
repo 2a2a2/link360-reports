@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-12T08:32:32Z",
+"actualizado": "2026-11-12T10:43:48Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3656,6 +3656,15 @@
 "s": 19,
 "l": "Experta Invisible",
 "n": "Elena",
+"f": "2026-11-12",
+"i": 1,
+"o": "run"
+},
+"lasastradigital": {
+"r": "amanda-herrera-gonz-lez",
+"s": 41,
+"l": "Fuga de Leads",
+"n": "Amanda",
 "f": "2026-11-12",
 "i": 1,
 "o": "run"
