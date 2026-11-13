@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-13T08:12:50Z",
+"actualizado": "2026-11-13T08:22:16Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3710,6 +3710,15 @@
 "s": 29,
 "l": "Autoridad Enterrada",
 "n": "Ramón",
+"f": "2026-11-13",
+"i": 1,
+"o": "run"
+},
+"apereiram": {
+"r": "abel-pereira-matalobos",
+"s": 27,
+"l": "Candidato, No Cliente",
+"n": "Abel",
 "f": "2026-11-13",
 "i": 1,
 "o": "run"
