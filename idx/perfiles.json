@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-13T08:22:16Z",
+"actualizado": "2026-11-13T08:24:47Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3719,6 +3719,15 @@
 "s": 27,
 "l": "Candidato, No Cliente",
 "n": "Abel",
+"f": "2026-11-13",
+"i": 1,
+"o": "run"
+},
+"salvador-vega-lópez-b4b51b2b": {
+"r": "salvador-vega-l-pez",
+"s": 29,
+"l": "El Experto Invisible",
+"n": "Salvador",
 "f": "2026-11-13",
 "i": 1,
 "o": "run"
