@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-13T14:52:48Z",
+"actualizado": "2026-11-13T16:15:02Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3755,6 +3755,15 @@
 "s": 16,
 "l": "Perfil Fantasma",
 "n": "Edith",
+"f": "2026-11-13",
+"i": 1,
+"o": "run"
+},
+"rodrigodiazv": {
+"r": "rodrigo-a-d-az-videla",
+"s": 13,
+"l": "Perfil Fantasma",
+"n": "Rodrigo",
 "f": "2026-11-13",
 "i": 1,
 "o": "run"
