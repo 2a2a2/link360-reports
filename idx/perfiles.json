@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-12T17:52:56Z",
+"actualizado": "2026-11-13T08:12:50Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3702,6 +3702,15 @@
 "l": "Modo CV, no Landing",
 "n": "Yair",
 "f": "2026-11-12",
+"i": 1,
+"o": "run"
+},
+"ramonramon": {
+"r": "ram-n-ram-n-s-nchez",
+"s": 29,
+"l": "Autoridad Enterrada",
+"n": "Ramón",
+"f": "2026-11-13",
 "i": 1,
 "o": "run"
 }
