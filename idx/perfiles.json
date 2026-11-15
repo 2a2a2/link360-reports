@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-15T15:04:34Z",
+"actualizado": "2026-11-15T16:00:07Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3845,6 +3845,15 @@
 "s": 27,
 "l": "CV Digital",
 "n": "Wilbert",
+"f": "2026-11-15",
+"i": 1,
+"o": "run"
+},
+"yolanda-gonzález-carro": {
+"r": "yolanda-gonz-lez-carro",
+"s": 16,
+"l": "CV Pasivo",
+"n": "Yolanda",
 "f": "2026-11-15",
 "i": 1,
 "o": "run"
