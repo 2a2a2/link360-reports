@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-15T08:36:07Z",
+"actualizado": "2026-11-15T10:48:08Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3818,6 +3818,15 @@
 "s": 58,
 "l": "Autoridad sin sistema",
 "n": "Constanza",
+"f": "2026-11-15",
+"i": 1,
+"o": "run"
+},
+"javier-palanca-fontestad-ba2b87b0": {
+"r": "javier-palanca-fontestad",
+"s": 18,
+"l": "Modo CV, no landing",
+"n": "Javier",
 "f": "2026-11-15",
 "i": 1,
 "o": "run"
