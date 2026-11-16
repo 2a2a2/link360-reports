@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-16T19:47:00Z",
+"actualizado": "2026-11-16T20:52:16Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3926,6 +3926,15 @@
 "s": 30,
 "l": "Currículum Congelado",
 "n": "Manuel",
+"f": "2026-11-16",
+"i": 1,
+"o": "run"
+},
+"lara-del-barrio-564478b8": {
+"r": "lara-del-barrio",
+"s": 28,
+"l": "Vitrina Vacía",
+"n": "Lara",
 "f": "2026-11-16",
 "i": 1,
 "o": "run"
