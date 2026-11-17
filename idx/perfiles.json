@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-17T01:34:27Z",
+"actualizado": "2026-11-17T02:19:52Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3953,6 +3953,15 @@
 "s": 22,
 "l": "CV disfrazado",
 "n": "Jorge",
+"f": "2026-11-17",
+"i": 1,
+"o": "run"
+},
+"sergio-nuñez-crisanto-a74b1418a": {
+"r": "sergio-nu-ez-crisanto",
+"s": 17,
+"l": "CV Disfrazado",
+"n": "Sergio",
 "f": "2026-11-17",
 "i": 1,
 "o": "run"
