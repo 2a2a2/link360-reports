@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-16T20:52:16Z",
+"actualizado": "2026-11-17T00:16:48Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -3936,6 +3936,15 @@
 "l": "Vitrina Vacía",
 "n": "Lara",
 "f": "2026-11-16",
+"i": 1,
+"o": "run"
+},
+"elide-landero-tech": {
+"r": "ana-elid-landero",
+"s": 46,
+"l": "Vitrina sin Pipeline",
+"n": "Ana",
+"f": "2026-11-17",
 "i": 1,
 "o": "run"
 }
