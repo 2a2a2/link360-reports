@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-18T09:05:15Z",
+"actualizado": "2026-11-18T15:48:05Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4034,6 +4034,15 @@
 "s": 18,
 "l": "Modo CV, Cero Pipeline",
 "n": "Pamela",
+"f": "2026-11-18",
+"i": 1,
+"o": "run"
+},
+"joaquin-nunez-primalcut": {
+"r": "joaquin-tavares-nu-ez",
+"s": 51,
+"l": "Vitrina sin sistema",
+"n": "Joaquin",
 "f": "2026-11-18",
 "i": 1,
 "o": "run"
