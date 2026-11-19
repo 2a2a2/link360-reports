@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-19T15:50:37Z",
+"actualizado": "2026-11-19T18:39:01Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4124,6 +4124,15 @@
 "s": 27,
 "l": "CV disfrazado de perfil",
 "n": "Manuel",
+"f": "2026-11-19",
+"i": 1,
+"o": "run"
+},
+"lauramobelcan": {
+"r": "laura-c",
+"s": 27,
+"l": "Fuga crítica de leads",
+"n": "Laura",
 "f": "2026-11-19",
 "i": 1,
 "o": "run"
