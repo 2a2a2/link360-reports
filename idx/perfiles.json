@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-19T15:17:19Z",
+"actualizado": "2026-11-19T15:27:43Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4106,6 +4106,15 @@
 "s": 28,
 "l": "CV Pasivo",
 "n": "Maria",
+"f": "2026-11-19",
+"i": 1,
+"o": "run"
+},
+"jmamorales": {
+"r": "jose-alberto-morales",
+"s": 39,
+"l": "Currículum de lujo, sin funnel",
+"n": "Jose",
 "f": "2026-11-19",
 "i": 1,
 "o": "run"
