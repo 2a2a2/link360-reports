@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-19T15:27:43Z",
+"actualizado": "2026-11-19T15:50:37Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4115,6 +4115,15 @@
 "s": 39,
 "l": "Currículum de lujo, sin funnel",
 "n": "Jose",
+"f": "2026-11-19",
+"i": 1,
+"o": "run"
+},
+"manuellopezglz": {
+"r": "manuel-l-pez-gonz-lez",
+"s": 27,
+"l": "CV disfrazado de perfil",
+"n": "Manuel",
 "f": "2026-11-19",
 "i": 1,
 "o": "run"
