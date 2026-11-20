@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-20T15:28:27Z",
+"actualizado": "2026-11-20T15:34:14Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4180,6 +4180,15 @@
 "s": 33,
 "l": "Landing Page Rota",
 "n": "Cynthia",
+"f": "2026-11-20",
+"i": 1,
+"o": "run"
+},
+"diego-d-gonzalez": {
+"r": "diego-gonzalez",
+"s": 19,
+"l": "Autoridad Dormida",
+"n": "Diego",
 "f": "2026-11-20",
 "i": 1,
 "o": "run"
