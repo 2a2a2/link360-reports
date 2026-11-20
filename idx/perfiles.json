@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-20T12:28:24Z",
+"actualizado": "2026-11-20T15:06:25Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4162,6 +4162,15 @@
 "s": 26,
 "l": "CV Disfrazado",
 "n": "José",
+"f": "2026-11-20",
+"i": 1,
+"o": "run"
+},
+"brendahidalgo": {
+"r": "brenda-hidalgo-geldres",
+"s": 36,
+"l": "Vitrina de Cargos",
+"n": "Brenda",
 "f": "2026-11-20",
 "i": 1,
 "o": "run"
