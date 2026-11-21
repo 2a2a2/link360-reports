@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-21T13:17:08Z",
+"actualizado": "2026-11-21T14:24:48Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4208,6 +4208,15 @@
 "s": 28,
 "l": "CV Disfrazado",
 "n": "Julio",
+"f": "2026-11-21",
+"i": 1,
+"o": "run"
+},
+"elodia-gonzalez-": {
+"r": "elodia-gonzalez",
+"s": 45,
+"l": "CV Disfrazado de Landing",
+"n": "Elodia",
 "f": "2026-11-21",
 "i": 1,
 "o": "run"
