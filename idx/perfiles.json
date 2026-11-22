@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-22T17:51:11Z",
+"actualizado": "2026-11-22T19:56:12Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -1570,8 +1570,9 @@
 "l": "CV con foto",
 "n": "Jairo",
 "f": "2026-09-04",
-"i": 1,
-"o": "seed-2026-09-06"
+"i": 2,
+"o": "seed-2026-09-06",
+"u": "2026-11-22"
 },
 "victor-guerra-rodriguez-4090b39a": {
 "r": "victor-guerra-rodriguez",
