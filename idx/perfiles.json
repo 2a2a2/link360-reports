@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-22T16:43:32Z",
+"actualizado": "2026-11-22T16:51:13Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4281,6 +4281,15 @@
 "s": 35,
 "l": "Landing Apagada",
 "n": "Sergi",
+"f": "2026-11-22",
+"i": 1,
+"o": "run"
+},
+"wilhelm-preisler": {
+"r": "wilhelm-preisler",
+"s": 16,
+"l": "Perfil Fantasma",
+"n": "Wilhelm",
 "f": "2026-11-22",
 "i": 1,
 "o": "run"
