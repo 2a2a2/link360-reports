@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-22T16:17:03Z",
+"actualizado": "2026-11-22T16:43:32Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4272,6 +4272,15 @@
 "s": 58,
 "l": "Autoridad sin Captura",
 "n": "José",
+"f": "2026-11-22",
+"i": 1,
+"o": "run"
+},
+"sergi-vilardell-7320b7446": {
+"r": "sergi-vilardell",
+"s": 35,
+"l": "Landing Apagada",
+"n": "Sergi",
 "f": "2026-11-22",
 "i": 1,
 "o": "run"
