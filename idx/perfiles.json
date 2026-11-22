@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-22T15:56:59Z",
+"actualizado": "2026-11-22T16:17:03Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4263,6 +4263,15 @@
 "s": 47,
 "l": "Fundación a medias",
 "n": "Estefi",
+"f": "2026-11-22",
+"i": 1,
+"o": "run"
+},
+"jlarellano-advisor": {
+"r": "jos-luis-arellano",
+"s": 58,
+"l": "Autoridad sin Captura",
+"n": "José",
 "f": "2026-11-22",
 "i": 1,
 "o": "run"
