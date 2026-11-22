@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-22T19:56:12Z",
+"actualizado": "2026-11-22T20:42:44Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4300,6 +4300,15 @@
 "s": 40,
 "l": "Vendedor Dormido",
 "n": "Jeremias",
+"f": "2026-11-22",
+"i": 1,
+"o": "run"
+},
+"ignacio-galan": {
+"r": "ignacio-galan",
+"s": 24,
+"l": "Autoridad Invisible",
+"n": "Ignacio",
 "f": "2026-11-22",
 "i": 1,
 "o": "run"
