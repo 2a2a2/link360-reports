@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-22T11:01:51Z",
+"actualizado": "2026-11-22T11:03:38Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -1199,7 +1199,7 @@
 "l": "Fuga de Leads",
 "n": "Ana",
 "f": "2026-08-29",
-"i": 2,
+"i": 3,
 "o": "seed-2026-09-06",
 "u": "2026-11-22"
 },
