@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-23T12:35:36Z",
+"actualizado": "2026-11-23T12:51:05Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -9,8 +9,9 @@
 "l": "",
 "n": "Juanma",
 "f": "2026-07-31",
-"i": 1,
-"o": "seed-2026-09-06"
+"i": 2,
+"o": "seed-2026-09-06",
+"u": "2026-11-23"
 },
 "marmunozmunoz": {
 "r": "msfycavz23x8x4v",
