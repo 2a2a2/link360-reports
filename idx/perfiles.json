@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-23T17:24:13Z",
+"actualizado": "2026-11-24T18:55:33Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4356,6 +4356,15 @@
 "l": "CV Digital, No Landing",
 "n": "Alena",
 "f": "2026-11-23",
+"i": 1,
+"o": "run"
+},
+"lina-maria-botero-duran": {
+"r": "lina-maria-botero-duran",
+"s": 20,
+"l": "Perfil Fantasma",
+"n": "Lina",
+"f": "2026-11-24",
 "i": 1,
 "o": "run"
 }
