@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-24T19:10:27Z",
+"actualizado": "2026-11-24T20:21:41Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4373,6 +4373,15 @@
 "s": 26,
 "l": "CV Disfrazado de Perfil",
 "n": "Rosa",
+"f": "2026-11-24",
+"i": 1,
+"o": "run"
+},
+"roberto-herrera-7551a572": {
+"r": "roberto-herrera",
+"s": 18,
+"l": "Experto Invisible",
+"n": "Roberto",
 "f": "2026-11-24",
 "i": 1,
 "o": "run"
