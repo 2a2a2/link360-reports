@@ -1,7 +1,7 @@
 {
 "version": 1,
 "descripcion": "Perfiles ya analizados por el LM Personalizado (una vez por perfil). clave = vanity LinkedIn normalizada. r=report_id s=score l=nivel n=nombre f=fecha 1er análisis i=intentos u=último intento o=origen",
-"actualizado": "2026-11-25T00:35:59Z",
+"actualizado": "2026-11-25T17:26:33Z",
 "perfiles": {
 "jmalmdvr": {
 "r": "ms93w85etdrjxvu",
@@ -4391,6 +4391,15 @@
 "s": 40,
 "l": "Autoridad sin sistema",
 "n": "Alfredo",
+"f": "2026-11-25",
+"i": 1,
+"o": "run"
+},
+"arturo-gomez-marin": {
+"r": "arturo-gomez-marin",
+"s": 42,
+"l": "Autoridad sin sistema",
+"n": "Arturo",
 "f": "2026-11-25",
 "i": 1,
 "o": "run"
